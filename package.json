@@ -1,0 +1,69 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.0",
+    "emailjs-com": "^2.6.4",
+    "gsap": "^3.6.0",
+    "mdbreact": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-animated-css": "^1.2.1",
+    "react-background-animation": "^1.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "react-elastic-carousel": "^0.11.1",
+    "react-gsap": "^2.2.1",
+    "react-icons": "^4.2.0",
+    "react-particles-js": "^3.4.1",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-scroll": "^1.8.1",
+    "react-scrollmagic": "^2.2.0",
+    "react-slick": "^0.28.0",
+    "react-spring": "^8.0.27",
+    "react-styled-carousel": "^0.5.1",
+    "react-toggle": "^4.1.1",
+    "react-typewriter": "^0.4.1",
+    "react-use": "^17.1.1",
+    "react-vertical-timeline-component": "^3.3.3",
+    "styled-components": "^5.2.1",
+    "sweetalert": "^2.1.2",
+    "typewriter-effect": "^2.3.3",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "react-alice-carousel": "^2.4.0"
+  }
+}

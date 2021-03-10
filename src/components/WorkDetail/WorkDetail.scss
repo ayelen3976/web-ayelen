@@ -1,0 +1,150 @@
+@mixin transition(
+  $property: all,
+  $duration: 0.5s,
+  $ease: cubic-bezier(0.65, -0.25, 0.25, 1.95)
+) {
+  transition: $property $duration $ease;
+}
+.workdetail {
+  padding: 50px;
+  margin-top: 10px;
+  .back {
+    margin-top: 3px;
+    float: right;
+    margin-right: 70px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-image: linear-gradient(#b47dcd, #e878a2, #eb85ab);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+
+    font-family: Neue Plak W01 Bold, sans-serif;
+    font-size: 14px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .back:hover,
+  .back:focus {
+    background-size: 100% 2px;
+  }
+  .work {
+    margin-left: 20px;
+    margin-top: 3%;
+    font-family: Neue Plak W01 Narrow SemiBold;
+    font-size: 36px;
+    line-height: 32px;
+    letter-spacing: 0.6em;
+    color: #7045e4c5;
+  }
+  .work-title {
+    color: var(--text-color);
+    margin-top: 5%;
+    font-size: 85px;
+    line-height: 1.24em;
+    letter-spacing: 12px;
+    font-family: caneladeck-light, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+
+    // font-weight: lighter;
+  }
+
+  .buttons {
+    p{
+      font-size: 20px;
+      font-family: "Times New Roman", sans-serif;
+      color: var(--text-color);
+    }
+    margin-top: 2%;
+    justify-content: space-between;
+    width: 370px;
+    display: flex;
+    .btn-one {
+      a {
+        color: black;
+      }
+
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid black;
+      vertical-align: middle;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      .icon-git {
+        width: 40px;
+        height: 30px;
+      }
+    }
+    .btn-one {
+      @include transition(all, 0.5s, cubic-bezier(0.65, -0.25, 0.25, 1.95));
+      font-weight: 900;
+      color: black;
+      padding: 10px 20px;
+      background: rgba(245, 244, 244, 0.795);
+      text-transform: uppercase;
+    }
+    .btn-one:hover,
+    .btn-one:focus,
+    .btn-one:active {
+      letter-spacing: 0.125rem;
+    }
+  }
+}
+@media (max-width: 648px) {
+  .workdetail {
+    padding: 15px;
+    margin-top: 1px;
+    .back {
+      margin-top: 1px;
+
+      margin-right: 7px;
+
+      font-size: 14px;
+    }
+
+    .work {
+      margin-left: 1px;
+      margin-top: 75px;
+    }
+    .work-title {
+      margin-top: 55px;
+      font-size: 28px;
+
+      // font-weight: lighter;
+    }
+
+    .buttons {
+      width: 270px;
+      margin-top: 2%;
+      justify-content: space-between;
+
+      display: flex;
+      .btn-one {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 10px;
+        font-family: inherit;
+        .icon-git {
+          width: 40px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

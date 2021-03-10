@@ -1,0 +1,138 @@
+{
+  "main": {
+    "projects": [
+      {
+        "id": 1,
+        "img": "./../projects/amazon/amazon1.png",
+        "name": "Amazon Clone",
+        "description": "This is a Amazon clone built in 100% react with method of payment and using the hosting in firebase",
+        "marginTop": "2px",
+        "data": {
+          "repo": "https://github.com/ayelen3976/amazon-clone",
+          "deploy": "https://challenge-c052e.web.app/ ",
+          "tecnologies": "",
+
+          "img1": "./../projects/amazon/amazon1.png",
+          "img2": "./../projects/amazon/amazon2.png",
+          "img3": "./../projects/amazon/amazon3.png",
+          "img4": "./../projects/amazon/amazon4.png",
+          "img5": "./../projects/amazon/amazon5.png",
+          "img6": "./../projects/amazon/amazon6.png",
+          "img7": "./../projects/amazon/amazon7.png"
+        }
+      },
+      {
+        "id": 2,
+        "img": "./../projects/netflix/netflix1.png",
+        "name": "Netflix Clone",
+        "description": "This is a Netflix Clone using the TMDb api, built in 100% react on the client side",     "marginTop": "90px",
+        "data": {
+          "repo": "https://github.com/ayelen3976/netflix--clone",
+          "deploy": "https://netflix-clone-alpha.vercel.app/",
+          "img1": "./../projects/netflix/netflix1.png",
+          "img2": "./../projects/netflix/netflix2.png",
+          "img3": "./../projects/netflix/netflix3.png"
+        }
+      },
+      {
+        "id": 3,
+        "img": "./../projects/moscow/moscow.png",
+        "name": "Moscow Diet",
+        "description": "Final project carried out in henry's bootcamp, consisted of building an e-commerce working as a fullstack developer",    "marginTop": "2px",
+        "data": {
+          "repo": "https://github.com/ayelen3976/E-commerce/tree/last",
+          "img1": "./../projects/moscow/moscow1.png",
+          "img2": "./../projects/moscow/moscow2.png",
+          "img3": "./../projects/moscow/moscow3.png",
+          "img4": "./../projects/moscow/moscow4.png",
+          "img5": "./../projects/moscow/moscow5.png",
+          "img6": "./../projects/moscow/moscow6.png",
+          "img7": "./../projects/moscow/moscow7.png",
+          "img8": "./../projects/moscow/moscow8.png",
+          "img9": "./../projects/moscow/moscow9.png",
+          "img10": "./../projects/moscow/moscow10.png",
+          "img11": "./../projects/moscow/moscow11.png",
+          "img12": "./../projects/moscow/moscow12.png"
+        }
+      },
+      {
+        "id": 4,
+        "img": "./../projects/weather/weather1.png",
+        "name": "Weather Week",
+        "description": "Small project that consists of seeing the climate of the next 5 days of different countries",   
+         "marginTop": "90px",
+        "data": {
+          "repo": "https://github.com/ayelen3976/weather-week",
+          "deploy": "https://client-theta-green.vercel.app/",
+          "img1": "./../projects/weather/weather1.png",
+          "img2": "./../projects/weather/weather2.png",
+          "img3": "./../projects/weather/weather3.png"
+        }
+      },
+      {
+        "id": 5,
+        "img": "./../projects/dtodo/dtodo19.png",
+        "name": "DTodoInd",
+        "description": "E-commerce full stack for a real clothing store in Argentina in process ",
+          "marginTop": "20px",
+        "data": {
+          "repo": "https://github.com/Bhavesh588/manjares",
+        
+    
+          "img1": "./../projects/dtodo/dtodo1.png",
+          "img2": "./../projects/dtodo/dtodo2.png",  
+          "img3": "./../projects/dtodo/dtodo3.jpg", 
+          "img4": "./../projects/dtodo/dtodo4.png", 
+          "img5": "./../projects/dtodo/dtodo5.png", 
+          "img6": "./../projects/dtodo/dtodo6.png", 
+          "img7": "./../projects/dtodo/dtodo7.png", 
+          "img8": "./../projects/dtodo/dtodo8.png", 
+          "img9": "./../projects/dtodo/dtodo9.jpg", 
+          "img10": "./../projects/dtodo/dtodo10.png",
+          "img11": "./../projects/dtodo/dtodo11.png",
+          "img12": "./../projects/dtodo/dtodo12.png",  
+          "img13": "./../projects/dtodo/dtodo13.png", 
+          "img14": "./../projects/dtodo/dtodo14.png", 
+          "img15": "./../projects/dtodo/dtodo15.png", 
+          "img16": "./../projects/dtodo/dtodo16.png", 
+          "img17": "./../projects/dtodo/dtodo17.png", 
+          "img18": "./../projects/dtodo/dtodo18.jpg"
+         
+         }
+      },
+   
+      {
+        "id": 6,
+        "img": "./../projects/somosmas/somosmas1.png",
+        "name": "Somos Más",
+        "description": "Project carried out in the alkemy program to gain experience as a junior developer",
+        "marginTop": "100px",
+        "data": {
+          "img1": "./../projects/somosmas/somosmas1.png", 
+          "img2": "./../projects/somosmas/somosmas2.png", 
+          "img3": "./../projects/somosmas/somosmas3.png", 
+          "img4": "./../projects/somosmas/somosmas4.png", 
+          "img5": "./../projects/somosmas/somosmas5.png", 
+          "img6": "./../projects/somosmas/somosmas6.png",
+          "img7": "./../projects/somosmas/somosmas7.png", 
+          "img8": "./../projects/somosmas/somosmas8.png"
+        }
+      },
+  
+      {
+        "id": 7,
+        "img": "./../projects/mine/mine.png",
+        "name": "Personal Portfolio",
+        "description": "This website, check the repository! :)",
+        "marginTop": "100px",
+        "data": {
+          "repo": "https://github.com/ayelen3976/web-ayelen.git",
+          "deploy": "https://portfolio-c470d.web.app/",
+         
+          "img1": "./../projects/mine/mine1.png",
+          "img2": "./../projects/mine/mine2.png"
+        }
+      }
+    ]
+  }
+}

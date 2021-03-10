@@ -1,0 +1,227 @@
+.content-images {
+  margin-top: 3%;
+  .moscow-img1 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+  .cont-moscow {
+    contain: content;
+    .text-moscow {
+      text-align: center;
+    }
+
+    .tech-moscow {
+      font-size: 33px;
+      font-family: "Times New Roman", sans-serif;
+
+      margin-top: 6%;
+      color: var(--text-color);
+      text-decoration: underline;
+    }
+    p {
+      font-size: 30px;
+      font-family: "Times New Roman", sans-serif;
+      text-align: -webkit-center;
+      margin-top: 10%;
+      color: var(--text-color);
+    }
+    ul {
+      margin-top: 3%;
+      li {
+        margin-left: 12%;
+        list-style: none;
+        font-size: 22px;
+        font-family: "Times New Roman", sans-serif;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .moscow-img2 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img3 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img4 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img5 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img6 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img7 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img8 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img9 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img10 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img11 {
+    margin-top: 10%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .moscow-img12 {
+    margin-top: 10%;
+    text-align: center;
+    img {
+      width: 60%;
+      height: 500px;
+    }
+  }
+}
+
+@media (max-width: 648px) {
+  .content-images {
+    .moscow-img1 {
+      img {
+        height: 200px;
+      }
+    }
+    .cont-moscow {
+      contain: content;
+      .text-moscow {
+        text-align: center;
+      }
+
+      .tech-moscow {
+        font-size: 28px;
+        font-family: "Times New Roman", sans-serif;
+
+        margin-top: 6%;
+      }
+      p {
+        font-size: 20px;
+
+        text-align: -webkit-center;
+        margin-top: 10%;
+      }
+      ul {
+        margin-top: 3%;
+        li {
+          margin-left: 1px;
+          list-style: none;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .moscow-img2 {
+      margin-top: 6%;
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img3 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img4 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img5 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img6 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img7 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img8 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img9 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img10 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img11 {
+      img {
+        height: 200px;
+      }
+    }
+
+    .moscow-img12 {
+      margin-top: 10%;
+      text-align: center;
+      img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  }
+}

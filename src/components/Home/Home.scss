@@ -1,0 +1,258 @@
+.home {
+ 
+  padding: 1px;
+  margin-top: 10%;
+  .type-div {
+    padding: 20px;
+
+    .typewriter {
+      margin-top: 1%;
+      font-size: 45px;
+
+      font-family: TimesNewRoman;
+      margin-bottom: 8%;
+      color: #313131;
+
+      font-weight: bold;
+
+      animation: colorchange 20s infinite alternate;
+      @keyframes colorchange {
+        0% {
+          color: rgb(146, 148, 248);
+        }
+
+        10% {
+          color: #8e44ad;
+        }
+
+        15% {
+          color: #bc1a99;
+        }
+
+        20% {
+          color: #1abc9c;
+        }
+
+        30% {
+          color: #d3ac00;
+        }
+
+        40% {
+          color: rgb(236, 189, 87);
+        }
+
+        50% {
+          color: #34495e;
+        }
+
+        60% {
+          color: rgba(0, 247, 255, 0.397);
+        }
+
+        70% {
+          color: #099dff;
+        }
+        80% {
+          color: #f1c40f;
+        }
+
+        90% {
+          color: #080d53;
+        }
+
+        100% {
+          color: pink;
+        }
+      }
+    }
+    .contenedor {
+      font-family: TimesNewRoman;
+      display: flex;
+      width: 600px;
+      height: 40px;
+
+      font-size: 43px;
+      line-height: 40px;
+
+      font-weight: bold;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      overflow: hidden;
+      animation: colorchange 20s infinite alternate;
+      @keyframes colorchange {
+        0% {
+          color: rgb(146, 148, 248);
+        }
+
+        10% {
+          color: #8e44ad;
+        }
+
+        15% {
+          color: #bc1a99;
+        }
+
+        20% {
+          color: #1abc9c;
+        }
+
+        30% {
+          color: #d35400;
+        }
+
+        40% {
+          color: rgb(255, 94, 0);
+        }
+
+        50% {
+          color: #34495e;
+        }
+
+        60% {
+          color: rgba(0, 247, 255, 0.397);
+        }
+
+        70% {
+          color: #099dff;
+        }
+        80% {
+          color: #f1c40f;
+        }
+
+        90% {
+          color: #080d53;
+        }
+
+        100% {
+          color: pink;
+        }
+      }
+      ul {
+        list-style: none;
+        padding-left: 10px;
+        animation: cambiar 7s infinite;
+      }
+
+      ul,
+      p {
+        margin: 0;
+      }
+
+      @keyframes cambiar {
+        0% {
+          margin-top: 0;
+        }
+        20% {
+          margin-top: 0;
+        }
+
+        25% {
+          margin-top: -40px;
+        }
+        50% {
+          margin-top: -40px;
+        }
+
+        55% {
+          margin-top: -80px;
+        }
+        80% {
+          margin-top: -80px;
+        }
+
+        85% {
+          margin-top: -40px;
+        }
+        95% {
+          margin-top: -40px;
+        }
+
+        100% {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+.home-img{
+  .icon-laptop {
+    width: 150px;
+    height: 150px;
+
+    opacity: 0.7;
+    margin-top: 10%;
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+    @keyframes shake {
+      0% {
+        transform: skewY(20deg);
+      }
+      100% {
+        transform: skewY(-20deg);
+      }
+    }
+  }
+}
+
+img {
+  margin-left: 20px;
+
+  width: 350px;
+  height: 300px;
+}
+}
+  
+
+@media (max-width: 648px) {
+  .home {
+    text-align: -webkit-center;
+    padding: 1px;
+    margin-top: 10%;
+    .type-div {
+      padding: 40px;
+  
+      .typewriter {
+        margin-top: 1%;
+        font-size: 23px;
+  
+        font-family: TimesNewRoman;
+        margin-bottom: 8%;
+        color: #313131;
+  
+  
+   
+      }
+      .contenedor {
+        font-family: TimesNewRoman;
+        display: flex;
+        width: 300px;
+        height: 40px;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: bold;
+     
+        ul {
+          list-style: none;
+          padding-left: 8px;
+          animation: cambiar 7s infinite;
+        }
+  
+        ul,
+        p {
+          margin: 0;
+        }
+  
+      
+      }
+    }
+  
+ .home-img{
+   display: none;
+
+}
+
+ }  
+  
+}

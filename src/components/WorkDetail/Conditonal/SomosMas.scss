@@ -1,0 +1,225 @@
+.content-images{
+
+    margin-top:3%;
+    .somosmas-img1{
+        p{
+            color: var(--text-color);
+            font-size: 30px;
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        img{
+            margin-top:6%;
+            width:100%;
+        
+        }
+    }
+    .cont-somosmas{
+        contain: content;
+        .text-somosmas {
+          text-align: center;
+        }
+    
+        .tech-somosmas{
+          font-size: 33px;
+          font-family: "Times New Roman", sans-serif;
+    
+          margin-top: 6%;
+          color: var(--text-color);
+          text-decoration: underline;
+        }
+        p {
+          font-size: 30px;
+          font-family: "Times New Roman", sans-serif;
+          text-align: -webkit-center;
+          margin-top: 10%;
+          color: var(--text-color);
+        }
+        ul {
+          margin-top: 3%;
+          li {
+            margin-left: 12%;
+            list-style: none;
+            font-size: 22px;
+            font-family: "Times New Roman", sans-serif;
+            color: var(--text-color);
+          }
+        }
+      }
+    .somosmas-img2{
+        margin-top:10%;
+        img{
+            width:100%;
+
+        }
+    }
+    .somosmas-img3{
+        margin-top:10%;
+        img{
+            width:100%;
+  
+        }
+    }
+    .somosmas-img4{
+        margin-top:10%;
+        img{
+            width:100%;
+
+        }
+    }
+    .somosmas-img5{
+        margin-top:10%;
+        img{
+            width:100%;
+       
+        }
+    }
+    .somosmas-img6{
+        margin-top:10%;
+        img{
+            width:100%;
+   
+        }
+    }
+    .res-somosmas{
+        contain: content;
+        margin-top: 5%;
+        justify-content: center;
+        font-size: 32px;
+        font-family: "Times New Roman", sans-serif;
+        color: var(--text-color);
+      }
+    
+    .somosmas-img7{
+        text-align: center;
+        margin-top:10%;
+        img{
+            width:360px;
+            height: 640px;
+        }
+    }
+    .somosmas-img8{
+        text-align: center;
+        margin-top:10%;
+        img{
+            width:360px;
+            height: 640px;
+        }
+    }
+
+    
+  
+    
+  }
+  @media (max-width: 648px) {
+    .content-images{
+
+        margin-top:3%;
+        .somosmas-img1{
+            p{
+                color: var(--text-color);
+                font-size: 30px;
+                font-family: "Times New Roman", sans-serif;
+            }
+    
+            img{
+                height: 300px;
+            
+            }
+        }
+
+        .cont-somosmas{
+            contain: content;
+            .text-somosmas{
+              text-align: center;
+            }
+      
+            .tech-somosmas{
+              font-size: 28px;
+              font-family: "Times New Roman", sans-serif;
+      
+              margin-top: 6%;
+            }
+            p {
+              font-size: 23px;
+      
+              text-align: -webkit-center;
+              margin-top: 10%;
+            }
+            ul {
+              margin-top: 3%;
+              li {
+                margin-left: 1px;
+                list-style: none;
+                font-size: 22px;
+              }
+            }
+          }
+        .somosmas-img2{
+            margin-top:10%;
+            img{
+                height: 300px;
+    
+            }
+        }
+        .somosmas-img3{
+            margin-top:10%;
+            img{
+                height: 300px;
+      
+            }
+        }
+        .somosmas-img4{
+            margin-top:10%;
+            img{
+                height: 300px;
+    
+            }
+        }
+        .somosmas-img5{
+            margin-top:10%;
+            img{
+                height: 300px;
+           
+            }
+        }
+        .somosmas-img6{
+            margin-top:10%;
+            img{
+                height: 300px;
+       
+            }
+        }
+        .res-somosmas{
+            font-size: 23px;
+            margin-top: 12%;
+            contain: content;
+  
+            justify-content: center;
+          
+            font-family: "Times New Roman", sans-serif;
+            color: var(--text-color);
+          }
+        
+        .somosmas-img7{
+            text-align: center;
+            margin-top:1px;
+            img{
+                width: 180px;
+                height: 320px;
+            }
+        }
+        .somosmas-img8{
+            text-align: center;
+            margin-top:10%;
+            img{
+                width: 180px;
+                height: 320px;
+            }
+        }
+    
+        
+      
+        
+      }
+  }
