@@ -15,9 +15,9 @@ function Work() {
   }, []);
 
   return (
-    <div className="works-tech">
+    <div className="works-tech" id="work">
       <MDBContainer>
-        <MDBRow className="row-tech" id="work">
+        <MDBRow className="row-tech">
           {main.projects.map((p) => (
             <>
               <Col className="card-work" style={{ marginTop: p.marginTop }}>

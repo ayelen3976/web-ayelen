@@ -1,45 +1,27 @@
-import React, {useRef} from "react";
-import {useIntersection} from 'react-use'
-import gsap from 'gsap';
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import "./About.scss";
 import { Row, Col } from "react-bootstrap";
 import profile from "./../../assets/profile.jpg";
-import {Animated} from "react-animated-css";
+
 function About() {
-    const sectionRef = useRef(null);
-const intersection = useIntersection(sectionRef, {
-    root:null,
-    rootMargin:"0px",
-    threshold:1
-})
-const fadeIn = element =>{
-    gsap.to(element, 1, {
-        opacity: 1,
-        y:-60,
-        ease:"power4.out",
-        stagger:{
-            amount:0.3
-        }
-    })
-}
-const fadeOut = element=>{
-    gsap.to(element, 1, {
-        opacity:0,
-        y: -20,
-        ease: 'power4.out'
-    })
-}
-intersection && intersection.isIntersecting < 0.5
-? fadeOut('.fadeIn') : fadeIn('.fadeIn')
+
+  useEffect(() => {
+    Aos.init({
+      duration: 3000,
+    });
+  }, []);
 
   return (
-    <div className="about" ref={sectionRef}>
+    <div className="about">
        
       <Row className='rowe'>
         <Col>
           <img src={profile} />
         </Col>
-        <Col className='about-col-2'>
+        <Col className='about-col-2' data-aos="fade-left">
         
         
           <p className='about-title fadeIn'>About me</p>

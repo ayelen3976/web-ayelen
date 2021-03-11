@@ -3,7 +3,7 @@
     "projects": [
       {
         "id": 1,
-        "img": "./../projects/amazon/amazon1.png",
+        "img": "./../projects/amazon/amazonhome.jpg",
         "name": "Amazon Clone",
         "description": "This is a Amazon clone built in 100% react with method of payment and using the hosting in firebase",
         "marginTop": "2px",
@@ -23,7 +23,7 @@
       },
       {
         "id": 2,
-        "img": "./../projects/netflix/netflix1.png",
+        "img": "./../projects/netflix/netflixhome.jpg",
         "name": "Netflix Clone",
         "description": "This is a Netflix Clone using the TMDb api, built in 100% react on the client side",     "marginTop": "90px",
         "data": {
@@ -36,7 +36,7 @@
       },
       {
         "id": 3,
-        "img": "./../projects/moscow/moscow.png",
+        "img": "./../projects/moscow/moscowhome.png",
         "name": "Moscow Diet",
         "description": "Final project carried out in henry's bootcamp, consisted of building an e-commerce working as a fullstack developer",    "marginTop": "2px",
         "data": {
@@ -57,7 +57,7 @@
       },
       {
         "id": 4,
-        "img": "./../projects/weather/weather1.png",
+        "img": "./../projects/weather/weatherhome.jpg",
         "name": "Weather Week",
         "description": "Small project that consists of seeing the climate of the next 5 days of different countries",   
          "marginTop": "90px",
@@ -71,7 +71,7 @@
       },
       {
         "id": 5,
-        "img": "./../projects/dtodo/dtodo19.png",
+        "img": "./../projects/dtodo/dtodohome.jpg",
         "name": "DTodoInd",
         "description": "E-commerce full stack for a real clothing store in Argentina in process ",
           "marginTop": "20px",
@@ -103,7 +103,7 @@
    
       {
         "id": 6,
-        "img": "./../projects/somosmas/somosmas1.png",
+        "img": "./../projects/somosmas/somosmashome.jpg",
         "name": "Somos Más",
         "description": "Project carried out in the alkemy program to gain experience as a junior developer",
         "marginTop": "100px",

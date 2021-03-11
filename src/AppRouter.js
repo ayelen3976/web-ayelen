@@ -47,7 +47,7 @@ const PrincipalScreen = () => (
       <Resume />
 
       <Technologies />
-      <Works />
+       <Works /> 
 
       <Contact />
       <Footer />
