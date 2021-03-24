@@ -10,7 +10,7 @@ import {
   AiFillLinkedin,
   AiOutlineInstagram,
   AiOutlineTwitter,
-  AiFillFacebook,
+  AiFillGithub,
 } from "react-icons/ai";
 import { FaDownload } from "react-icons/fa";
 
@@ -155,9 +155,9 @@ function Contact() {
                 {" "}
                 <AiOutlineTwitter className="icon" />
               </a>
-              <a href="https://www.facebook.com/ayee.fernandez.315">
+              <a href="https://github.com/ayelen3976">
                 {" "}
-                <AiFillFacebook className="icon" />
+                <AiFillGithub className="icon" />
               </a>
               <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
                 {" "}

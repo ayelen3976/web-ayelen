@@ -21,10 +21,16 @@
     filter: none !important;
     background-color: black;
   }
+
   @media (max-width: 648px) {
     #darkMode {
       margin-top: 20%;
       }
+      .tooltip.show {
+        display: none;
+        opacity: .9;
+    }
+  
       
 
   }

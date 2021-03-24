@@ -1,6 +1,11 @@
 import React from "react"
 import "./DarkMode.scss"
-
+import {OverlayTrigger, Tooltip} from 'react-bootstrap'
+const renderTooltip = (props) => (
+  <Tooltip id="button-tooltip" {...props} className="tool">
+   Dark Mode
+  </Tooltip>
+);
 const DarkMode = () => {
   let clickedClass = "clicked"
   const body = document.body
@@ -29,11 +34,17 @@ const DarkMode = () => {
     }
   }
   return (
+    <OverlayTrigger
+    placement="right"
+     defaultShow={true}
+    overlay={renderTooltip}
+  >
     <button
       className={theme === "dark" ? clickedClass : ""}
       id="darkMode"
       onClick={e => switchTheme(e)}
     ></button>
+      </OverlayTrigger>
   )
 }
 

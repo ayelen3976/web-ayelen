@@ -1,0 +1,38 @@
+[debug] [2021-03-24T03:54:12.911Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T03:54:12.914Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2021-03-24T03:54:12.914Z] CLI Version:   8.10.0
+[debug] [2021-03-24T03:54:12.914Z] Platform:      darwin
+[debug] [2021-03-24T03:54:12.914Z] Node Version:  v14.15.5
+[debug] [2021-03-24T03:54:12.922Z] Time:          Wed Mar 24 2021 00:54:12 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-03-24T03:54:12.922Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T03:54:12.922Z] 
+[debug] [2021-03-24T03:54:12.936Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-24T03:54:12.936Z] > authorizing via signed-in user
+[debug] [2021-03-24T03:54:12.936Z] [iam] checking project portfolio-c470d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-24T03:54:12.938Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-24T03:54:12.938Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-24T03:54:13.280Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 24 Mar 2021 03:54:14 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-24T03:54:13.301Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-c470d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-24T03:54:14.540Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Mar 2021 03:54:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=947","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-24T03:54:14.542Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-c470d  
+ 
+[debug] [2021-03-24T03:54:15.583Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Mar 2021 03:54:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-24T03:54:15.584Z] [WARNING] Unable to fetch default resources. Falling back to project id (portfolio-c470d)
+[info] 
+[info] === Deploying to 'portfolio-c470d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-03-24T03:54:15.588Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-c470d/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-03-24T03:54:17.395Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Mar 2021 03:54:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[portfolio-c470d]: beginning deploy... 
+[info] i  hosting[portfolio-c470d]: found 93 files in build 
+[debug] [2021-03-24T03:54:20.564Z] [hosting] hash cache [YnVpbGQ] stored for 93 files
+[debug] [2021-03-24T03:54:20.567Z] [hosting][hash queue][FINAL] {"max":2618,"min":56,"avg":775.9247311827957,"active":0,"complete":93,"success":93,"errored":0,"retried":0,"total":93,"elapsed":3145}
+[debug] [2021-03-24T03:54:20.567Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-c470d/versions/6a7d8f62015e9d66:populateFiles  
+ <request body omitted>
+[debug] [2021-03-24T03:54:22.732Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Mar 2021 03:54:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-24T03:54:22.739Z] [hosting][populate queue][FINAL] {"max":2178,"min":2178,"avg":2178,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2184}
+[debug] [2021-03-24T03:54:22.739Z] [hosting] uploads queued: 12

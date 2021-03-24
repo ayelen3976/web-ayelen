@@ -1,15 +1,18 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import Typewriter from "typewriter-effect";
 import "./Home.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import {MDBContainer, MDBCol, MDBRow} from 'mdbreact'
+
 // import {FaLaptopCode} from 'react-icons/fa'
 // import laptop from './../../assets/laptop.png'
 import desk from './../../assets/desk.png'
 import "react-toggle/style.css";
 import DarkMode from '../DarkMode/DarkMode'
+
+
 function Home() {
 
 useEffect(() => {
@@ -21,7 +24,11 @@ useEffect(() => {
     <div className="home" id='home'>
  
    <MDBContainer>
+
+
    <DarkMode/>
+   
+
      <MDBRow>
      <MDBCol>
      <div className="type-div" data-aos='flip-up'>
