@@ -25,6 +25,7 @@
       display: none;
     }
     .option {
+      cursor: pointer;
       text-decoration: none;
       background-image: linear-gradient(#b47dcd, #e878a2, #eb85ab);
       background-position: 0% 100%;
@@ -81,6 +82,7 @@
       display: block;
     }
     .nav-options.active {
+      cursor: pointer;
       align-items: center;
       background: #1947BC;
     
