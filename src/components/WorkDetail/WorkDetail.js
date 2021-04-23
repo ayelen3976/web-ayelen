@@ -40,11 +40,11 @@ function WorkDetail() {
           <button className="btn-one">
             {" "}
             <AiFillGithub className="icon-git" />{" "}
-            <a href={project?.data.repo}>Source Code</a>
+            <a href={project?.data.repo} target="_blank">Source Code</a>
           </button>
 
           <button className="btn-one">
-            <a href={project?.data.deploy}>Live Demo</a>
+            <a href={project?.data.deploy} target="_blank">Live Demo</a>
           </button>
         </div>
       );
