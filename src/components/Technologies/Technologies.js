@@ -29,8 +29,8 @@ function Technologies() {
 
    
     <MDBRow className='tech-cards-1'>
-    <TechCard img={html} name='Css'/>
-  <TechCard img={css} name='Html'/>
+    <TechCard img={html} name='Html' />
+  <TechCard img={css} name='Css'/>
   <TechCard img={javascript} name='Javascript'/>
   <TechCard img={react} name='React'/>
   <TechCard img={redux} name='Redux'/>
