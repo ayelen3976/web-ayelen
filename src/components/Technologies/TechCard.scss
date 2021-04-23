@@ -3,12 +3,19 @@
 
     width: 12%;
     text-align-last: center;
-    --border-width: 3px;
-  
+
+// border:  2px solid #40838583;
     margin: 9px;
     color: var(--text-color);
     background: var(--iconcard);
 
+    --angle: 0deg;
+
+    
+    border: 3px solid;
+    border-image: linear-gradient(var(--angle), #40838583,rgb(3, 240, 240),#31205ae8,  #0bc4ca83) 1;
+    
+    animation: 10s rotate linear infinite;
   
    
     p{
@@ -25,62 +32,46 @@
     }
     
 }
-.techcard:after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(224, 85%, 66%),
-      hsl(269, 85%, 66%),
-      hsl(314, 85%, 66%),
-      hsl(359, 85%, 66%),
-      hsl(44, 85%, 66%),
-  
-      hsl(179, 85%, 66%)
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
-    @keyframes moveGradient {
-        50% {
-          background-position: 100% 50%;
-        }}
-  }
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
   @media (max-width: 648px) {
     .techcard{
+
       position: relative;
   
-      width: 11%;
+   
       text-align-last: center;
-      --border-width: 3px;
+
     
       margin: 4px;
       color: var(--text-color);
-      background: var(--iconcard);
-      border-radius: var(--border-width);
-    
-     
+      background: none;
+
+      border-image:none;
+      border:none;
       p{
-          font-size: 5px;
+          font-size: 10px;
       }
       img{
           animation: 
           pulse 3s ease infinite alternate, 
            nudge 5s linear infinite alternate;
           
-          padding: 9%;
-          height: 50px;
-          width: 90%;
+          padding: 1px;
+          height: 70px;
+          width: 110%;
       }
       
   }
-  .techcard:after {
+ /*  .techcard:after {
       position: absolute;
       content: "";
       top: calc(-1 * var(--border-width));
@@ -106,5 +97,5 @@
           50% {
             background-position: 100% 50%;
           }}
-    }
+    } */
     }

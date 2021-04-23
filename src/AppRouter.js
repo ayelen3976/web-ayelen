@@ -16,7 +16,7 @@ import ScrollTop from "./components/Variants/ScrollTop";
 import ParticleComponent from "./components/Variants/particles";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
 
-function AppRouter() {
+function AppRouter() { 
   return (
     <Router>
       <Switch>
@@ -52,10 +52,10 @@ const PrincipalScreen = () => (
       <Contact />
       <Footer />
     </div>
+    {/* <ParticleComponent></ParticleComponent>
     <ParticleComponent></ParticleComponent>
     <ParticleComponent></ParticleComponent>
-    <ParticleComponent></ParticleComponent>
-    <ParticleComponent></ParticleComponent>
+    <ParticleComponent></ParticleComponent> */}
   </div>
 );
 export default AppRouter;

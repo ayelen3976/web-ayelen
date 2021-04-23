@@ -1,30 +1,40 @@
 :root {
   --black: black;
-  --white: white;
-  --grey: rgb(53, 52, 52);
+  --whitep: #abd7d8;
+  --whiten: white;
+  --grey: rgb(92, 91, 91);
+  --grey: rgb(102, 98, 98);
   --darke:rgb(26, 24, 24);
-  --lighte:white;
+  --lighte: #6cb3b3b4;
   --inputC:rgb(194, 190, 190);
-  
+ --whitedark: #4f9899;
 }
 
 body.light {
-  --background-color: var(--white);
+  --background-color: var(--whitep);
   --text-color: var(--black);
+  --coloraresponsive:var(--whiten);
 --download: var(--black);
---letterDown: var(--white);
+--letterDown: var(--whiten);
 --boxshadow: var(--grey);
 --iconcard: var(--lighte);
 --inputsc:var(--lighte);
+--nave: var( --black);
+--menu-icon: var( --grey);
+
 }
 body.dark {
   --background-color: var(--black);
-  --text-color: var(--white);
-  --download: var(--white);
+  --text-color: var(--whiten);
+  --coloraresponsive:var(--black);
+  --download: var(--whiten);
   --letterDown: var(--black);
   --boxshadow: var(--grey);
   --iconcard: var(--darke);
   --inputsc:var(--inputC);
+  --nave: var( --whitedark);
+  --menu-icon: var( --grey);
+  --menu-icon: var( --black);
 }
 body{
   background: var(--background-color);

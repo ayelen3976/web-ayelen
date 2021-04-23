@@ -8,12 +8,12 @@ import WorkImages from "./WorkImages";
 import Footer from "./../Footer/Footer";
 function WorkDetail() {
   const { id } = useParams();
-  console.log("id", id);
+
   const [project, setProject] = useState();
   useEffect(() => {
-    console.log("main data", main);
+ 
     let filteredData = main?.projects?.find((p) => p.id === parseInt(id));
-    console.log("filterdata", filteredData);
+
     setProject(filteredData);
   }, []);
 

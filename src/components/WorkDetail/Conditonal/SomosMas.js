@@ -12,7 +12,7 @@ function SomosMas(props) {
   return (
     <div className="content-images">
       <div className="somosmas-img1"  data-aos="fade-up">
-      <p>Continues in process ...</p>
+      {/* <p>Continues in process ...</p> */}
         <img src={`/projects/${props.project?.data?.img1}`} alt="img" />
       </div>
       <MDBContainer>

@@ -43,7 +43,7 @@ function Technologies() {
     <TechCard img={nodejs} name='Nodejs'/>
   <TechCard img={mysql} name='MySQL'/>
   <TechCard img={sql} name='SQL'/>
-  <TechCard img={postgresql} name='PostgresSQL'/>
+  <TechCard img={postgresql} name='Postgres'/>
   <TechCard img={sequelize} name='Sequelize'/>
   </MDBRow>
     </MDBContainer>

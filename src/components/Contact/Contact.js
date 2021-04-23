@@ -11,9 +11,11 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
   AiFillGithub,
+  AiOutlineMail,
 } from "react-icons/ai";
+import {GrLocationPin} from  'react-icons/gr'
 import { FaDownload } from "react-icons/fa";
-
+import { BiPhone } from "react-icons/bi";
 function Contact() {
   const [input, setInput] = useState({
     name: "",
@@ -55,7 +57,6 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
           swal({
             icon: "success",
             text: "Thanks for contacting me!",
@@ -89,14 +90,64 @@ function Contact() {
   } */
   return (
     <div className="contact" id="contact">
+            <div className="social-links">
+                  <a href="https://www.instagram.com/ayefernandez0211/">
+                    {" "}
+                    <AiOutlineInstagram className="icon" />
+                  </a>
+                  <a href="https://twitter.com/ayee018">
+                    {" "}
+                    <AiOutlineTwitter className="icon" />
+                  </a>
+                  <a href="https://github.com/ayelen3976">
+                    {" "}
+                    <AiFillGithub className="icon" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
+                    {" "}
+                    <AiFillLinkedin className="icon" />
+                  </a>
+                </div>
       <Row className="rowe-contact">
-        <Col data-aos="fade">
+        <Col data-aos="fade" className="col-detail">
+          <p className="pepa">Contact Details</p>
+          <div className="details">
+            <p>Ayelen Fernandez</p>
+            <p> <GrLocationPin/>  Argentina, Buenos Aires</p>
+            <p>
+              {" "}
+              <BiPhone />  +54 9 11 2515-2015
+            </p>
+            <p>
+              {" "}
+              <AiOutlineMail />  ayee_01@live.com
+            </p>
+            </div>
+            <Row>
+            <Col className='col-download'>
+                <div className="download">
+                  <a
+                    href="https://drive.google.com/file/d/1A6xqpge2PAvyeQTY9Nk8U8w0GF_wE5YD/view?usp=sharing"
+                    target="_blank"
+                  >
+                    {" "}
+                    <FaDownload className="down-icon" />
+                    Donwload Resume
+                  </a>
+                </div>
+              </Col>
+           
+        
+            </Row>
+          
+        </Col>
+        <Col data-aos="fade" className="col-email">
           <p className="pepe"> Lets work together or talk</p>
           <div className="inputs">
             <form onSubmit={sendEmail}>
               <input
                 name="name"
-                placeholder="  name"
+                placeholder="  Name"
                 type="text"
                 onChange={(e) => handleInputChange(e)}
                 value={input.name}
@@ -104,7 +155,7 @@ function Contact() {
 
               <input
                 name="email"
-                placeholder="  your email"
+                placeholder="  Your email"
                 type="text"
                 value={input.email}
                 onChange={(e) => handleInputChange(e)}
@@ -112,7 +163,7 @@ function Contact() {
 
               <input
                 name="subject"
-                placeholder="  subject"
+                placeholder="  Subject"
                 type="text"
                 value={input.subject}
                 onChange={(e) => handleInputChange(e)}
@@ -120,50 +171,13 @@ function Contact() {
 
               <textarea
                 name="message"
-                placeholder="  message"
+                placeholder="  Message"
                 type="text"
                 value={input.message}
                 onChange={(e) => handleInputChange(e)}
               ></textarea>
               <button className="btn-submit">Submit</button>
             </form>
-          </div>
-        </Col>
-        <Col data-aos="fade">
-          <p className="pepa">Contact Details</p>
-          <div className="details">
-            <p>Ayelen Fernandez</p>
-            <p>Argentina, Buenos Aires</p>
-            <p>+54 9 11 2515-2015</p>
-            <p>ayee_01@live.com</p>
-            <div className="download">
-              <a
-                href="https://drive.google.com/file/d/1A6xqpge2PAvyeQTY9Nk8U8w0GF_wE5YD/view?usp=sharing"
-                target="_blank"
-              >
-                {" "}
-                <FaDownload className="down-icon" />
-                Donwload Resume
-              </a>
-            </div>
-            <div className="social-links">
-              <a href="https://www.instagram.com/ayefernandez0211/">
-                {" "}
-                <AiOutlineInstagram className="icon" />
-              </a>
-              <a href="https://twitter.com/ayee018">
-                {" "}
-                <AiOutlineTwitter className="icon" />
-              </a>
-              <a href="https://github.com/ayelen3976">
-                {" "}
-                <AiFillGithub className="icon" />
-              </a>
-              <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
-                {" "}
-                <AiFillLinkedin className="icon" />
-              </a>
-            </div>
           </div>
         </Col>
       </Row>
