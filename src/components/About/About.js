@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import "./About.scss";
 import { Row, Col } from "react-bootstrap";
-import profile from "./../../assets/profile.jpg";
+import profile2 from "./../../assets/profile2.jpeg";
 
 function About() {
 
@@ -19,7 +19,7 @@ function About() {
        
       <Row className='rowe'>
         <Col>
-          <img src={profile} />
+          <img src={profile2} />
         </Col>
         <Col className='about-col-2' data-aos="fade-left">
         
@@ -33,7 +33,7 @@ function About() {
             create new horizons in my life. Nowadays I create projects in my
             free time to make my way into the world of work and I am doing the
             entrance course at the University of Buenos Aires to study computer
-            engineering
+            engineering.
           </p>
 <br id='resume'></br>
         </Col>

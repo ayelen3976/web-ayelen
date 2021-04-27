@@ -17,14 +17,14 @@ function Navbar() {
         data-animation="center"
       >
          <li className="option" onClick={closeMobileMenu}>
-          <Link to="home" spy={true} smooth={true} duration={2000} activeClass="active">
+          <Link to="home" spy={true} smooth={true} duration={1000} activeClass="active">
         
           <a>HOME</a>
    
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="about" spy={true} smooth={true} duration={2000} activeClass="active">
+          <Link to="about" spy={true} smooth={true} duration={1000} activeClass="active">
   
           <a>ABOUT</a>
    
@@ -32,22 +32,22 @@ function Navbar() {
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="resume" spy={true} smooth={true} offset={50} duration={2000}>
+          <Link to="resume" spy={true} smooth={true} offset={50} duration={1000}>
             <a>RESUME</a>
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="technologies" spy={true} smooth={true} offset={50} duration={2000}>
+          <Link to="technologies" spy={true} smooth={true} offset={50} duration={1000}>
             <a>TECHNOLOGIES</a>
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="work" spy={true} smooth={true} offset={50} duration={2000}>
+          <Link to="work" spy={true} smooth={true} offset={50} duration={1000}>
             <a>WORK</a>
           </Link>
         </li>
         <li className="option" onClick={closeMobileMenu}>
-          <Link to="contact"  spy={true} smooth={true} offset={50} duration={2000} >
+          <Link to="contact"  spy={true} smooth={true} offset={50} duration={1000} >
             <a>CONTACT</a>
           </Link>
         </li>

@@ -2,11 +2,10 @@
   padding: 1%;
   margin: auto;
   background: var(--background-color);
-  
-  .row-tech {
 
+  .row-tech {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 6%;
     .card-work {
       color: var(--text-color);
@@ -15,35 +14,40 @@
       width: 100%;
       img {
         width: 100%;
-        height: 500px;
-        transition: transform 2s; 
+        height: 350px;
+        transition: transform 2s;
         box-shadow: 7px 1px 12px 6px var(--boxshadow);
         -webkit-box-shadow: 7px 1px 12px 6px var(--boxshadow);
         -moz-box-shadow: 7px 1px 12px 6px var(--boxshadow);
         &:hover {
-          transform: rotateY(-20deg) ;
+          transform: rotateY(-20deg);
         }
       }
-        
-
     }
     .col-1-tech {
       width: 80%;
       margin-bottom: 10%;
       .col-1-body {
-        text-align: justify;
-        .title {
-          color: var(--text-color);
-          font-size: 42px;
+        .btn-work {
+          margin-top: 9%;
+          background-color: black;
+          width: 150px;
+          .title {
+            letter-spacing: 2px;
+            margin-top: 10px;
+            // color: var(--text-color);
+            color: var(--download);
+            font-size: 15px;
+          }
         }
-        .description{
-     
+
+        .description {
+          margin-top: 6%;
           font-size: 20px;
           color: var(--text-color);
         }
       }
     }
- 
   }
 }
 @media (max-width: 648px) {
@@ -69,17 +73,27 @@
         width: 100%;
         margin-top: 15%;
         .col-1-body {
-          text-align: justify;
-          .description{
+          .btn-work {
+            margin-top: 9%;
+            background-color: black;
+            width: 150px;
+            .title {
+              letter-spacing: 2px;
+              margin-top: 10px;
+              // color: var(--text-color);
+              color: white;
+              font-size: 15px;
+            }
+          }
+
+          .description {
             text-align: -webkit-center;
-          
           }
           .title {
             font-size: 32px;
           }
         }
       }
- 
     }
   }
 }

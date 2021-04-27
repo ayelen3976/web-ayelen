@@ -6,6 +6,7 @@ import { main } from "../data.json";
 import { AiFillGithub } from "react-icons/ai";
 import WorkImages from "./WorkImages";
 import Footer from "./../Footer/Footer";
+// import DarkMode from './../DarkMode/DarkMode';
 function WorkDetail() {
   const { id } = useParams();
 
@@ -57,6 +58,7 @@ function WorkDetail() {
         <NavLink to="/">
           <p className="back"> BACK TO HOME</p>
         </NavLink>
+        {/* <DarkMode /> */}
         <p className="work">work</p>
         <p className="work-title">{project?.name}</p>
 

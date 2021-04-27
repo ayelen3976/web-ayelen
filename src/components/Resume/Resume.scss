@@ -1,13 +1,14 @@
 .resume {
 
-  padding: 1%;
+  // padding: 1%;
+  padding-bottom: 70px;
   background: var(--background-color);
    .vertical-timeline-element {
      margin: 1em 0;
      height: 130px;
    }
 }
-@media (max-width: 648px) {
+@media (max-width: 1030px) {
   /*Mobile View */
   .resume {
     padding: 6%;

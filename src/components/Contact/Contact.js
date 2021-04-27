@@ -109,7 +109,7 @@ function Contact() {
                   </a>
                 </div>
       <Row className="rowe-contact">
-        <Col data-aos="fade" className="col-detail">
+        <Col sm={5} data-aos="fade" className="col-detail">
           <p className="pepa">Contact Details</p>
           <div className="details">
             <p>Ayelen Fernandez</p>
@@ -141,7 +141,7 @@ function Contact() {
             </Row>
           
         </Col>
-        <Col data-aos="fade" className="col-email">
+        <Col sm={7} data-aos="fade" className="col-email">
           <p className="pepe"> Lets work together or talk</p>
           <div className="inputs">
             <form onSubmit={sendEmail}>

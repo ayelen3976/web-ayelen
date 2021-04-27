@@ -6,22 +6,24 @@
   transition: $property $duration $ease;
 }
 .workdetail {
-  padding: 50px;
-  margin-top: 10px;
+  // background-color: #fee9e1;
+  background-color: var(--background-color);
+  padding: 10px 50px 50px 50px ;
+  // margin-top: 10px;
   .back {
-    margin-top: 3px;
+    margin-top: 10px;
     float: right;
-    margin-right: 70px;
+    margin-right: 20px;
     text-decoration: none;
     color: var(--text-color);
-    background-image: linear-gradient(#b47dcd, #e878a2, #eb85ab);
+    background-image: linear-gradient(#c44d51, #ee6641,  #ecc3a183);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size 0.3s;
 
-    font-family: Neue Plak W01 Bold, sans-serif;
-    font-size: 14px;
+    font-family: Miracle Mercury Bold Semi-Italic;
+    font-size: 15px;
 
     font-weight: 400;
 
@@ -37,13 +39,13 @@
     background-size: 100% 2px;
   }
   .work {
-    margin-left: 20px;
-    margin-top: 3%;
-    font-family: Neue Plak W01 Narrow SemiBold;
-    font-size: 36px;
+    margin-left: 15px;
+    margin-top: 4%;
+    font-family: Miracle Mercury Bold Semi-Italic;
+    font-size: 38px;
     line-height: 32px;
     letter-spacing: 0.6em;
-    color: #7045e4c5;
+    color:  #c44d51;
   }
   .work-title {
     color: var(--text-color);
@@ -125,7 +127,7 @@
     }
 
     .buttons {
-      width: 270px;
+      width: 250px;
       margin-top: 2%;
       justify-content: space-between;
 
@@ -141,7 +143,7 @@
         font-size: 10px;
         font-family: inherit;
         .icon-git {
-          width: 40px;
+          width: 20px;
           height: 30px;
         }
       }

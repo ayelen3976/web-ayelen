@@ -1,7 +1,9 @@
 /*Desktop View*/
 .header {
   display: flex;
-  background: var(--background-color);
+  // background: var(--background-color);
+  background: var(--navbardesk);
+  
   justify-content: space-between;
   align-items: center;
   padding: 0px 430px;
@@ -13,6 +15,7 @@
   top: 0;
 
   .nav-options {
+  
     padding-left: 15px;
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -23,16 +26,18 @@
       display: none;
     }
     .option {
+    
       cursor: pointer;
       text-decoration: none;
-      background-image: linear-gradient(#b47dcd, #e878a2, #eb85ab);
+      background-image: linear-gradient(#c44d51, #ee6641,  #ecc3a183);
       background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: 0% 2px;
       transition: background-size 0.3s;
 
       a {
-        color: var(--text-color);
+        // color: var(--text-color);
+        color:  #c44d51;
       }
     }
     // .option :hover {
@@ -41,7 +46,8 @@
     .option:hover,
     .option:focus {
       background-size: 100% 2px;
-      color: var(--text-color);
+      // color: var(--text-color);
+      color:  #c44d51;
     }
 
     a {
@@ -54,10 +60,11 @@
     display: none;
   }
 }
-@media (max-width: 648px) {
+@media (max-width: 768px) {
   /*Mobile View */
   .header {
-    background: var(--nave);
+    // background: var(--nave);
+    background: var(--navbardesk);
     z-index: 999;
 
     top: 0;
@@ -84,7 +91,8 @@
     .nav-options.active {
       cursor: pointer;
       align-items: center;
-      background: var(--nave);
+      //  background: var(--nave);
+       background: var(--navbardesk);
 
       left: 0;
       opacity: 1;
@@ -94,7 +102,8 @@
       padding-top: 20px;
       li {
         a {
-          color: var(--coloraresponsive);
+          // color: var(--coloraresponsive);
+          color:  #c44d51;
         }
         margin: 15px;
       }

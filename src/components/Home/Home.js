@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import "./Home.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +19,7 @@ function Home() {
   return (
     <div className="home" id="home">
       <MDBContainer>
-        <DarkMode/>
+        <DarkMode />
 
         <MDBRow>
           <MDBCol>
@@ -30,8 +30,7 @@ function Home() {
                   onInit={(typewriter) => {
                     typewriter
                       .typeString("Hi, welcome to my Portfolio")
-                      .callFunction(() => {
-                      })
+                      .callFunction(() => {})
                       .start();
                   }}
                 />

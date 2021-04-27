@@ -1,86 +1,86 @@
 .home {
- 
+  background-image: url("../../assets/banner3.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  
+  overflow: scroll;
+  // background: var(--background-color);
+  padding: 10% 0px 8% 0px;
+  // padding-top: 10%;
 
-  background: var(--background-color);
-  padding: 1px;
-  padding-top: 10%;
   .type-div {
     padding: 50px;
 
     .typewriter {
       margin-top: 1%;
       font-size: 60px;
-
-      font-family: TimesNewRoman;
+      font-family: Miracle Mercury Bold Semi-Italic;
+      src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
+      // font-family: TimesNewRoman;
       margin-bottom: 5%;
       color: #313131;
 
-      font-weight: bold;
+      font-weight: 500;
 
       animation: colorchange 20s infinite alternate;
       @keyframes colorchange {
         0% {
-          color: rgb(146, 148, 248);
+          color: #9b4e30;
         }
 
         10% {
-          color: #8e44ad;
-        }
-
-        15% {
-          color: #bc1a99;
+          color: #110e0d;
         }
 
         20% {
-          color: #074639;
+          color: #c38f81;
         }
 
         30% {
-          color: #d3ac00;
+          color: #32423f;
         }
 
         40% {
-          color: rgb(236, 189, 87);
+          color: #68816b;
         }
 
         50% {
-          color: #34495e;
+          color: #f75c88;
         }
 
         60% {
-          color: rgb(32, 9, 116);
+          color: #e7744a;
         }
 
         70% {
-          color: #ff09b5;
+          color: #53a38f;
         }
         80% {
-          color: #f1c40f;
+          color: #ee6189;
         }
-
         90% {
-          color: #080d53;
+          color: #c38f81;
         }
-
         100% {
-          color: pink;
+          color: rgb(235, 129, 147);
         }
       }
     }
     .contenedor {
-      font-family: TimesNewRoman;
+      // font-family: TimesNewRoman;
+      // font-family: Dancing Script, cursive;
       display: flex;
       width: 600px;
-      height: 43px;
+      height: 45px;
 
       font-size: 43px;
       line-height: 40px;
 
-      font-weight: bold;
+       font-weight: 400;
 
       overflow: hidden;
       animation: colorchange 20s infinite alternate;
- 
+
       ul {
         list-style: none;
         padding-left: 10px;
@@ -136,9 +136,12 @@
   }
 }
 
-@media (max-width: 648px) {
+@media (max-width: 768px) {
   .home {
-
+    background-image: url("../../assets//banner6.png");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -60px 80px ;
     padding: 10px;
     margin-top: 10%;
     .type-div {
@@ -148,19 +151,19 @@
         margin-top: 5%;
         font-size: 27px;
 
-        font-family: TimesNewRoman;
+
         margin-bottom: 8%;
         color: #313131;
       }
       .contenedor {
-        font-family: TimesNewRoman;
+  
         display: flex;
         width: 300px;
         height: 40px;
-   
+
         font-size: 28px;
         line-height: 40px;
-        font-weight: bold;
+      
 
         ul {
           list-style: none;
@@ -176,6 +179,7 @@
     }
 
     .home-img {
+
       display: none;
     }
   }

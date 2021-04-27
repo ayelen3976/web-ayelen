@@ -1,6 +1,7 @@
 .contact {
-  padding: 4%;
-  font-family: TimesNewRoman;
+  padding: 6%;
+  font-family: Miracle Mercury Bold Semi-Italic;
+  src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
   background: var(--background-color);
   .social-links {
     a {
@@ -11,18 +12,21 @@
         height: 40px;
       }
       .icon:hover {
-        color: rgb(146, 148, 248);
+        color: var(--sociallinks);
       }
     }
   }
   .rowe-contact {
-    border: 1px solid rgba(146, 148, 248, 0.4);
+    border: 1px solid var(--bordercontact);
     .col-detail {
-      background-color: #6cb3b3b4;
+      // background-color: #6cb3b3b4;
+      // background-color: #e29578;
+      background-color: var(--contactdetail);
+
       .pepa {
-        font-weight: 600;
+        font-weight: 200;
         color: var(--text-color);
-        margin-top: 8%;
+        margin-top: 2%;
         margin-bottom: 6%;
         font-size: 35px;
         text-align: start;
@@ -31,12 +35,16 @@
     }
     .pepe {
       margin-bottom: 6%;
-      font-weight: 600;
-      margin-top: 8%;
+      font-weight: 200;
+      margin-top: 2%;
       text-align: start;
       margin-left: 8%;
       font-size: 35px;
       color: var(--text-color);
+    }
+    .col-email {
+      // background-color: #e0e7ef;
+      background-color: var(--contactemail);
     }
     .inputs {
       text-align: -webkit-center;
@@ -44,37 +52,36 @@
       input {
         border-radius: 10px;
         background: var(--inputsc);
-        margin-bottom: 5%;
-        width: 90%;
+        margin-bottom: 8px;
+        width: 83%;
         height: 50px;
       }
       textarea {
         border-radius: 10px;
         background: var(--inputsc);
-        width: 90%;
-        height: 120px;
-        margin-bottom: 1px;
+        width: 83%;
+        height: 90px;
+        margin-bottom: 2px;
       }
       .btn-submit {
-        margin-top: 4%;
-        width: 30%;
+        margin-top: 1%;
+        width: 20%;
         height: 40px;
-        color: rgb(22, 21, 21);
+        color: var(--download);
         font-size: 28px;
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.288)),
-          url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
-            no-repeat center center/cover;
-        border: 1px solid rgb(146, 148, 248);
+        background: black;
+        border-radius: 8px;
+        border: 1px solid #0a0a0a;
         position: relative;
         overflow: hidden;
         margin-bottom: 3%;
         float: left;
-        margin-left: 6%;
+        margin-left: 9%;
       }
       .btn-submit:hover {
-        color: var(--letterDown);
-        box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        // color: var(--letterDown);
+        box-shadow: 1px 1px 25px 10px #14141421;
       }
 
       .btn-submit:before {
@@ -84,13 +91,14 @@
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
+        /*   background: linear-gradient(
           120deg,
           transparent,
-          rgba(146, 148, 248, 0.4),
+          #ff99ac,
           transparent
         );
         transition: all 650ms;
+      } */
       }
 
       .btn-submit:hover:before {
@@ -101,31 +109,33 @@
     .details {
       color: var(--text-color);
       line-height: 2.8;
-      margin-bottom: 11%;
+
       margin-left: 8%;
-      font-size: 23px;
+      font-size: 20px;
     }
     .download {
       margin-left: 8%;
-      animation: wiggle 2.5s infinite;
+       animation: wiggle 2.5s infinite;
       height: 40px;
-      width: 40%;
-      color: rgb(22, 21, 21);
+      width: 32%;
 
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.288)),
-        url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
-          no-repeat center center/cover;
-      border: 1px solid rgb(146, 148, 248);
+      // background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.288)),
+      //   url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
+      //     no-repeat center center/cover;
+      background: black;
+      border-radius: 8px;
+      border: 1px solid #080808;
       position: relative;
       overflow: hidden;
       a {
         text-decoration: none;
         text-align-last: center;
         font-size: 24px;
-        color: black;
+        color: var(--download);
       }
       .down-icon {
+        color: var(--download);
         margin-left: 10px;
         margin-right: 10px;
       }
@@ -155,20 +165,21 @@
         color: var(--letterDown);
       }
 
-      box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+      box-shadow: 1px 1px 25px 10px rgba(20, 20, 20, 0.4);
     }
   }
 }
-@media (max-width: 648px) {
+@media (max-width: 768px) {
   /*Mobile View */
   .contact {
+    text-align: -webkit-center;
     padding: 5%;
     background: var(--background-color);
     .social-links {
       a {
         .icon {
           color: var(--text-color);
-  
+
           width: 43px;
           height: 40px;
         }
@@ -180,22 +191,22 @@
     .rowe-contact {
       display: block;
       .col-detail {
-        background-color: #6cb3b3b4;
         .pepa {
-          font-weight: 600;
+          padding: 5% 0px 0px 0px;
+          font-weight: 300;
           color: var(--text-color);
           margin-top: 1%;
           margin-bottom: 6%;
           font-size: 30px;
-          text-align: start;
+
           text-align-last: center;
         }
       }
-      .col-email {
-        background-color: #6cb3b3b4;
-      }
+
       .pepe {
-        margin-top: 1px;
+        padding: 5% 0px 0px 0px;
+        margin-left: 13%;
+        margin-top: 3px;
         text-align: start;
 
         font-size: 25px;
@@ -203,14 +214,14 @@
       .inputs {
         display: grid;
         input {
-          margin-bottom: 5%;
-          width: 80%;
-          height: 50px;
+          margin-bottom: 1%;
+          width: 85%;
+          height: 40px;
         }
         textarea {
-          width: 80%;
-          height: 120px;
-          margin-bottom: 5%;
+          width: 85%;
+          height: 80px;
+          margin-bottom: 1%;
         }
 
         .btn-submit {
@@ -232,27 +243,9 @@
         margin-bottom: 15px;
         text-align: -webkit-center;
         .download {
-          margin-left: 1%;
-          background: var(--download);
-          width: 80%;
+          margin-left: 4%;
 
-          color: rgb(255, 255, 255);
-
-          font-family: Arial, Helvetica, sans-serif;
-          background: linear-gradient(
-              rgba(0, 0, 0, 0.548),
-              rgba(0, 0, 0, 0.288)
-            ),
-            url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
-              no-repeat center center/cover;
-          border: 1px solid rgb(146, 148, 248);
-          position: relative;
-          overflow: hidden;
-          a {
-            text-align-last: center;
-            font-size: 22px;
-            color: rgb(255, 253, 253);
-          }
+          width: 75%;
 
           .down-icon {
             margin-right: 10px;

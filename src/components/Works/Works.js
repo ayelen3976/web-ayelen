@@ -20,7 +20,7 @@ function Work() {
         <MDBRow className="row-tech">
           {main.projects.map((p) => (
             <>
-              <Col className="card-work" style={{ marginTop: p.marginTop }}>
+              <Col className="card-work">
                 <NavLink
                   to={`/project/${p.id}`}
                   key={p.id}
@@ -35,7 +35,8 @@ function Work() {
                       />
                     </div>
                     <div className="col-1-body">
-                      <p className="title">{p.name}</p>
+                      <button className="btn-work"> <p className="title">{p.name}</p></button>
+                     
                       <p className="description">{p.description}</p>
                     </div>
                   </div>

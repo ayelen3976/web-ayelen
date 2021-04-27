@@ -60,7 +60,7 @@
         "img": "./../projects/weather/weatherhome.jpg",
         "name": "Weather Week",
         "description": "Small project that consists of seeing the climate of the next 5 days of different countries",   
-         "marginTop": "90px",
+        
         "data": {
           "repo": "https://github.com/ayelen3976/weather-week",
           "deploy": "https://client-theta-green.vercel.app/",
@@ -74,7 +74,7 @@
         "img": "./../projects/dtodo/dtodohome.jpg",
         "name": "DTodoInd",
         "description": "E-commerce full stack for a real clothing store in Argentina in process ",
-          "marginTop": "20px",
+       
         "data": {
           "repo": "https://github.com/Bhavesh588/manjares",
         
@@ -106,7 +106,7 @@
         "img": "./../projects/somosmas/somosmashome.jpg",
         "name": "Somos Más",
         "description": "Project carried out in the alkemy program to gain experience as a junior developer",
-        "marginTop": "100px",
+    
         "data": {
           "img1": "./../projects/somosmas/somosmas1.png", 
           "img2": "./../projects/somosmas/somosmas2.png", 
@@ -124,7 +124,7 @@
         "img": "./../projects/mine/mine.png",
         "name": "Personal Portfolio",
         "description": "This website, check the repository! :)",
-        "marginTop": "100px",
+
         "data": {
           "repo": "https://github.com/ayelen3976/web-ayelen.git",
           "deploy": "https://portfolio-c470d.web.app/",
