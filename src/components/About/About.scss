@@ -20,7 +20,7 @@
       }
       .about-text {
         padding: 20px;
-        background-color:  var(--aboutback);
+        background-color: var(--aboutback);
         color: var(--text-color);
         width: 85%;
         margin-top: 6%;
@@ -34,7 +34,6 @@
 @media (max-width: 668px) {
   /*Mobile View */
   .about {
-    
     padding: 5%;
     .rowe {
       flex-direction: column-reverse;
@@ -43,9 +42,8 @@
       img {
         margin-top: 0px;
         margin-left: 0%;
-    
+
         width: 90%;
-        
       }
       .about-col-2 {
         text-align: -webkit-center;

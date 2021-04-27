@@ -127,7 +127,7 @@ function Contact() {
             <Col className='col-download'>
                 <div className="download">
                   <a
-                    href="https://drive.google.com/file/d/1A6xqpge2PAvyeQTY9Nk8U8w0GF_wE5YD/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1LYfnuo1xsz_a2roP87jc8_F4VNWujzla/view?usp=sharing"
                     target="_blank"
                   >
                     {" "}
