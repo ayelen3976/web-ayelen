@@ -2,7 +2,7 @@
   background-image: url("../../assets/banner3.jpeg");
   background-attachment: fixed;
   background-size: cover;
-  
+  background-color: #38373717;
   overflow: scroll;
   // background: var(--background-color);
   padding: 10% 0px 8% 0px;
@@ -76,7 +76,7 @@
       font-size: 43px;
       line-height: 40px;
 
-       font-weight: 400;
+      font-weight: 400;
 
       overflow: hidden;
       animation: colorchange 20s infinite alternate;
@@ -138,10 +138,11 @@
 
 @media (max-width: 768px) {
   .home {
-    background-image: url("../../assets//banner6.png");
+    // background-image: url("../../assets//banner6.png");
+
     background-repeat: no-repeat;
     background-size: 120%;
-    background-position: -60px 80px ;
+    background-position: -60px 80px;
     padding: 10px;
     margin-top: 10%;
     .type-div {
@@ -151,19 +152,16 @@
         margin-top: 5%;
         font-size: 27px;
 
-
         margin-bottom: 8%;
         color: #313131;
       }
       .contenedor {
-  
         display: flex;
         width: 300px;
         height: 40px;
 
         font-size: 28px;
         line-height: 40px;
-      
 
         ul {
           list-style: none;
@@ -179,7 +177,6 @@
     }
 
     .home-img {
-
       display: none;
     }
   }
