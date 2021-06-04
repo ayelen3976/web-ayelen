@@ -13,16 +13,18 @@
     .about-col-2 {
       margin-top: 3%;
       .about-title {
+        text-align: center;
         font-family: Miracle Mercury Bold Semi-Italic;
         src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
         font-size: 43px;
         color: var(--text-color);
       }
       .about-text {
+       
         padding: 20px;
         background-color: var(--aboutback);
         color: var(--text-color);
-        width: 85%;
+        width: 100%;
         margin-top: 6%;
         font-size: 20px;
         line-height: 2;

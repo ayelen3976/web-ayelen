@@ -18,9 +18,9 @@ function About() {
     <div className="about">
        
       <Row className='rowe'>
-        <Col>
+        {/* <Col>
           <img src={profile2} />
-        </Col>
+        </Col> */}
         <Col className='about-col-2' data-aos="fade-left">
         
         
