@@ -31,7 +31,7 @@ function WorkDetail() {
           <button className="btn-one">
             {" "}
             <AiFillGithub className="icon-git" />{" "}
-            <a href={project?.data.repo}>Source Code</a>
+            <a href={project?.data.repo} target="_blank">Source Code</a>
           </button>
         </div>
       );

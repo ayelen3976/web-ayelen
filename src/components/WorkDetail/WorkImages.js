@@ -6,6 +6,7 @@ import Weather from './Conditonal/Weather'
 import Dtodo from './Conditonal/Dtodo'
 import SomosMas from './Conditonal/SomosMas'
 import Mine from './Conditonal/Mine'
+import CelJava from "./Conditonal/CelularJava";
 function WorkImages(props) {
     if(props.project?.id === 1){
         return <Amazon project={props.project}/>
@@ -33,9 +34,13 @@ function WorkImages(props) {
         return <Mine project={props.project}/>
         
     }
+    else if(props.project?.id === 8){
+        return <CelJava project={props.project}/>
+        
+    }
     else{
         return <div>
-            <p>weolcome to back </p>
+            <p>welcome to back </p>
         </div>
     }
 

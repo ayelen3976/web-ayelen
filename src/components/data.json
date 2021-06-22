@@ -132,6 +132,23 @@
           "img1": "./../projects/mine/mine1.png",
           "img2": "./../projects/mine/mine2.png"
         }
+      },
+      {
+        "id": 8,
+        "img": "./../projects/celPhone/celhome.png",
+        "name": "Project in Java",
+        "description": "It was my first project in Java",
+
+        "data": {
+          "repo": "https://github.com/ayelen3976/CelularesJava",
+         
+          "img1": "./../projects/celPhone/cel1.png",
+          "img2": "./../projects/celPhone/cel2.png",
+          "img3": "./../projects/celPhone/cel3.png",
+          "img4": "./../projects/celPhone/cel4.png",
+          "img5": "./../projects/celPhone/cel5.png",
+          "img6": "./../projects/celPhone/cel6.png"
+        }
       }
     ]
   }
