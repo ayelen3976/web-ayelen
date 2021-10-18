@@ -13,10 +13,10 @@ import {
   AiFillGithub,
   AiOutlineMail,
 } from "react-icons/ai";
-import {GrLocationPin} from  'react-icons/gr'
+import { GrLocationPin } from "react-icons/gr";
 import { FaDownload } from "react-icons/fa";
 import { BiPhone } from "react-icons/bi";
-function Contact() {
+function Contact(props) {
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -59,7 +59,7 @@ function Contact() {
         (result) => {
           swal({
             icon: "success",
-            text: "Thanks for contacting me!",
+            text: props.checkBox ? "Gracias por enviar tu mensaje!" : "Thanks for contacting me!",
           });
           setInput({
             name: "",
@@ -90,42 +90,60 @@ function Contact() {
   } */
   return (
     <div className="contact" id="contact">
-            <div className="social-links">
-                  <a href="https://www.instagram.com/ayefernandez0211/">
-                    {" "}
-                    <AiOutlineInstagram className="icon" />
-                  </a>
-                  <a href="https://twitter.com/ayee018">
-                    {" "}
-                    <AiOutlineTwitter className="icon" />
-                  </a>
-                  <a href="https://github.com/ayelen3976">
-                    {" "}
-                    <AiFillGithub className="icon" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
-                    {" "}
-                    <AiFillLinkedin className="icon" />
-                  </a>
-                </div>
+      <div className="social-links">
+        <a href="https://www.instagram.com/ayefernandez0211/">
+          {" "}
+          <AiOutlineInstagram className="icon" />
+        </a>
+        <a href="https://twitter.com/ayee018">
+          {" "}
+          <AiOutlineTwitter className="icon" />
+        </a>
+        <a href="https://github.com/ayelen3976">
+          {" "}
+          <AiFillGithub className="icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
+          {" "}
+          <AiFillLinkedin className="icon" />
+        </a>
+      </div>
       <Row className="rowe-contact">
         <Col sm={5} data-aos="fade" className="col-detail">
-          <p className="pepa">Contact Details</p>
+          {props.checkBox ? (
+            <p className="pepa">Contacto</p>
+          ) : (
+            <p className="pepa">Contact Details</p>
+          )}
+
           <div className="details">
             <p>Ayelen Fernandez</p>
-            <p> <GrLocationPin/>  Argentina, Buenos Aires</p>
             <p>
               {" "}
-              <BiPhone />  +54 9 11 2515-2015
+              <GrLocationPin /> Argentina, Buenos Aires
             </p>
             <p>
               {" "}
-              <AiOutlineMail />  ayee_01@live.com
+              <BiPhone /> +54 9 11 2515-2015
             </p>
-            </div>
-            <Row>
-            <Col className='col-download'>
-                <div className="download">
+            <p>
+              {" "}
+              <AiOutlineMail /> ayee_01@live.com
+            </p>
+          </div>
+          <Row>
+            <Col className="col-download">
+              <div className="download">
+                {props.checkBox ? (
+                  <a
+                    href="https://drive.google.com/file/d/1KOEDTJm0123aF-C9cgUHlIQqHCgOobTm/view?usp=sharing"
+                    target="_blank"
+                  >
+                    {" "}
+                    <FaDownload className="down-icon" />
+                    Descargar cv
+                  </a>
+                ) : (
                   <a
                     href="https://drive.google.com/file/d/1KOEDTJm0123aF-C9cgUHlIQqHCgOobTm/view?usp=sharing"
                     target="_blank"
@@ -134,15 +152,18 @@ function Contact() {
                     <FaDownload className="down-icon" />
                     Donwload Resume
                   </a>
-                </div>
-              </Col>
-           
-        
-            </Row>
-          
+                )}
+              </div>
+            </Col>
+          </Row>
         </Col>
         <Col sm={7} data-aos="fade" className="col-email">
-          <p className="pepe"> Lets work together or talk</p>
+          {props.checkBox ? (
+            <p className="pepe"> Vamos a trabajar juntos o hablar !</p>
+          ) : (
+            <p className="pepe"> Lets work together or talk</p>
+          )}
+
           <div className="inputs">
             <form onSubmit={sendEmail}>
               <input
@@ -176,7 +197,11 @@ function Contact() {
                 value={input.message}
                 onChange={(e) => handleInputChange(e)}
               ></textarea>
-              <button className="btn-submit">Submit</button>
+              {props.checkBox ? (
+                <button className="btn-submit">Enviar</button>
+              ) : (
+                <button className="btn-submit">Submit</button>
+              )}
             </form>
           </div>
         </Col>

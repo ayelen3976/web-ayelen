@@ -17,7 +17,7 @@ import sass from "./../../assets/sass.png";
 import { MDBRow, MDBContainer } from "mdbreact";
 import TechCard from "./TechCard";
 
-function Technologies() {
+function Technologies(props) {
   return (
     <div className="tech">
       {/* <div className="linea">
@@ -29,7 +29,12 @@ function Technologies() {
      
         <hr />
       </div> */}
-   <h2 className="linea"><span>Technologies</span></h2>
+      {props.checkBox ? (
+   <h2 className="linea"><span>Tecnologías</span></h2>
+      ) : (
+        <h2 className="linea"><span>Technologies</span></h2>
+      )}
+
 
       <div className="tech-cards">
         <MDBContainer>

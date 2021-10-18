@@ -6,6 +6,7 @@
         "img": "./../projects/amazon/amazonhome.jpg",
         "name": "Amazon Clone",
         "description": "This is a Amazon clone built in 100% react with method of payment and using the hosting in firebase",
+        "descriptionES": "Este es un Clon de Amazon contruido al 100% en react, utilizando metodos de pago y el hosting de firebase",
         "marginTop": "2px",
         "data": {
           "repo": "https://github.com/ayelen3976/amazon-clone",
@@ -25,7 +26,9 @@
         "id": 2,
         "img": "./../projects/netflix/netflixhome.jpg",
         "name": "Netflix Clone",
-        "description": "This is a Netflix Clone using the TMDb api, built in 100% react on the client side",     "marginTop": "90px",
+        "description": "This is a Netflix Clone using the TMDb api, built in 100% react on the client side", 
+        "descriptionES": "Este es un Clon de Netflix utilizando la api de TMDb, construido al 100% en react", 
+        "marginTop": "90px",
         "data": {
           "repo": "https://github.com/ayelen3976/netflix--clone",
           "deploy": "https://netflix-clone-alpha.vercel.app/",
@@ -38,7 +41,11 @@
         "id": 3,
         "img": "./../projects/moscow/moscowhome.png",
         "name": "Moscow Diet",
-        "description": "Final project carried out in henry's bootcamp, consisted of building an e-commerce working as a fullstack developer",    "marginTop": "2px",
+        "description": "Final project carried out in henry's bootcamp, consisted of building an e-commerce working as a fullstack developer",   
+        "descriptionES": "Proyecto final de henry bootcamp, consistió en construir un e-commerce fullstack", 
+        "marginTop": "2px",
+       
+       
         "data": {
           "repo": "https://github.com/ayelen3976/E-commerce/tree/last",
           "img1": "./../projects/moscow/moscow1.png",
@@ -60,7 +67,7 @@
         "img": "./../projects/weather/weatherhome.jpg",
         "name": "Weather Week",
         "description": "Small project that consists of seeing the climate of the next 5 days of different countries",   
-        
+        "descriptionES": "Pequeño proyecto que consiste en mirar el clima de los próximos 5 días en diferentes países", 
         "data": {
           "repo": "https://github.com/ayelen3976/weather-week",
           "deploy": "https://client-theta-green.vercel.app/",
@@ -74,10 +81,10 @@
         "img": "./../projects/dtodo/dtodohome.jpg",
         "name": "DTodoInd",
         "description": "E-commerce full stack for a real clothing store in Argentina in process ",
-       
+        "descriptionES": "Tienda online para una tienda real de Argentina, que vende indumentaria", 
         "data": {
           "repo": "https://github.com/Bhavesh588/manjares",
-        
+          "deploy": "https://www.dtodoind.com/",
     
           "img1": "./../projects/dtodo/dtodo1.png",
           "img2": "./../projects/dtodo/dtodo2.png",  
@@ -106,7 +113,7 @@
         "img": "./../projects/somosmas/somosmashome.jpg",
         "name": "Somos Más",
         "description": "Project carried out in the alkemy program to gain experience as a junior developer",
-    
+        "descriptionES": "Proyecto llevado a cabo en el programa de alkemy para obtener experiencia como developer junior", 
         "data": {
           "img1": "./../projects/somosmas/somosmas1.png", 
           "img2": "./../projects/somosmas/somosmas2.png", 
@@ -124,7 +131,7 @@
         "img": "./../projects/mine/mine.png",
         "name": "Personal Portfolio",
         "description": "This website, check the repository! :)",
-
+        "descriptionES": "Esta es mi pagina, puede chequear el repositorio ! :)", 
         "data": {
           "repo": "https://github.com/ayelen3976/web-ayelen.git",
           "deploy": "https://portfolio-c470d.web.app/",
@@ -138,7 +145,7 @@
         "img": "./../projects/celPhone/celhome.png",
         "name": "Project in Java",
         "description": "It was my first project in Java",
-
+        "descriptionES": "Este fue mi primer proyecto en java , próximamente voy a construir una api", 
         "data": {
           "repo": "https://github.com/ayelen3976/CelularesJava",
          

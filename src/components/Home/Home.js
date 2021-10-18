@@ -10,7 +10,8 @@ import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
 import "react-toggle/style.css";
 import DarkMode from "../DarkMode/DarkMode";
 
-function Home() {
+function Home(props) {
+  console.log(props.checkBox, 'error ahr');
   useEffect(() => {
     Aos.init({
       duration: 3000,
@@ -25,25 +26,53 @@ function Home() {
           <MDBCol>
             <div className="type-div" data-aos="flip-up">
               <div className="typewriter">
-                <Typewriter
-                  autoStart="true"
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString("Hi, welcome to my Portfolio")
-                      .callFunction(() => {})
-                      .start();
-                  }}
-                />
+              {props.checkBox ? (
+                     <Typewriter
+                     autoStart="true"
+                     onInit={(typewriter) => {
+                       typewriter
+                         .typeString("Hola, Bienvenido a mi portfolio")
+                         .callFunction(() => {})
+                         .start();
+                     }}
+                   />
+                  ) : (
+                    <Typewriter
+                    autoStart="true"
+                    onInit={(typewriter) => {
+                      typewriter
+                        .typeString("Hi, welcome to my Portfolio")
+                        .callFunction(() => {})
+                        .start();
+                    }}
+                  />
+                  )}
+        
               </div>
-              <div className="contenedor">
-                <p>I'm</p>
-                <ul>
-                  <li>Ayelen Fernandez</li>
-                  <li>FullStack Developer</li>
-
-                  <li>from Argentina</li>
-                </ul>
-              </div>
+              {props.checkBox ? (
+                        <div className="contenedor">
+             
+                        <p>Soy</p>
+                        <ul>
+                          <li>Ayelen Fernandez</li>
+                          <li>FullStack Developer</li>
+        
+                          <li>de Argentina</li>
+                        </ul>
+                      </div>
+                  ) : (
+                    <div className="contenedor">
+             
+                    <p>I'm</p>
+                    <ul>
+                      <li>Ayelen Fernandez</li>
+                      <li>FullStack Developer</li>
+    
+                      <li>from Argentina</li>
+                    </ul>
+                  </div>
+                  )}
+        
             </div>
           </MDBCol>
           {/*     <MDBCol className='home-img'>

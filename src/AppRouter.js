@@ -1,9 +1,5 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React, {useState} from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -15,47 +11,52 @@ import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/Variants/ScrollTop";
 import ParticleComponent from "./components/Variants/particles";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
+function AppRouter() {
+  const [checkBox, setCheckBox] = useState(false)
 
-function AppRouter() { 
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={PrincipalScreen} />
+        <Route exact path="/" component={()=><PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox}/>} />
         <ScrollTop>
-          <Route path="/project/:id" component={WorkDetail} />
+          <Route path="/project/:id" component={()=><WorkDetail/>} />
         </ScrollTop>
       </Switch>
     </Router>
   );
 }
-const PrincipalScreen = () => (
-  <div>
-    <Navbar />
+const PrincipalScreen = (props) => (
+ 
+        <div>
 
-    <div
-      style={{
-        position: "absolute",
-        left: "0",
-        top: "0",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <Home />
-      <About />
+ <Navbar checkBox={props.checkBox} setCheckBox={props.setCheckBox}/> 
 
-      <Resume />
+<div
+  style={{
+    position: "absolute",
+    left: "0",
+    // top: "0",
+    width: "100%",
+    height: "100%",
+  }}
+>
+  <Home checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <About checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
 
-      <Technologies />
-       <Works /> 
+  <Resume checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
 
-      <Contact />
-      <Footer />
-    </div>
-    {/* <ParticleComponent></ParticleComponent>
-    <ParticleComponent></ParticleComponent>
-    <ParticleComponent></ParticleComponent>
-    <ParticleComponent></ParticleComponent> */}
-  </div>
+  <Technologies checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Works checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+
+  <Contact checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Footer />
+</div>
+{/* <ParticleComponent></ParticleComponent>
+<ParticleComponent></ParticleComponent>
+<ParticleComponent></ParticleComponent>
+<ParticleComponent></ParticleComponent> */}
+</div>
+
+
 );
 export default AppRouter;

@@ -7,7 +7,7 @@ import { MDBContainer, MDBRow } from "mdbreact";
 import { NavLink } from "react-router-dom";
 import { main } from "./../data.json";
 
-function Work() {
+function Work(props) {
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -35,9 +35,15 @@ function Work() {
                       />
                     </div>
                     <div className="col-1-body">
-                      <button className="btn-work"> <p className="title">{p.name}</p></button>
-                     
-                      <p className="description">{p.description}</p>
+                      <button className="btn-work">
+                        {" "}
+                        <p className="title">{p.name}</p>
+                      </button>
+                      {props.checkBox ? (
+                        <p className="description">{p.descriptionES}</p>
+                      ) : (
+                        <p className="description">{p.description}</p>
+                      )}
                     </div>
                   </div>
                 </NavLink>
