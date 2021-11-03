@@ -24,7 +24,7 @@ function About(props) {
             <>
               <p className="about-title fadeIn">Sobre mi</p>
               <p className="about-text fadeIn">
-                Soy de Argentina, tengo 19 años. Comencé el mundo de la
+                Soy de Argentina, tengo 20 años. Comencé el mundo de la
                 informatica a los 16 años con la idea de aprender cosas nuevas,
                 relacionados con la tecnología. Me gusta programar y aprender
                 cosas nuevas todos los días, también me gusta hacer deporte por
@@ -39,7 +39,7 @@ function About(props) {
             <>
               <p className="about-title fadeIn">About me</p>
               <p className="about-text fadeIn">
-                I am from Argentina, I am 19 years old. I started in the IT
+                I am from Argentina, I am 20 years old. I started in the IT
                 world at the age of 16 with the idea of ​​learning new things,
                 related to technology. I like to program and learn new things
                 every day, I also like to do sports in the mornings. my dream is
