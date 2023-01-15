@@ -11,17 +11,17 @@ function Navbar(props) {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <div>
-  
+    <div className="header">
+      <div className="logo-nav">
+        <div className="logo-container">
+          <a href="#">
+   
+          </a>
+        </div>
 
-      <div className="header">
-        <Animated animationIn="fadeInDown">
-          <ul
-            className={click ? "nav-options active" : "nav-options"}
-            data-animation="center"
-          >
-            <li className="option" onClick={closeMobileMenu}>
-              <Link
+        <ul className={click ? "nav-options active" : "nav-options"}>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link
                 to="home"
                 spy={true}
                 smooth={true}
@@ -30,9 +30,9 @@ function Navbar(props) {
               >
                { props.checkBox ? <a>INICIO</a> :  <a>HOME</a>   }
               </Link>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link
                 to="about"
                 spy={true}
                 smooth={true}
@@ -42,9 +42,9 @@ function Navbar(props) {
                   { props.checkBox? <a>AYELEN</a> :  <a>ABOUT</a> }
                 
               </Link>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link
                 to="resume"
                 spy={true}
                 smooth={true}
@@ -54,9 +54,9 @@ function Navbar(props) {
                    { props.checkBox  ? <a>RESUMEN</a> : <a>RESUME</a> }
              
               </Link>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
+          <Link
                 to="technologies"
                 spy={true}
                 smooth={true}
@@ -66,8 +66,8 @@ function Navbar(props) {
                    { props.checkBox ? <a>TECNOLOGÍA</a> :   <a>TECHNOLOGIES</a> }
                
               </Link>
-            </li>
-            <li className="option" onClick={closeMobileMenu}>
+          </li>
+          <li className="option" onClick={closeMobileMenu}>
               <Link
                 to="work"
                 spy={true}
@@ -79,8 +79,8 @@ function Navbar(props) {
           
               </Link>
             </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <Link
+          <li className="option" onClick={closeMobileMenu}>
+          <Link
                 to="contact"
                 spy={true}
                 smooth={true}
@@ -90,21 +90,29 @@ function Navbar(props) {
                    { props.checkBox ? <a>CONTACTO</a> : <a>CONTACT</a> }
         
               </Link>
+          </li>
+          <li className=" option mobile-option" onClick={closeMobileMenu}>
+              <a href="" className="sign-up">
+              <ButtonTranslate checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+              </a>
             </li>
-            <li className="option-button" onClick={closeMobileMenu}>
-       
-                <ButtonTranslate checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
-          
-            </li>
-          </ul>
-        </Animated>
-        <div className="mobile-menu" onClick={handleClick}>
-          {click ? (
-            <AiOutlineClose className="menu-icon" />
-          ) : (
-            <GiHamburgerMenu className="menu-icon" />
-          )}
-        </div>
+        </ul>
+      </div>
+      <ul className="signin-up">
+         
+          <li onClick={closeMobileMenu}>
+            <a href="" className="signup-btn">
+            <ButtonTranslate checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+            </a>
+          </li>
+        </ul>
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+        <AiOutlineClose className="menu-icon" />
+        ) : (
+          <GiHamburgerMenu className="menu-icon" />
+
+        )}
       </div>
     </div>
   );

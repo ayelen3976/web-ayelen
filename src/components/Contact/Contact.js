@@ -136,7 +136,7 @@ function Contact(props) {
               <div className="download">
                 {props.checkBox ? (
                   <a
-                    href="https://drive.google.com/file/d/1KOEDTJm0123aF-C9cgUHlIQqHCgOobTm/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1EYbaZxZdf6MFPb5g4CFzCiEZCvzg8wxi/view?usp=sharing"
                     target="_blank"
                   >
                     {" "}
@@ -145,7 +145,7 @@ function Contact(props) {
                   </a>
                 ) : (
                   <a
-                    href="https://drive.google.com/file/d/1KOEDTJm0123aF-C9cgUHlIQqHCgOobTm/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1EYbaZxZdf6MFPb5g4CFzCiEZCvzg8wxi/view?usp=sharing"
                     target="_blank"
                   >
                     {" "}

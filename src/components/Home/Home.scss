@@ -1,11 +1,12 @@
 .home {
-  background-image: url("../../assets/banner3.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #38373717;
-  overflow: scroll;
+  // background-image: url("../../assets/banner3.jpeg");
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-color: #38373717;
+  // overflow: scroll;
+  // padding: 10% 0px 8% 0px;
   // background: var(--background-color);
-  padding: 10% 0px 8% 0px;
+ 
   // padding-top: 10%;
 
   .type-div {
@@ -145,7 +146,7 @@
 
     background-position: -60px 80px;
     padding: 10px;
-    margin-top: 10%;
+    //margin-top: 10%;
     .type-div {
       padding: 10px;
 

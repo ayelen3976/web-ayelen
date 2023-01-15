@@ -1,0 +1,43 @@
+{
+  "mainpro": {
+    "projects": [
+      {
+        "id": 9,
+        "img": "./../projects/controlstock/logostock.png",
+        "name": "Control de Stock",
+        "description": "Inventory management and control system with barcode reader for clothing store",
+        "descriptionES": "Sistema de gestion y control de inventario con lector de código de barras para tienda de ropa",
+        "marginTop": "2px",
+        "data": {
+          "desc": "In this project, an inventory control system with a barcode was developed, in this system you can add, edit, delete and send products to other branches of the same brand, it also has its own panel used so that sellers can only access to the info. they need to make a sale. among those things it has other great features that help stores to better manage their store",
+          "descES": "En este proyecto se desarrollo un sistema de control de inventario con código de barra, en este sistema se puede agregar, editar, eliminar y enviar productos a otras sucursales de la misma marca , tambien tiene su propio panel empleado para que los vendedores solo puedan acceder a la info. que necesitan para hacer una venta. entre esas cosas tiene otras funcionalidadea geniales que ayudan a las tiendas a llevar un mejor manejo de su tienda",
+
+          "img1": "./../projects/controlstock/controlstock1.png",
+          "img2": "./../projects/controlstock/controlstock2.png",
+          "img3": "./../projects/controlstock/controlstock3.png",
+          "img4": "./../projects/controlstock/controlstock4.png",
+          "img5": "./../projects/controlstock/controlstock5.png"
+        }
+      },
+      {
+        "id": 10,
+        "img": "./../projects/webarchitect/logoarq.png",
+        "name": "Felix T. Clavijo",
+        "description": "Website for the Felix Clavijo architecture studio team",
+        "descriptionES": "Página web para el equipo del estudio de arquitectura Felix Clavijo",
+        "marginTop": "90px",
+        "data": {
+            "desc": "A personalized web page was built to represent the study of the architect Felix Clavijo, where it contains the necessary information, Works, Designs, projects, etc. It was built in a responsive way for cell phones and computers as well, before programming it, a design approved by the client was created.",
+            "descES": "Se construyo una Página web personalizada para representar el estudio del Arquitecto Felix Clavijo, donde contiene la información necesaria, Trabajos,  Diseños, proyectos, etc. Fue construida de manera responsive para celulares y computadoras tambien antes de programarla se le creo un diseño aprobado por el cliente.",
+  
+          "img1": "./../projects/webarchitect/webarq1.png",
+          "img2": "./../projects/webarchitect/webarq2.png",
+          "img3": "./../projects/webarchitect/webarq3.png",
+          "img4": "./../projects/webarchitect/webarq4.png",
+          "img5": "./../projects/webarchitect/webarq5.png",
+          "img6": "./../projects/webarchitect/webarq6.png"
+        }
+      }
+    ]
+  }
+}

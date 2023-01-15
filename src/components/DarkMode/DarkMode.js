@@ -6,7 +6,7 @@ const renderTooltip = (props) => (
    Dark Mode
   </Tooltip>
 );
-const DarkMode = () => {
+const DarkMode = (props) => {
   let clickedClass = "clicked"
   const body = document.body
   const lightTheme = "light"
@@ -22,15 +22,18 @@ const DarkMode = () => {
   }
   const switchTheme = e => {
     if (theme === darkTheme) {
+    
       body.classList.replace(darkTheme, lightTheme)
       e.target.classList.remove(clickedClass)
       localStorage.setItem("theme", "light")
       theme = lightTheme
+      props.setCheckTheme(true)
     } else {
       body.classList.replace(lightTheme, darkTheme)
       e.target.classList.add(clickedClass)
       localStorage.setItem("theme", "dark")
       theme = darkTheme
+      props.setCheckTheme(false)
     }
   }
   return (

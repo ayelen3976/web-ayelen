@@ -1,26 +1,48 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
 import "./Home.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { MDBContainer, MDBCol, MDBRow } from "mdbreact";
-
+import img from "./../../assets/banner3.jpeg"
+import img2 from "./../../assets/bannerdark.jpg"
 // import desk from "./../../assets/desk.png";
 import "react-toggle/style.css";
 import DarkMode from "../DarkMode/DarkMode";
 
 function Home(props) {
+
+  const [checktheme, setCheckTheme] = useState(true)
   console.log(props.checkBox, 'error ahr');
   useEffect(() => {
     Aos.init({
       duration: 3000,
     });
   }, []);
+  var themec = localStorage.getItem("theme");
+  console.log(themec)
+
+  const bannerStyle = { 
+   backgroundImage: `url(${checktheme ? `${img}` : `${img2}`})`,
+  
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundColor: "#38373717",
+    overflow: 'scroll',
+    padding: "10% 0px 8% 0px",
+  backgroundAttachment: "fixed"
+ 
+}
+
+
+
+
+
   return (
-    <div className="home" id="home">
+    <div className="home" id="home" style={bannerStyle}>
       <MDBContainer>
-        <DarkMode />
+        <DarkMode setCheckTheme={setCheckTheme} />
 
         <MDBRow>
           <MDBCol>

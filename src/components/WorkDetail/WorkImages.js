@@ -7,7 +7,9 @@ import Dtodo from './Conditonal/Dtodo'
 import SomosMas from './Conditonal/SomosMas'
 import Mine from './Conditonal/Mine'
 import CelJava from "./Conditonal/CelularJava";
+import ProjectDetail from "./ProjectDetail/ProjectDetail";
 function WorkImages(props) {
+
     if(props.project?.id === 1){
         return <Amazon project={props.project}/>
     }else if(props.project?.id === 2){
@@ -40,7 +42,7 @@ function WorkImages(props) {
     }
     else{
         return <div>
-            <p>welcome to back </p>
+            <ProjectDetail project={props.projectdetails}/>
         </div>
     }
 

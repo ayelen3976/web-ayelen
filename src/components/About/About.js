@@ -20,33 +20,30 @@ function About(props) {
           <img src={profile2} />
         </Col> */}
         <Col className="about-col-2" data-aos="fade-left">
-          {props.checkBox? (
+          {props.checkBox ? (
             <>
               <p className="about-title fadeIn">Sobre mi</p>
               <p className="about-text fadeIn">
-                Soy de Argentina, tengo 20 años. Comencé el mundo de la
-                informatica a los 16 años con la idea de aprender cosas nuevas,
-                relacionados con la tecnología. Me gusta programar y aprender
-                cosas nuevas todos los días, también me gusta hacer deporte por
-                las mañanas. mi sueño es viajar por el mundo y crear nuevos
-                horizontes en mi vida. Hoy en día creo proyectos en mi tiempo
-                libre para abrirme camino el mundo del trabajo y estoy haciendo
-                el curso de ingreso a la Universidad de Buenos Aires para
-                estudiar Ingeniería en Computación.
+                Soy de Argentina, tengo 21 años, Estudio la carrera de
+                Ingeniería informática en la Universidad de Buenos Aires. Me
+                gusta programar y aprender cosas nuevas todos los días, también
+                me gusta hacer deporte por las mañanas. mi sueño es viajar por
+                el mundo y crear nuevos horizontes en mi vida. Hoy en día creo
+                proyectos en mi tiempo libre propios y de forma freelance para
+                abrirme camino en el mundo del trabajo y experiencia
               </p>
             </>
           ) : (
             <>
               <p className="about-title fadeIn">About me</p>
               <p className="about-text fadeIn">
-                I am from Argentina, I am 20 years old. I started in the IT
-                world at the age of 16 with the idea of ​​learning new things,
-                related to technology. I like to program and learn new things
-                every day, I also like to do sports in the mornings. my dream is
-                to travel for the world and to create new horizons in my life.
-                Nowadays I create projects in my free time to make my way into
-                the world of work and I am doing the entrance course at the
-                University of Buenos Aires to study computer engineering.
+                I am from Argentina, I am 21 years old, I am studying Computer
+                Engineering at the University of Buenos Aires. I like
+                programming and learning new things every day, I also like to
+                play sports for the mornings. My dream is to travel the world
+                and create new horizons in my life Today I create projects in my
+                time free own and freelance to make my way in the world of work
+                and experience
               </p>
             </>
           )}

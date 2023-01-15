@@ -12,14 +12,15 @@ import mysql from "./../../assets/mysql.png";
 import nodejs from "./../../assets/node-js.png";
 import react from "./../../assets/react.png";
 import postgresql from "./../../assets/postgresql.png";
+import tsimage from "./../../assets/ts.png"
+import figma from "./../../assets/figma.png"
 import sass from "./../../assets/sass.png";
-
 import { MDBRow, MDBContainer } from "mdbreact";
 import TechCard from "./TechCard";
 
 function Technologies(props) {
   return (
-    <div className="tech">
+    <div className="tech" >
       {/* <div className="linea">
   
         <hr />
@@ -36,9 +37,9 @@ function Technologies(props) {
       )}
 
 
-      <div className="tech-cards">
-        <MDBContainer>
-          <MDBRow className="tech-cards-1">
+      <div className="tech-cards" >
+     
+          <MDBRow className="tech-cards-1"  id="technologies">
             <TechCard img={html} name="Html" />
             <TechCard img={css} name="Css" />
             <TechCard img={javascript} name="Javascript" />
@@ -46,6 +47,7 @@ function Technologies(props) {
             <TechCard img={redux} name="Redux" />
             <TechCard img={sass} name="Sass" />
             <TechCard img={bootstrap} name="Bootstrap" />
+            <TechCard img={figma} name="Figma" />
           </MDBRow>
           <MDBRow className="tech-cards-2">
             <TechCard img={express} name="Express" />
@@ -54,8 +56,10 @@ function Technologies(props) {
             <TechCard img={sql} name="SQL" />
             <TechCard img={postgresql} name="Postgres" />
             <TechCard img={sequelize} name="Sequelize" />
+            <TechCard img={tsimage} name="Typescript" />
+      
           </MDBRow>
-        </MDBContainer>
+      
       </div>
     </div>
   );

@@ -71,13 +71,17 @@
     padding: 0 15px;
   }
   .tech-cards {
+    
     height: 490px;
-    margin: 20px;
+    margin: 18px;
     padding: 60px 0px 0px 0px;
     // .tech-cards-1{
     background-color: var(--technologiesback);
 
     // }
+    .tech-cards-1 {
+      justify-content: center;
+    }
     .tech-cards-2 {
       justify-content: center;
     }
@@ -104,14 +108,9 @@
       padding: 19px 3px 19px 0px;
       // .tech-cards-1{
       background-color: var(--technologiesback);
-      display: flex;
-      .tech-cards-1 {
-        justify-content: center;
-      }
-      .tech-cards-2 {
-        justify-content: center;
-        justify-content: space-around;
-      }
+      //display: flex;
+      
+  
     }
   }
 }

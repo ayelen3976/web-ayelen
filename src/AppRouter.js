@@ -12,14 +12,14 @@ import ScrollTop from "./components/Variants/ScrollTop";
 import ParticleComponent from "./components/Variants/particles";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
 function AppRouter() {
-  const [checkBox, setCheckBox] = useState(false)
+  const [checkBox, setCheckBox] = useState(true)
 
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={()=><PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox}/>} />
         <ScrollTop>
-          <Route path="/project/:id" component={()=><WorkDetail/>} />
+          <Route path="/project/:id" component={()=><WorkDetail checkBox={checkBox}/>} />
         </ScrollTop>
       </Switch>
     </Router>
