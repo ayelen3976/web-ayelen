@@ -1,23 +1,11 @@
 .techcard{
     position: relative;
-
-    width: 10%;
-    text-align-last: center;
+   text-align-last: center;
+   padding: 2%;
 
 // border:  2px solid #40838583;
     margin: 8px;
-    color: var(--text-color);
-    background: var(--iconcard);
-
-    --angle: 0deg;
-
-    
-    border: 3px solid;
-    border-image: linear-gradient(var(--angle), #a34b27, #c38f81,#eed0c4,  #ecc3a183) 1;
-    
-    animation: 10s rotate linear infinite;
-  
-   
+    background: rgba(255, 255, 255, 0.121); 
     p{
         font-size: 20px;
     }
@@ -32,70 +20,21 @@
     }
     
 }
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }}
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
+@media (max-width: 768px) {
+  .techcard{
+    position: relative;
+
+  
+    text-align-last: center;
+
+// border:  2px solid #40838583;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.121); 
+    p{
+        display: none;
+    }
+
+}
 }
 
-  @media (max-width: 648px) {
-    .techcard{
-
-      position: relative;
-  
-   
-      text-align-last: center;
-
     
-      margin: 4px;
-      color: var(--text-color);
-      background: none;
-
-      border-image:none;
-      border:none;
-      p{
-          font-size: 10px;
-      }
-      img{
-          animation: 
-          pulse 3s ease infinite alternate, 
-           nudge 5s linear infinite alternate;
-          
-          padding: 1px;
-          height: 70px;
-          width: 90%;
-      }
-      
-  }
- /*  .techcard:after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * var(--border-width));
-      left: calc(-1 * var(--border-width));
-      z-index: -1;
-      width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-    
-        hsl(179, 85%, 66%)
-      );
-      background-size: 300% 300%;
-      background-position: 0 50%;
-      border-radius: calc(2 * var(--border-width));
-      animation: moveGradient 4s alternate infinite;
-      @keyframes moveGradient {
-          50% {
-            background-position: 100% 50%;
-          }}
-    } */
-    }

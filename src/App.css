@@ -1,6 +1,10 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .App {
-  background: var(--background-color);
+  background: black;
     /* text-align: center;
     content-visibility: auto; */
   }

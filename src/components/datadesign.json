@@ -1,0 +1,129 @@
+{
+    "main": {
+      "ProjectsDesign": [
+        {
+          "id": 1,
+          "img": "./../ProjectsDesign/controlstock/principalimg.png",
+          "name": "Control de Stock",
+          "description": "Inventory management Design to store clothing",
+          "descriptionES": "Diseños ux/ui de un sistema de gestion y control de inventario para una tienda de ropa",
+          "marginTop": "2px",
+          "data": {
+            "repo": "",
+            "desc": "",
+            "descES": "",
+            "images": [
+              {
+                "id": 1,
+                "img":"./../ProjectsDesign/controlstock/controlstock1.png"
+              },
+              {
+                "id": 2,
+                "img":"./../ProjectsDesign/controlstock/controlstock2.png"
+              },
+              {
+                "id": 3,
+                "img":"./../ProjectsDesign/controlstock/controlstock3.png"
+              },
+              {
+                "id": 4,
+                "img":"./../ProjectsDesign/controlstock/controlstock4.png"
+              }
+         
+          
+            ]
+           
+           
+           
+           
+           
+     
+          }
+        },
+        {
+            "id": 2,
+            "img": "./../ProjectsDesign/felixclavijoarq/principalimg.png",
+            "name": "Estudio de Arquitectura Felix Clavijo",
+            "description": "Design ux/ui architect Felix Clavijo",
+            "descriptionES": "Diseño ux/ui de la página del estudio de arquitectura Felix Clavijo",
+            "marginTop": "2px",
+            "data": {
+              "repo": "http://arquitectofelixclavijo.com",
+              "desc":"This contain admin panel to the website. this it a better option to change the content website when you want change it",
+              "descES": "Esta página ademas contiene el diseño de un panel administrador(backoffice) para cambiar el contenido de su paágina las veces que el mismo dueño decida",
+              "images": [
+                {
+                  "id": 1,
+                  "img":"./../ProjectsDesign/felixclavijoarq/webarq1.png"
+                },
+                {
+                  "id": 2,
+                  "img":"./../ProjectsDesign/felixclavijoarq/webarq2.png"
+                },
+                {
+                  "id": 3,
+                  "img":"./../ProjectsDesign/felixclavijoarq/webarq3.png"
+                },
+                {
+                  "id": 4,
+                  "img":"./../ProjectsDesign/felixclavijoarq/webarq4.png"
+                },
+                {
+                    "id": 5,
+                    "img":"./../ProjectsDesign/felixclavijoarq/webarq5.png"
+                  },
+                  {
+                    "id": 6,
+                    "img":"./../ProjectsDesign/felixclavijoarq/webarq6.png"
+                  },
+                  {
+                    "id": 7,
+                    "img":"./../ProjectsDesign/felixclavijoarq/webarq7.png"
+                  }
+           
+            
+              ]
+             
+             
+             
+             
+             
+       
+            }
+          },
+          {
+            "id": 3,
+            "img": "./../ProjectsDesign/architect/principalimg.png",
+            "name": "Portfolio web de Arquitectura",
+            "description": "Inventory management and control system with barcode reader for clothing store",
+            "descriptionES": "Sistema de gestion y control de inventario con lector de código de barras para tienda de ropa",
+            "marginTop": "2px",
+            "data": {
+              "repo": "",
+              "desc": "",
+             
+              "descES": "",
+              "images": [
+                {
+                  "id": 1,
+                  "img":"./../ProjectsDesign/architect/architect1.png"
+                },
+                {
+                  "id": 2,
+                  "img":"./../ProjectsDesign/architect/principalimg.png"
+                }
+             
+           
+            
+              ]
+             
+             
+             
+             
+             
+       
+            }
+          }
+      ]
+    }
+  }

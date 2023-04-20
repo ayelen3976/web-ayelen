@@ -3,23 +3,18 @@ import "./WorkDetail.scss";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { main } from "../data.json";
-import {mainpro} from "../dataProjects.json"
 import { AiFillGithub } from "react-icons/ai";
-import WorkImages from "./WorkImages";
+import ProjectDetail from './ProjectDetail/ProjectDetail'
 import Footer from "./../Footer/Footer";
-// import DarkMode from './../DarkMode/DarkMode';
 function WorkDetail(props) {
   const { id } = useParams();
 
   const [project, setProject] = useState();
-  const [project2, setProject2] = useState();
   useEffect(() => {
  
     let filteredData = main?.projects?.find((p) => p.id === parseInt(id));
-    let filteredData2 = mainpro?.projects?.find((p) => p.id === parseInt(id));
 
     setProject(filteredData);
-    setProject2(filteredData2);
   }, []);
 
   function Buttons() {
@@ -40,7 +35,16 @@ function WorkDetail(props) {
           </button>
         </div>
       );
-    } else {
+    } else if (!project?.data.repo) {
+      return (
+        <div className="buttons">
+         
+         <button className="btn-one">
+            <a href={project?.data.deploy} target="_blank">Live Demo</a>
+          </button>
+        </div>
+      );
+    }else {
       return (
         <div className="buttons">
           <button className="btn-one">
@@ -68,7 +72,7 @@ function WorkDetail(props) {
         <p className="work-title">{project?.name}</p>
 
         <Buttons />
-        <WorkImages project={project}  projectdetails={project2}/>
+        <ProjectDetail project={project}  />
         
       </div>
       <Footer />

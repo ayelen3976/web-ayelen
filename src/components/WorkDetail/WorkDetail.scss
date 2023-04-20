@@ -1,22 +1,20 @@
-@mixin transition(
-  $property: all,
+@mixin transition($property: all,
   $duration: 0.5s,
-  $ease: cubic-bezier(0.65, -0.25, 0.25, 1.95)
-) {
+  $ease: cubic-bezier(0.65, -0.25, 0.25, 1.95)) {
   transition: $property $duration $ease;
 }
+
 .workdetail {
-  // background-color: #fee9e1;
   background-color: var(--background-color);
-  padding: 10px 50px 50px 50px ;
-  // margin-top: 10px;
+  padding: 10px 50px 50px 50px;
+
   .back {
     margin-top: 10px;
     float: right;
     margin-right: 20px;
     text-decoration: none;
     color: var(--text-color);
-    background-image: linear-gradient(#c44d51, #ee6641,  #ecc3a183);
+    background-image: linear-gradient(#FF2372, #d31555, #15aff1c8);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
@@ -29,15 +27,17 @@
 
     letter-spacing: 0.15em;
   }
+
   a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
   }
 
   .back:hover,
   .back:focus {
     background-size: 100% 2px;
   }
+
   .work {
     margin-left: 15px;
     margin-top: 4%;
@@ -45,8 +45,9 @@
     font-size: 38px;
     line-height: 32px;
     letter-spacing: 0.6em;
-    color:  #c44d51;
+    color: #FF2372;
   }
+
   .work-title {
     color: var(--text-color);
     margin-top: 5%;
@@ -55,23 +56,25 @@
     letter-spacing: 12px;
     font-family: caneladeck-light, Helvetica, Arial, sans-serif;
     font-weight: lighter;
-
-    // font-weight: lighter;
   }
 
+
+  // BUTTONS 
   .buttons {
-    p{
+    p {
       font-size: 20px;
       font-family: "Times New Roman", sans-serif;
       color: var(--text-color);
     }
+
     margin-top: 2%;
     justify-content: space-between;
     width: 370px;
     display: flex;
+
     .btn-one {
       a {
-        color: black;
+        color: rgb(250, 245, 245);
       }
 
       position: relative;
@@ -83,19 +86,23 @@
       text-decoration: none;
       font-size: inherit;
       font-family: inherit;
+
       .icon-git {
         width: 40px;
         height: 30px;
       }
     }
+
     .btn-one {
       @include transition(all, 0.5s, cubic-bezier(0.65, -0.25, 0.25, 1.95));
       font-weight: 900;
-      color: black;
+
       padding: 10px 20px;
-      background: rgba(245, 244, 244, 0.795);
+      border-radius: 5px;
+      background-color: #FF2372;
       text-transform: uppercase;
     }
+
     .btn-one:hover,
     .btn-one:focus,
     .btn-one:active {
@@ -103,10 +110,12 @@
     }
   }
 }
+
 @media (max-width: 648px) {
   .workdetail {
     padding: 15px;
     margin-top: 1px;
+
     .back {
       margin-top: 1px;
 
@@ -119,6 +128,7 @@
       margin-left: 1px;
       margin-top: 75px;
     }
+
     .work-title {
       margin-top: 55px;
       font-size: 28px;
@@ -132,6 +142,7 @@
       justify-content: space-between;
 
       display: flex;
+
       .btn-one {
         position: relative;
         display: inline-block;
@@ -142,6 +153,7 @@
         text-decoration: none;
         font-size: 10px;
         font-family: inherit;
+
         .icon-git {
           width: 20px;
           height: 30px;

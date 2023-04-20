@@ -3,9 +3,8 @@ import "./Navbar.scss";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
-import { Animated } from "react-animated-css";
-import ButtonTranslate from "../ButtonTranslate/ButtonTranslate";
+
+
 function Navbar(props) {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -13,11 +12,7 @@ function Navbar(props) {
   return (
     <div className="header">
       <div className="logo-nav">
-        <div className="logo-container">
-          <a href="#">
-   
-          </a>
-        </div>
+      
 
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
@@ -39,7 +34,7 @@ function Navbar(props) {
                 duration={1000}
                 activeClass="active"
               >
-                  { props.checkBox? <a>AYELEN</a> :  <a>ABOUT</a> }
+                  { props.checkBox? <a>AYELEN</a> :  <a>AYELEN</a> }
                 
               </Link>
           </li>
@@ -91,21 +86,23 @@ function Navbar(props) {
         
               </Link>
           </li>
-          <li className=" option mobile-option" onClick={closeMobileMenu}>
-              <a href="" className="sign-up">
-              <ButtonTranslate checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
-              </a>
-            </li>
+          <li className="option mobile-option" onClick={closeMobileMenu}  style={{ color:"#FF2372 !important" }}>
+           <a  className="translate-btn" style={{ color:"#FF2372 !important" }} onClick={(()=>(props.setCheckBox(!props.checkBox)))}>
+        
+              { props.checkBox ? "ES" : "EN" }
+            </a>
+            </li> 
         </ul>
       </div>
-      <ul className="signin-up">
+       <ul className="translatein">
          
           <li onClick={closeMobileMenu}>
-            <a href="" className="signup-btn">
-            <ButtonTranslate checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+            <a  className="translate-btn" style={{ color:"#FF2372"}} onClick={(()=>(props.setCheckBox(!props.checkBox)))}>
+            { props.checkBox ? "ES" : "EN" }
+           
             </a>
           </li>
-        </ul>
+        </ul> 
       <div className="mobile-menu" onClick={handleClick}>
         {click ? (
         <AiOutlineClose className="menu-icon" />

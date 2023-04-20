@@ -2,83 +2,114 @@
   padding: 6%;
   font-family: Miracle Mercury Bold Semi-Italic;
   src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
-  background: var(--background-color);
+
   .social-links {
-    a {
-      .icon {
-        color: var(--text-color);
-
-        width: 60px;
-        height: 40px;
+    .icon-style {
+      display: flex;
+      div {
+        text-align: center;
+        border-radius: 6px;
+        margin: 2%;
+        width: 11%;
+        height: 6vh;
+       
+        background-color: #ff2372;
       }
-      .icon:hover {
-        color: var(--sociallinks);
+
+      a {
+        .icon {
+          color: #ffffff;
+          margin-top: 9%;
+          width: 30px;
+          height: 30px;
+        }
+
+        .icon:hover {
+          color: white;
+        }
       }
     }
+
   }
-  .rowe-contact {
-    border: 1px solid var(--bordercontact);
-    .col-detail {
-      // background-color: #6cb3b3b4;
-      // background-color: #e29578;
-      background-color: var(--contactdetail);
 
-      .pepa {
+  .rowe-contact {
+
+    // INFO CONTACTO
+    .col-detail {
+
+
+      
+
+
+      .contact-title {
+
         font-weight: 200;
-        color: var(--text-color);
-        margin-top: 2%;
-        margin-bottom: 6%;
-        font-size: 35px;
+
+        margin: 3% 0% 6% 0%;
+
+        font-size: 30px;
         text-align: start;
-        margin-left: 8%;
+
       }
     }
-    .pepe {
+
+
+    // ENVIAR EMAIL COLUMNA
+    .email-title {
       margin-bottom: 6%;
       font-weight: 200;
       margin-top: 2%;
       text-align: start;
       margin-left: 8%;
-      font-size: 35px;
-      color: var(--text-color);
+      font-size: 30px;
+
     }
+
     .col-email {
-      // background-color: #e0e7ef;
-      background-color: var(--contactemail);
+      border-radius: 10px;
+      border: 1px solid #FF2372;
+
     }
+
     .inputs {
       text-align: -webkit-center;
       display: grid;
+
       input {
         border-radius: 10px;
-        background: var(--inputsc);
+        background: white;
+        border: 1px solid #ffffff;
         margin-bottom: 8px;
         width: 83%;
         height: 50px;
       }
+
       textarea {
         border-radius: 10px;
-        background: var(--inputsc);
+        border: 1px solid #ffffff;
+        background: white;
         width: 83%;
         height: 90px;
         margin-bottom: 2px;
       }
+
       .btn-submit {
+        color: white;
         margin-top: 1%;
         width: 20%;
         height: 40px;
-        color: var(--download);
-        font-size: 28px;
+        font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        background: black;
-        border-radius: 8px;
-        border: 1px solid #0a0a0a;
+        background: #FF2372;
+        border-radius: 5px;
+        border: 1px solid #FF2372;
         position: relative;
         overflow: hidden;
         margin-bottom: 3%;
         float: left;
         margin-left: 9%;
       }
+
       .btn-submit:hover {
         // color: var(--letterDown);
         box-shadow: 1px 1px 25px 10px #14141421;
@@ -91,14 +122,7 @@
         left: -100%;
         width: 100%;
         height: 100%;
-        /*   background: linear-gradient(
-          120deg,
-          transparent,
-          #ff99ac,
-          transparent
-        );
-        transition: all 650ms;
-      } */
+
       }
 
       .btn-submit:hover:before {
@@ -107,151 +131,69 @@
     }
 
     .details {
-      color: var(--text-color);
+
       line-height: 2.8;
 
-      margin-left: 8%;
+
       font-size: 20px;
     }
-    .download {
-      margin-left: 8%;
-       animation: wiggle 2.5s infinite;
-      height: 40px;
-      width: 32%;
 
-      font-family: Arial, Helvetica, sans-serif;
-      // background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.288)),
-      //   url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg)
-      //     no-repeat center center/cover;
-      background: black;
-      border-radius: 8px;
-      border: 1px solid #080808;
-      position: relative;
-      overflow: hidden;
-      a {
-        text-decoration: none;
-        text-align-last: center;
-        font-size: 24px;
-        color: var(--download);
-      }
-      .down-icon {
-        color: var(--download);
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-    }
 
-    @keyframes wiggle {
-      0% {
-        transform: rotate(0deg);
-      }
-      80% {
-        transform: rotate(0deg);
-      }
-      85% {
-        transform: rotate(5deg);
-      }
-      95% {
-        transform: rotate(-5deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
-    }
-    .download:hover {
-      p {
-        text-align-last: center;
-        font-size: 20px;
-        color: var(--letterDown);
-      }
 
-      box-shadow: 1px 1px 25px 10px rgba(20, 20, 20, 0.4);
-    }
+}}
+
+.swal-modal {
+  background-color: rgb(32, 31, 31);
+
+}
+.swal-icon--success__hide-corners {
+  background: none !important;
   }
+  .swal-icon--success:before,
+  .swal-icon--success:after {
+  background: none !important;
+  }
+
+.swal-text {
+
+
+
+  color: #ffffff;
+}
+
+.swal-overlay {
+  background-color: #4382a96a;
 }
 @media (max-width: 768px) {
-  /*Mobile View */
-  .contact {
-    text-align: -webkit-center;
-    padding: 5%;
-    background: var(--background-color);
-    .social-links {
-      a {
-        .icon {
-          color: var(--text-color);
 
-          width: 43px;
-          height: 40px;
-        }
-        .icon:hover {
-          color: rgb(146, 148, 248);
-        }
+  .contact{
+    .rowe-contact{
+      flex-direction: column-reverse;
+      .col-email{
+        width: 100% !important;
       }
-    }
-    .rowe-contact {
-      display: block;
+
       .col-detail {
-        .pepa {
-          padding: 5% 0px 0px 0px;
-          font-weight: 300;
-          color: var(--text-color);
-          margin-top: 1%;
-          margin-bottom: 6%;
-          font-size: 30px;
 
-          text-align-last: center;
+
+      width: 100% !important;
+
+
+        .contact-title {
+  
+      
+  
+          margin: 0% 0% 6% 0%;
+  
+         
+          text-align: start;
+  
         }
       }
-
-      .pepe {
-        padding: 5% 0px 0px 0px;
-        margin-left: 12%;
-        margin-top: 3px;
-        text-align: start;
-        font-weight: 300;
-        font-size: 25px;
-      }
-      .inputs {
-        display: grid;
-        input {
-          margin-bottom: 2%;
-          width: 85%;
-          height: 40px;
-        }
-        textarea {
-          width: 85%;
-          height: 80px;
-          margin-bottom: 1%;
-        }
-
-        .btn-submit {
-          width: 34%;
-          font-size: 24px;
-          color: rgb(255, 255, 255);
-          margin-left: 10%;
-        }
-      }
-
-      .details {
-        line-height: 2;
-
-        margin-left: 2%;
-        font-size: 20px;
-        text-align: -webkit-center;
-      }
-      .col-download {
-        margin-bottom: 15px;
-        text-align: -webkit-center;
-        .download {
-          margin-left: 4%;
-
-          width: 75%;
-
-          .down-icon {
-            margin-right: 10px;
-          }
-        }
-      }
+  
     }
   }
+
+
+ 
 }

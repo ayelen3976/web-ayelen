@@ -1,64 +1,79 @@
 .about {
-  background: var(--background-color);
+
   padding: 4%;
-  .rowe {
+
+  .elipse-div {
+
     img {
-      // margin-top: 9%;
-      // margin-left: 20%;
-      margin-top: 15%;
-      margin-left: 12%;
-      width: 75%;
-      height: 75%;
+      animation:
+        pulse 8s ease infinite alternate,
+        nudge 10s linear infinite alternate;
+
     }
-    .about-col-2 {
-      margin-top: 3%;
-      .about-title {
-        text-align: center;
-        font-family: Miracle Mercury Bold Semi-Italic;
-        src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
-        font-size: 43px;
-        color: var(--text-color);
-      }
-      .about-text {
-       
-        padding: 20px;
-        background-color: var(--aboutback);
-        color: var(--text-color);
-        width: 100%;
-        margin-top: 6%;
-        font-size: 20px;
-        line-height: 2;
-        text-align: left;
-      }
+
+  }
+
+  .elipse-img {
+    animation:
+      pulse 8s ease infinite alternate,
+      nudge 10s linear infinite alternate;
+
+  }
+
+
+  .about-col {
+
+    .about-text {
+      margin-left: 10%;
+      padding: 10px;
+      width: 100%;
+      margin-top: 6%;
+      font-size: 20px;
+      line-height: 2;
+      text-align: left;
     }
   }
+
 }
+
 @media (max-width: 668px) {
-  /*Mobile View */
+
+
   .about {
-    padding: 5%;
-    .rowe {
-      flex-direction: column-reverse;
-      text-align-last: center;
-      margin-bottom: 8%;
+    .elipse-div {
+      text-align: end !important;
+
       img {
-        margin-top: 0px;
+
+        width: 40%;
+      }
+
+    }
+
+    .elipse-img {
+
+      width: 60%;
+    }
+  }
+
+  .row-about {
+    display: contents;
+
+    .about-col {
+
+      .about-text {
+        text-align: center;
         margin-left: 0%;
 
-        width: 90%;
-      }
-      .about-col-2 {
-        text-align: -webkit-center;
-        margin-top: 10%;
-        .about-title {
-          font-size: 30px;
-        }
-        .about-text {
-          text-align: -webkit-center;
-          font-size: 15px;
-          line-height: 2;
-        }
+
+        margin-top: 6%;
+        font-size: 18px;
+        line-height: 2;
+
       }
     }
+
   }
+
+
 }

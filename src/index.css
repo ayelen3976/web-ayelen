@@ -1,69 +1,9 @@
-:root {
-  --black: #151e21;
-  --black2: rgba(5, 5, 5, 0.842);
-  /* --whitep: #abd7d8; */
-  --whitenav: white;
-  --whitep: #fee9e1;
-  --whiten: rgba(255, 255, 255, 0.534);
-  --pinkdark: #e2bfb18a;
-  --pinkdark2: #14131371;
-  --grey: rgb(102, 98, 98);
-  --greydark:  rgb(150, 146, 146);
-  /* --darke:rgb(26, 24, 24); */
-  --darke: rgb(26, 24, 24);
-  /* --lighte: #6cb3b3b4; */
-  --lighte: #faf8f6;
-  --inputC: rgb(194, 190, 190);
-  /* --whitedark: #4f9899; */
-  --whitedark: #94618e;
-  --brown: #e29578;
-  --browndark: #6e3434c0;
-  --skyblue: #e0e7ef;
-  --skybluedar: #e0e7ef48;
 
-}
-
-body.light {
-  --sociallinks: var(--greydark);
-  --aboutback: var(--whiten);
-  --bordercontact: var(--inputC: rgb(194, 190, 190));
-  --contactemail: var(--skyblue);
-  --contactdetail: var(--brown);
-  --technologiesback: var(--pinkdark);
-  --navbardesk: var(--whitenav);
-  --background-color: var(--whitep);
-  --text-color: var(--black);
-  --coloraresponsive: var(--whiten);
-  --download: var(--whitenav);
-  --letterDown: var(--whiten);
-  --boxshadow: var(--grey);
-  --iconcard: var(--lighte);
-  --inputsc: var(--lighte);
-  --nave: var(--black);
-  --menu-icon: var(--black);
-}
-body.dark {
-  --sociallinks: var(--black2);
-  --aboutback: var(--pinkdark2);
-  --bordercontact: var(--darke);
-  --contactemail: var(--skybluedark);
-  --contactdetail: var(--browndark);
-  --technologiesback: var(--pinkdark2);
-  --navbardesk: var(--black);
-  --background-color: var(--black);
-  --text-color: var(--whiten);
-  --coloraresponsive: var(--black);
-  --download: var(--whiten);
-  --letterDown: var(--black);
-  --boxshadow: var(--black2);
-  --iconcard: var(--darke);
-  --inputsc: var(--inputC);
-  --nave: var(--whitedark);
-  --menu-icon: var(--grey);
-
-}
 body {
-  background: var(--background-color);
+  height: 100%;
+  width : 100% !important;
+  color: white !important;
+background-color: rgb(21, 20, 20) !important;
 }
 
 code {

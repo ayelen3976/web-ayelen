@@ -1,0 +1,108 @@
+// CARDS PROJECTS TABLE PROGRAMMING
+
+.programming {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6%;
+
+    .card-work {
+        color: white;
+        text-align: -webkit-center;
+
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 350px;
+            transition: transform 2s;
+            box-shadow: 7px 1px 12px 6px black;
+            -webkit-box-shadow: 7px 1px 12px 6px black;
+            -moz-box-shadow: 7px 1px 12px 6px black;
+
+            &:hover {
+                transform: rotateY(-20deg);
+            }
+        }
+
+        .col-1-tech {
+            width: 85%;
+            margin-bottom: 10%;
+
+            .col-1-body {
+                .btn-work {
+                    border: 1px solid #FF2372;
+                    margin-top: 9%;
+                    background-color: #FF2372;
+                    width: 200px;
+                    border-radius: 4px;
+
+                    .title {
+                        letter-spacing: 2px;
+                        margin-top: 10px;
+                        color: white;
+                        font-size: 15px;
+                    }
+                }
+
+                .description {
+                    margin-top: 6%;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+// MOBILE VIEW
+
+@media (max-width: 648px) {
+
+      .programming {
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+  
+        .card-work {
+          place-self: center;
+  
+          width: 90%;
+  
+          img {
+            width: 100%;
+            height: 360px;
+          }
+        }
+  
+        .col-1-tech {
+          width: 100%;
+          margin-top: 15%;
+  
+          .col-1-body {
+            .btn-work {
+              margin-top: 9%;
+              background-color: black;
+              width: 150px;
+  
+              .title {
+                letter-spacing: 2px;
+                margin-top: 10px;
+                color: white;
+                font-size: 15px;
+              }
+            }
+  
+            .description {
+              text-align: -webkit-center;
+            }
+  
+            .title {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  

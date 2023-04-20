@@ -1,0 +1,56 @@
+.project-design {
+    text-align: center;
+    margin-top: 3%;
+    
+    .cont-project {
+      contain: content;
+      .text-project {
+  
+        p {
+          font-size: 30px;
+          font-family: "Times New Roman", sans-serif;
+          text-align: -webkit-center;
+          margin-top: 10%;
+          color:  #ffffff;
+        }
+      }
+    }
+  
+    .project-images {
+      margin-top: 10%;
+      img {
+        margin-top: 5%;
+        width: 80%;
+      }
+    }
+  }
+  
+  @media (max-width: 648px) {
+    .project-design {
+      .project-img1 {
+        margin-top: 10%;
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+      .cont-project {
+        .text-project {
+          text-align: center;
+  
+          p {
+            font-size: 16px;
+  
+            margin-top: 15%;
+          }
+        }
+      }
+      .project-images {
+        margin-top: 10%;
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }

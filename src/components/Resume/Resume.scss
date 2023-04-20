@@ -1,23 +1,31 @@
+.vertical-timeline-element-icon {
+  
+  box-shadow:   inset 1px  0 #4ABAFF, inset  0 1px #FF2372  !important;
+  }
 .resume {
 
   // padding: 1%;
   padding-bottom: 70px;
-  background: var(--background-color);
-   .vertical-timeline-element {
-     margin: 1em 0;
-     height: 130px;
-   }
+  .costum-line:before {
+    background: #FF2372;
+  }
+   
+   .vertical-timeline-element-icon {
+    
+    background-image: linear-gradient( #FF2372, #4ABAFF) !important  }
+
 }
+
 @media (max-width: 1030px) {
   /*Mobile View */
-  .resume {
-    padding: 6%;
-    .vertical-timeline-element {
-      margin: 1em 0;
-      height: 100%;
-    }
+  // .resume {
+  //   padding: 6%;
+  //   .vertical-timeline-element {
+  //     margin: 1em 0;
+  //     height: 100%;
+  //   }
  
 
    
-  }
+  // }
 }

@@ -1,13 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Works.scss";
-import { Col } from "react-bootstrap";
-import { MDBContainer, MDBRow } from "mdbreact";
-import { NavLink } from "react-router-dom";
-import { main } from "./../data.json";
-import {mainpro} from "./../dataProjects.json"
+import { Container } from "react-bootstrap";
+
+
+import ProgrammingProjects from './../Works/Programming'
+import DesignProjects from './../Works/Designs'
 function Work(props) {
+
+  const [activeTab, setActiveTab] = useState("tab1");
+  const handleTab1 = () => {
+    // update the state to tab1
+    setActiveTab("tab1");
+  };
+  const handleTab2 = () => {
+    // update the state to tab2
+    setActiveTab("tab2");
+  };
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -16,76 +26,30 @@ function Work(props) {
 
   return (
     <div className="works-tech" id="work">
-      <MDBContainer>
-        <MDBRow className="row-tech">
+      <Container>
 
+        <div className="Tabs">
+          {/* Tab nav */}
+          <ul className="nav">
+            <li
+              className={activeTab === "tab1" ? "active" : ""}
+              onClick={handleTab1}
+            >
+              {props.checkBox ? "Programacíon" : "Programming"}
+              </li>
+            <li
+              className={activeTab === "tab2" ? "active" : ""}
+              onClick={handleTab2}
+            >
+               {props.checkBox ? "Diseño UX/UI" : "UX/UI designer"}
+        
+            </li>
+          </ul>
+          <div className="outlet">
+            {activeTab === "tab1" ? <ProgrammingProjects checkBox={props.checkBox}/> : <DesignProjects checkBox={props.checkBox}/>}      </div>
+        </div>
 
-        {mainpro.projects.map((p) => (
-            <>
-              <Col className="card-work">
-              <NavLink
-                  to={`/project/${p.id}`}
-                  key={p.id}
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="col-1-tech">
-                    <div>
-                      <img
-                        src={`projects/${p?.img}`}
-                        alt="imgwork"
-                        data-aos="fade-up"
-                      />
-                    </div>
-                    <div className="col-1-body">
-                      <button className="btn-work">
-                        {" "}
-                        <p className="title">{p.name}</p>
-                      </button>
-                      {props.checkBox ? (
-                        <p className="description">{p.descriptionES}</p>
-                      ) : (
-                        <p className="description">{p.description}</p>
-                      )}
-                    </div>
-                  </div>
-                  </NavLink>
-              </Col>
-            </>
-          ))}
-          {main.projects.map((p) => (
-            <>
-              <Col className="card-work">
-                <NavLink
-                  to={`/project/${p.id}`}
-                  key={p.id}
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="col-1-tech">
-                    <div>
-                      <img
-                        src={`projects/${p?.img}`}
-                        alt="imgwork"
-                        data-aos="fade-up"
-                      />
-                    </div>
-                    <div className="col-1-body">
-                      <button className="btn-work">
-                        {" "}
-                        <p className="title">{p.name}</p>
-                      </button>
-                      {props.checkBox ? (
-                        <p className="description">{p.descriptionES}</p>
-                      ) : (
-                        <p className="description">{p.description}</p>
-                      )}
-                    </div>
-                  </div>
-                </NavLink>
-              </Col>
-            </>
-          ))}
-        </MDBRow>
-      </MDBContainer>
+      </Container>
     </div>
   );
 }

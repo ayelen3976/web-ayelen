@@ -1,185 +1,36 @@
 .home {
-  // background-image: url("../../assets/banner3.jpeg");
-  // background-attachment: fixed;
-  // background-size: cover;
-  // background-color: #38373717;
-  // overflow: scroll;
-  // padding: 10% 0px 8% 0px;
-  // background: var(--background-color);
- 
-  // padding-top: 10%;
+.typewritter-txt{
+    font-size:50px;
+//     background: rgb(255,35,114);
+// background: linear-gradient(90deg, rgba(255,35,114,1) 0%, rgba(102,163,234,1) 100%);
+}
+    .img {
 
-  .type-div {
-    padding: 50px;
 
-    .typewriter {
-      margin-top: 1%;
-      font-size: 60px;
-      font-family: Miracle Mercury Bold Semi-Italic;
-      src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
-      // font-family: TimesNewRoman;
-      margin-bottom: 5%;
-      color: #313131;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
 
-      font-weight: 500;
-
-      animation: colorchange 20s infinite alternate;
-      @keyframes colorchange {
-        0% {
-          color: #9b4e30;
-        }
-
-        10% {
-          color: #110e0d;
-        }
-
-        20% {
-          color: #c38f81;
-        }
-
-        30% {
-          color: #32423f;
-        }
-
-        40% {
-          color: #68816b;
-        }
-
-        50% {
-          color: #f75c88;
-        }
-
-        60% {
-          color: #e7744a;
-        }
-
-        70% {
-          color: #53a38f;
-        }
-        80% {
-          color: #ee6189;
-        }
-        90% {
-          color: #c38f81;
-        }
-        100% {
-          color: rgb(235, 129, 147);
-        }
-      }
     }
-    .contenedor {
-      // font-family: TimesNewRoman;
-      // font-family: Dancing Script, cursive;
-      display: flex;
-      width: 600px;
-      height: 45px;
 
-      font-size: 43px;
-      line-height: 40px;
-
-      font-weight: 400;
-
-      overflow: hidden;
-      animation: colorchange 20s infinite alternate;
-
-      ul {
-        list-style: none;
-        padding-left: 10px;
-        animation: cambiar 7s infinite;
-      }
-
-      ul,
-      p {
-        margin: 0;
-      }
-
-      @keyframes cambiar {
-        0% {
-          margin-top: 0;
-        }
-        20% {
-          margin-top: 0;
-        }
-
-        25% {
-          margin-top: -40px;
-        }
-        50% {
-          margin-top: -40px;
-        }
-
-        55% {
-          margin-top: -80px;
-        }
-        80% {
-          margin-top: -80px;
-        }
-
-        85% {
-          margin-top: -40px;
-        }
-        95% {
-          margin-top: -40px;
-        }
-
-        100% {
-          margin-top: 0;
-        }
-      }
-    }
-  }
-
-  img {
-    margin-left: 20px;
-
-    width: 350px;
-    height: 300px;
-  }
 }
 
-@media (max-width: 768px) {
-  .home {
-    background-image: url("../../assets//banner7.png");
-
-    background-repeat: no-repeat;
-    background-size: 120%;
-
-    background-position: -60px 80px;
-    padding: 10px;
-    //margin-top: 10%;
-    .type-div {
-      padding: 10px;
-
-      .typewriter {
-        margin-top: 5%;
-        font-size: 27px;
-
-        margin-bottom: 8%;
-        color: #313131;
-      }
-      .contenedor {
-        display: flex;
-        width: 300px;
-        height: 40px;
-
-        font-size: 28px;
-        line-height: 40px;
-
-        ul {
-          list-style: none;
-          padding-left: 8px;
-          animation: cambiar 7s infinite;
+@media (max-width: 648px) {
+    .home {
+        margin-top: 20%;
+        .typewritter-txt{
+            font-size:20px;
+         
+        }
+        div{
+            display: block !important;
+            img{
+                display: none;
+            }
+            
         }
 
-        ul,
-        p {
-          margin: 0;
-        }
-      }
+
     }
 
-    .home-img {
-      display: none;
-    }
-  }
 }

@@ -9,8 +9,9 @@ import Works from "./components/Works/Works";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/Variants/ScrollTop";
-import ParticleComponent from "./components/Variants/particles";
+
 import WorkDetail from "./components/WorkDetail/WorkDetail";
+import WorkDesigns from "./components/WorkDesigns/WorkDesigns";
 function AppRouter() {
   const [checkBox, setCheckBox] = useState(true)
 
@@ -20,6 +21,9 @@ function AppRouter() {
         <Route exact path="/" component={()=><PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox}/>} />
         <ScrollTop>
           <Route path="/project/:id" component={()=><WorkDetail checkBox={checkBox}/>} />
+          <ScrollTop>
+          <Route path="/projectdesign/:id" component={()=><WorkDesigns checkBox={checkBox}/>} />
+        </ScrollTop>
         </ScrollTop>
       </Switch>
     </Router>
@@ -40,21 +44,18 @@ const PrincipalScreen = (props) => (
     height: "100%",
   }}
 >
-  <Home checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
-  <About checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Home checkBox={props.checkBox} />
+  <About checkBox={props.checkBox}/>
 
-  <Resume checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Resume checkBox={props.checkBox} />
 
-  <Technologies checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
-  <Works checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Technologies checkBox={props.checkBox} />
+  <Works checkBox={props.checkBox} />
 
-  <Contact checkBox={props.checkBox} setCheckBox={props.setCheckBox}/>
+  <Contact checkBox={props.checkBox} />
   <Footer />
 </div>
-{/* <ParticleComponent></ParticleComponent>
-<ParticleComponent></ParticleComponent>
-<ParticleComponent></ParticleComponent>
-<ParticleComponent></ParticleComponent> */}
+
 </div>
 
 

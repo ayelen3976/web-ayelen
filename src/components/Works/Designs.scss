@@ -1,0 +1,110 @@
+// CARDS PROJECTS TABLE DESIGN
+
+.design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6%;
+
+    // CARD IMAGE 
+    .card-work-design {
+        margin: 5%;
+
+
+
+
+        img {
+            border-radius: 5px;
+            width: 100%;
+            height: 350px;
+            transition: transform 2s;
+
+            &:hover {
+                transform: rotateY(-20deg);
+            }
+        }
+
+        .col-1-tech {
+            height: 90vh;
+            width: 95%;
+            border-radius: 5px;
+            border: 1px solid #FF2372;
+            text-align: center;
+
+            .col-1-body {
+                .btn-work {
+                    border: 1px solid #FF2372;
+                    margin-top: 9%;
+                    background-color: #FF2372;
+                    width: 200px;
+                    border-radius: 4px;
+
+                    .title {
+                        letter-spacing: 2px;
+                        margin-top: 10px;
+                        color: white;
+                        font-size: 15px;
+                    }
+                }
+
+                .description {
+                    padding: 8% 2% 3% 2%;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+// MOBILE VIEW
+
+@media (max-width: 648px) {
+
+
+      .design{
+        margin-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+  
+        .card-work {
+          place-self: center;
+  
+          width: 90%;
+  
+          img {
+            width: 100%;
+            height: 360px;
+          }
+        }
+  
+        .col-1-tech {
+          width: 100%;
+          margin-top: 15%;
+  
+          .col-1-body {
+            .btn-work {
+              margin-top: 9%;
+              background-color: black;
+              width: 150px;
+  
+              .title {
+                letter-spacing: 2px;
+                margin-top: 10px;
+                color: white;
+                font-size: 15px;
+              }
+            }
+  
+            .description {
+              text-align: -webkit-center;
+            }
+  
+            .title {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }

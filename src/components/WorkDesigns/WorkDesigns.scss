@@ -1,0 +1,156 @@
+@mixin transition(
+  $property: all,
+  $duration: 0.5s,
+  $ease: cubic-bezier(0.65, -0.25, 0.25, 1.95)
+) {
+  transition: $property $duration $ease;
+}
+.workdesigns {
+
+
+  padding: 10px 50px 50px 50px ;
+
+  .back {
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-image: linear-gradient(#FF2372, #d31555,  #15aff1c8);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+
+    font-family: Miracle Mercury Bold Semi-Italic;
+    font-size: 15px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.15em;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .back:hover,
+  .back:focus {
+    background-size: 100% 2px;
+  }
+  .work {
+    margin-left: 15px;
+    margin-top: 4%;
+    font-family: Miracle Mercury Bold Semi-Italic;
+    font-size: 38px;
+    line-height: 32px;
+    letter-spacing: 0.6em;
+    color: #FF2372;
+  }
+  .work-title {
+    color: var(--text-color);
+    margin-top: 5%;
+    font-size: 85px;
+    line-height: 1.24em;
+    letter-spacing: 12px;
+    font-family: caneladeck-light, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+
+    // font-weight: lighter;
+  }
+
+  
+
+//   BUTTONS
+  .buttons {
+    p{
+      font-size: 20px;
+      font-family: "Times New Roman", sans-serif;
+
+    }
+    margin-top: 2%;
+    justify-content: space-between;
+    width: 370px;
+    display: flex;
+    .btn-one {
+      a {
+        color: white;
+      }
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid black;
+      vertical-align: middle;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+  
+    }
+    .btn-one {
+      @include transition(all, 0.5s, cubic-bezier(0.65, -0.25, 0.25, 1.95));
+      font-weight: 900;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #FF2372;
+      text-transform: uppercase;
+    }
+    .btn-one:hover,
+    .btn-one:focus,
+    .btn-one:active {
+      letter-spacing: 0.125rem;
+    }
+  }
+}
+@media (max-width: 648px) {
+  .workdesigns {
+    padding: 15px;
+    margin-top: 1px;
+
+    .back {
+      margin-top: 1px;
+
+      margin-right: 7px;
+
+      font-size: 14px;
+    }
+
+    .work {
+      margin-left: 1px;
+      margin-top: 75px;
+    }
+
+    .work-title {
+      margin-top: 55px;
+      font-size: 28px;
+
+      // font-weight: lighter;
+    }
+
+    .buttons {
+      width: 250px;
+      margin-top: 2%;
+      justify-content: space-between;
+
+      display: flex;
+
+      .btn-one {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 1px solid black;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 10px;
+        font-family: inherit;
+
+        .icon-git {
+          width: 20px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

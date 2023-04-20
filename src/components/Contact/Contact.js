@@ -11,11 +11,9 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
   AiFillGithub,
-  AiOutlineMail,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
-import { GrLocationPin } from "react-icons/gr";
-import { FaDownload } from "react-icons/fa";
-import { BiPhone } from "react-icons/bi";
+
 function Contact(props) {
   const [input, setInput] = useState({
     name: "",
@@ -35,7 +33,7 @@ function Contact(props) {
     if (!input.name || !input.email || !input.subject || !input.message) {
       return swal({
         icon: "error",
-        text: "Fields cannot be empty",
+        text:props.checkBox ? "Debe llenar todos los campos!" : "FIELDS CANNOT BE EMPTY",
       });
     } else if (
       !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -59,7 +57,7 @@ function Contact(props) {
         (result) => {
           swal({
             icon: "success",
-            text: props.checkBox ? "Gracias por enviar tu mensaje!" : "Thanks for contacting me!",
+            text: props.checkBox ? "GRACIAS POR ENVIAR TU MENSAJE!" : "THANKS FOR CONTACT ME!",
           });
           setInput({
             name: "",
@@ -90,78 +88,13 @@ function Contact(props) {
   } */
   return (
     <div className="contact" id="contact">
-      <div className="social-links">
-        <a href="https://www.instagram.com/ayefernandez0211/">
-          {" "}
-          <AiOutlineInstagram className="icon" />
-        </a>
-        <a href="https://twitter.com/ayee018">
-          {" "}
-          <AiOutlineTwitter className="icon" />
-        </a>
-        <a href="https://github.com/ayelen3976">
-          {" "}
-          <AiFillGithub className="icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/">
-          {" "}
-          <AiFillLinkedin className="icon" />
-        </a>
-      </div>
-      <Row className="rowe-contact">
-        <Col sm={5} data-aos="fade" className="col-detail">
-          {props.checkBox ? (
-            <p className="pepa">Contacto</p>
-          ) : (
-            <p className="pepa">Contact Details</p>
-          )}
 
-          <div className="details">
-            <p>Ayelen Fernandez</p>
-            <p>
-              {" "}
-              <GrLocationPin /> Argentina, Buenos Aires
-            </p>
-            <p>
-              {" "}
-              <BiPhone /> +54 9 11 2515-2015
-            </p>
-            <p>
-              {" "}
-              <AiOutlineMail /> ayee_01@live.com
-            </p>
-          </div>
-          <Row>
-            <Col className="col-download">
-              <div className="download">
-                {props.checkBox ? (
-                  <a
-                    href="https://drive.google.com/file/d/1EYbaZxZdf6MFPb5g4CFzCiEZCvzg8wxi/view?usp=sharing"
-                    target="_blank"
-                  >
-                    {" "}
-                    <FaDownload className="down-icon" />
-                    Descargar cv
-                  </a>
-                ) : (
-                  <a
-                    href="https://drive.google.com/file/d/1EYbaZxZdf6MFPb5g4CFzCiEZCvzg8wxi/view?usp=sharing"
-                    target="_blank"
-                  >
-                    {" "}
-                    <FaDownload className="down-icon" />
-                    Donwload Resume
-                  </a>
-                )}
-              </div>
-            </Col>
-          </Row>
-        </Col>
-        <Col sm={7} data-aos="fade" className="col-email">
+      <Row className="rowe-contact" style={{justifyContent: 'center'}}>
+        <div data-aos="fade" className="col-email" style={{ width: "45%" }}>
           {props.checkBox ? (
-            <p className="pepe"> Vamos a trabajar juntos o hablar !</p>
+            <p className="email-title">¡VAMOS A TRABAJAR JUNTOS!</p>
           ) : (
-            <p className="pepe"> Lets work together or talk</p>
+            <p className="email-title"> LET'S WORKS TOGETHER!</p>
           )}
 
           <div className="inputs">
@@ -204,7 +137,81 @@ function Contact(props) {
               )}
             </form>
           </div>
-        </Col>
+        </div>
+        <div data-aos="fade" className="col-detail" style={{ width: "40%", minHeight: "62vh", position: "relative" }}>
+
+          <div className="social-links" style={{ width: "100%" }}>
+            <div className='icon-style'>
+              <div>
+
+
+                <a href="https://www.instagram.com/ayefernandez0211/" target="_blank">
+                  {" "}
+                  <AiOutlineInstagram className="icon" />
+                </a>
+              </div>
+{/* 
+              <div>
+                <a href="https://twitter.com/ayee018">
+                  {" "}
+                  <AiOutlineTwitter className="icon" />
+                </a>
+              </div> */}
+              <div>
+                <a href="https://github.com/ayelen3976" target="_blank">
+                  {" "}
+                  <AiFillGithub className="icon" />
+                </a>
+              </div>
+              <div>
+              <a href="https://wa.me/+541125152012?text=¡Hola!" target="_blank">
+                  
+                  {" "}
+                  < AiOutlineWhatsApp className="icon" /> 
+                </a>
+              </div>
+              <div>
+
+
+                <a href="https://www.linkedin.com/in/ayelen-fernandez-783286187/" target="_blank">
+                  {" "}
+                  <AiFillLinkedin className="icon" />
+                </a>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+          <div style={{ minHeight: "20vh", width: "100%", border: " 1px solid #FF2372 ", borderRadius: '5px', position: "absolute", bottom: "0", paddingLeft: "5%"}}>
+
+
+            {props.checkBox ? (
+              <p className="contact-title">CONTACTO</p>
+            ) : (
+              <p className="contact-title">CONTACT</p>
+            )}
+
+            <div className="details">
+              <p>Ayelen Fernandez</p>
+              <p>
+                Argentina, Buenos Aires
+              </p>
+              <p>
+                +54 9 11 2515-2015
+              </p>
+              <p>
+                ayee_01@live.com
+              </p>
+            </div>
+
+          </div>
+
+
+        </div>
+
       </Row>
     </div>
   );

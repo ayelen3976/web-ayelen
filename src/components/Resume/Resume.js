@@ -5,20 +5,19 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-// import { RiGovernmentFill } from "react-icons/ri";
+
 import { FaLaptopCode, FaGraduationCap } from "react-icons/fa";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 function Resume(props) {
   return (
     <div className="resume">
-      <VerticalTimeline className="resume-timeline">
+      <VerticalTimeline className="resume-timeline costum-line">
 
       <VerticalTimelineElement
   
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
+          className="vertical-timeline-element--work  "
+          contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
           icon={<FaGraduationCap />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -47,9 +46,8 @@ function Resume(props) {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
+          contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
           icon={<FaLaptopCode />}
         >
           <h3 className="vertical-timeline-element-title">Freelance</h3>
@@ -76,9 +74,8 @@ function Resume(props) {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
+          contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
           icon={<BsFillBriefcaseFill />}
         >
           <h3 className="vertical-timeline-element-title">Anteia Empresa</h3>
@@ -108,38 +105,12 @@ function Resume(props) {
             </>
           )}
         </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
-          icon={<FaLaptopCode />}
-        >
-          <h3 className="vertical-timeline-element-title">Seduca</h3>
-          <h4 className="vertical-timeline-element-subtitle">Java</h4>
-          {props.checkBox ? (
-            <>
-              <p>Aprendi Java </p>
-              <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-                marzo 2021 - junio 2021
-              </p>
-            </>
-          ) : (
-            <>
-              <p>I learned Java </p>
-              <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-                march 2021 - june 2021
-              </p>
-            </>
-          )}
-        </VerticalTimelineElement>
-        
+   
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
+          contentStyle={{ background: "#212121"}}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
           icon={<FaLaptopCode />}
         >
           <h3 className="vertical-timeline-element-title">Henry Bootcamp</h3>
@@ -172,9 +143,8 @@ function Resume(props) {
         <VerticalTimelineElement
           id="technologies"
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121", color: "#fff" }}
+          contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
-          iconStyle={{ background: "#212121", color: "#fff" }}
           icon={<FaGraduationCap />}
         >
           <h3 className="vertical-timeline-element-title">
