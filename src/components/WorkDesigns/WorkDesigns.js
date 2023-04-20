@@ -27,7 +27,7 @@ function WorkDesigns(props) {
                 <div className="buttons">
                     <button className="btn-one">
 
-                        <a href={project?.data.repo} target="_blank">Source Code</a>
+                        <a href={project?.data.repo} target="_blank">Source Design</a>
                     </button>
 
                 </div>
