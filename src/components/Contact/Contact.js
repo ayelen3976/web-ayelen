@@ -164,7 +164,7 @@ function Contact(props) {
                 </a>
               </div>
               <div>
-              <a href="https://wa.me/+541125152012?text=¡Hola!" target="_blank">
+              <a href="https://wa.me/1125152015?text=¡Hola!" target="_blank">
                   
                   {" "}
                   < AiOutlineWhatsApp className="icon" /> 

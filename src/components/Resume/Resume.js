@@ -13,20 +13,20 @@ function Resume(props) {
     <div className="resume">
       <VerticalTimeline className="resume-timeline costum-line">
 
-      <VerticalTimelineElement
-  
+        <VerticalTimelineElement
+
           className="vertical-timeline-element--work  "
           contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
           icon={<FaGraduationCap />}
         >
           <h3 className="vertical-timeline-element-title">
-          Ingeniería informática
+            Ingeniería informática
           </h3>
           {props.checkBox ? (
             <>
               <h4 className="vertical-timeline-element-subtitle">
-              Universidad de Buenos Aires
+                Universidad de Buenos Aires
               </h4>
 
               <p>      Actualmente me encuentro estudiando la carrea de Ingeniería informática en FIUBA</p>
@@ -34,14 +34,17 @@ function Resume(props) {
           ) : (
             <>
               <h4 className="vertical-timeline-element-subtitle">
-                Bachellor in comunication
+
+                Informatics Engineering
+                Buenos Aires' University
               </h4>
 
-              <p>Bachellor in orientation comunication</p>
+              <p>I am currently studying Computer Engineering at FIUBA
+              </p>
             </>
           )}
 
-          <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>2015-2019</p>
+          <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>2022 - presente</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -51,22 +54,23 @@ function Resume(props) {
           icon={<FaLaptopCode />}
         >
           <h3 className="vertical-timeline-element-title">Freelance</h3>
+          
           {props.checkBox ? (
             <>
-              <h4 className="vertical-timeline-element-subtitle">Trabajo</h4>
+              <h4 className="vertical-timeline-element-subtitle"></h4>
               <p>
-                Estoy trabajando como freelance con clientes y creando mis propios proyectos 
+                Estoy trabajando como freelance con clientes y creando mis propios proyectos
               </p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-                mayo 2021 - presente
+                enero 2021 - presente
               </p>
             </>
           ) : (
             <>
-              <h4 className="vertical-timeline-element-subtitle">Work</h4>
+              <h4 className="vertical-timeline-element-subtitle"></h4>
               <p>I am working as a freelance with clients and creating my own projects</p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-                may 2021 - present
+                january 2021 - present
               </p>
             </>
           )}
@@ -85,10 +89,10 @@ function Resume(props) {
                 Experiencia trabajando como dev junior
               </h4>
               <p>
-              Es una empresa que trabaja con inteligencia artificial donde me toco estar en el equipo como Frontend junior, tambien diseñando y proponiendo ideas para cada proyecto nuevo que tocaba.
+                Es una empresa que trabaja con inteligencia artificial donde me toco estar en el equipo como Frontend junior, tambien diseñando y proponiendo ideas para cada proyecto nuevo que teniamos que desarrollar.
               </p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-                marzo 2021 - diciembre 2022{" "}
+                mayo 2021 - enero 2023{" "}
               </p>
             </>
           ) : (
@@ -97,19 +101,19 @@ function Resume(props) {
                 experience working
               </h4>
               <p>
-              It is a company that works with artificial intelligence where I had to be in the team as Junior Frontend, also designing and proposing ideas.
+                It is a company that works with artificial intelligence where I had to be in the team as Junior Frontend, also designing and proposing ideas.
               </p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
-              march 2021 - december 2022{" "}
+                may 2021 - january 2023{" "}
               </p>
             </>
           )}
         </VerticalTimelineElement>
-   
+
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#212121"}}
+          contentStyle={{ background: "#212121" }}
           contentArrowStyle={{ borderRight: "7px solid   black" }}
           icon={<FaLaptopCode />}
         >
@@ -168,7 +172,7 @@ function Resume(props) {
             </>
           )}
 
-          <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>2015-2019</p>
+          <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>2014 - 2019</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

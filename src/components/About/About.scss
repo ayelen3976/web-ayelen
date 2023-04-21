@@ -4,19 +4,48 @@
 
   .elipse-div {
 
-    img {
-      animation:
-        pulse 8s ease infinite alternate,
-        nudge 10s linear infinite alternate;
 
+
+    img {
+
+      //   animation:
+      //     pulse 8s ease infinite alternate,
+      //     nudge 10s linear infinite alternate;
+
+      animation-name: stretch;
+
+      animation-duration: 2s;
+
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
     }
 
   }
 
+  @keyframes stretch {
+
+
+    50% {
+      transform: scale(1.0);
+
+    }
+
+    100% {
+      transform: scale(1.09);
+
+    }
+  }
+
   .elipse-img {
-    animation:
-      pulse 8s ease infinite alternate,
-      nudge 10s linear infinite alternate;
+    animation-name: stretch;
+
+    animation-duration: 2s;
+
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    // animation:
+    //   pulse 8s ease infinite alternate,
+    //   nudge 10s linear infinite alternate;
 
   }
 
