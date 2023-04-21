@@ -14,9 +14,11 @@ function About(props) {
     });
   }, []);
 
+
+  var responsive = window.matchMedia("(max-width: 700px)")
   return (
     <div className="about">
-    <div className="elipse-div" style={{ width: "100%", textAlign: 'center' }} data-aos="fade-left">
+    <div className="elipse-div" style={{ width: "100%", textAlign: 'center' }} data-aos={responsive.matches ? "" : "fade-left" } >
         <img src={elipse1} alt="elipse1" style={{marginLeft:"10%"}} />
 
 
@@ -56,8 +58,8 @@ function About(props) {
             <br id="resume"></br>
           </div>
         </Col>
-        <Col data-aos="fade-left">
-          <div style={{ textAlign: 'center', marginLeft: "40%" }}>
+        <Col data-aos={responsive.matches ? "" : "fade-left" }>
+          <div style={{ textAlign: 'center', marginLeft: "40%" }} >
             <img className="elipse-img" src={elipse3} alt="elipse1" />
 
           </div>
