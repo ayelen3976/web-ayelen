@@ -72,7 +72,7 @@ function WorkDetail(props) {
         <p className="work-title">{project?.name}</p>
 
         <Buttons />
-        <ProjectDetail project={project}  />
+        <ProjectDetail project={project} checkBox={props.checkBox} />
         
       </div>
       <Footer />

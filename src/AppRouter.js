@@ -14,15 +14,20 @@ import WorkDetail from "./components/WorkDetail/WorkDetail";
 import WorkDesigns from "./components/WorkDesigns/WorkDesigns";
 function AppRouter() {
   const [checkBox, setCheckBox] = useState(true)
+  localStorage.setItem("translateTxt", JSON.stringify(checkBox))
+  
 
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={()=><PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox}/>} />
+        {/* Los checkbox pasando como el estado a los components detail desde app.js no funca, funciona el pasaje desde el componente padre a hijo */}
         <ScrollTop>
-          <Route path="/project/:id" component={()=><WorkDetail checkBox={checkBox}/>} />
+
+          <Route path="/project/:id" component={()=><WorkDetail />} />
           <ScrollTop>
-          <Route path="/projectdesign/:id" component={()=><WorkDesigns checkBox={checkBox}/>} />
+
+          <Route path="/projectdesign/:id" component={()=><WorkDesigns />} />
         </ScrollTop>
         </ScrollTop>
       </Switch>

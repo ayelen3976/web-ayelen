@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import './ProjectDetail.scss'
 import { Row, Container } from "react-bootstrap";
 function ProjectDetail(props) {
-  console.log(props)
+  console.log(props, 'deteail')
   useEffect(() => {
     Aos.init({
       duration: 3000,

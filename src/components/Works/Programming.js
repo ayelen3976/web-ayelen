@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import { main } from "./../data.json";
 
 function ProgrammingProjects(props){
-  console.log(props, 'this props')
     return(
 
 

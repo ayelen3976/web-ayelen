@@ -48,7 +48,7 @@ function WorkDesigns(props) {
                 <Buttons />
 
 
-                <ProjectDesigns project={project} />
+                <ProjectDesigns project={project} checkBox={props.checkBox}/>
 
             </div>
             <Footer />
