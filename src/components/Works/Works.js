@@ -8,7 +8,6 @@ import { Container } from "react-bootstrap";
 import ProgrammingProjects from './../Works/Programming'
 import DesignProjects from './../Works/Designs'
 function Work(props) {
-console.log(props, 'works')
   const [activeTab, setActiveTab] = useState("tab1");
   const handleTab1 = () => {
     // update the state to tab1

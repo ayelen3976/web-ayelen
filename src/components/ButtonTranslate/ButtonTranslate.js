@@ -15,7 +15,7 @@ function ButtonTranslate(props) {
     props.setCheckBox(!props.checkBox);
   }
 
-  console.log(!props.checkBox, "STATE");
+
   return (
     <>
       <div className="custom-control custom-switch" style={{ marginTop: "7%" }}>
