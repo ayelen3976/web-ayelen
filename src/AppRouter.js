@@ -14,7 +14,7 @@ import WorkDetail from "./components/WorkDetail/WorkDetail";
 import WorkDesigns from "./components/WorkDesigns/WorkDesigns";
 function AppRouter() {
   const [checkBox, setCheckBox] = useState(true)
-  localStorage.setItem("translateTxt", JSON.stringify(checkBox))
+  // localStorage.setItem("translateTxt", JSON.stringify(checkBox))
   
 
   return (
