@@ -95,8 +95,8 @@
             "id": 3,
             "img": "./../ProjectsDesign/architect/principalimg.png",
             "name": "Portfolio web de Arquitectura",
-            "description": "Inventory management and control system with barcode reader for clothing store",
-            "descriptionES": "Sistema de gestion y control de inventario con lector de código de barras para tienda de ropa",
+            "description": "Personal portfolio for an architect who seeks to offer his services and at the same time show his different projects containing his cv",
+            "descriptionES": "Portfolio personal para arquitecto que busca ofrecer sus servicios y a la vez mostrar sus diferentes proyectos conteniendo su cv",
             "marginTop": "2px",
             "data": {
               "repo": "",
