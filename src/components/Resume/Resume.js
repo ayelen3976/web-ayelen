@@ -29,7 +29,7 @@ function Resume(props) {
                 Universidad de Buenos Aires
               </h4>
 
-              <p>      Actualmente me encuentro estudiando la carrea de Ingeniería informática en FIUBA</p>
+              <p>      Actualmente me encuentro estudiando la carrera de Ingeniería informática en FIUBA</p>
             </>
           ) : (
             <>
@@ -59,7 +59,7 @@ function Resume(props) {
             <>
               <h4 className="vertical-timeline-element-subtitle"></h4>
               <p>
-                Estoy trabajando como freelance con clientes y creando mis propios proyectos
+               Trabajo como freelance con clientes Diseñando y desarrollando proyectos 
               </p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
                 enero 2021 - presente
@@ -86,7 +86,7 @@ function Resume(props) {
           {props.checkBox ? (
             <>
               <h4 className="vertical-timeline-element-subtitle">
-                Experiencia trabajando como dev junior
+                Experiencia trabajando como developer junior
               </h4>
               <p>
                 Es una empresa que trabaja con inteligencia artificial donde me toco estar en el equipo como Frontend junior, tambien diseñando y proponiendo ideas para cada proyecto nuevo que teniamos que desarrollar.
@@ -124,8 +124,8 @@ function Resume(props) {
           {props.checkBox ? (
             <>
               <p>
-                I me converti en una developer Fullstack con el bootcamp
-                realizado online, aprendi backend y frontend
+                Me converti en una developer Fullstack con el bootcamp
+                realizado de forma online, aprendi backend y frontend
               </p>
               <p style={{ color: "rgba(240, 235, 235, 0.5)" }}>
                 june 2020 - december 2020{" "}
@@ -160,7 +160,7 @@ function Resume(props) {
                 Bachiller en comunicación
               </h4>
 
-              <p>Bachiller en orientación de comunicación</p>
+              <p>Bachiller en comunicación</p>
             </>
           ) : (
             <>
