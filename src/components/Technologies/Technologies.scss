@@ -3,43 +3,22 @@
 
 
 
-
-  h2 {
-    font: 33px sans-serif;
-    margin-top: 0px;
-    text-align: center;
-  }
-  h2.linea {
-
-    z-index: 1;
-  }
-  h2.linea:before {
-
-    content: "";
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 95%;
-    z-index: -1;
-  }
+margin: 6%;
+ 
   h2.linea span {
 
-    letter-spacing: 0.2em;
+    // letter-spacing: 0.1em;
 
-    font-size: 45px;
-    font-weight: 100;
-    font-family: Miracle Mercury Bold Semi-Italic;
-
-    padding: 0 15px;
+    // font-size: 30px;
+    padding: 1%;
+    font-weight: 500;
+    // font-family: Miracle Mercury Bold Semi-Italic;
   }
   .tech-cards {
     margin: 2%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
- padding: 10%;
+//  padding: 5%;
  
    
     .tech-cards-1 {

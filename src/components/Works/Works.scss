@@ -1,6 +1,6 @@
 .works-tech {
   padding: 1%;
-  margin: auto;
+  margin: 6%;
 
   .Tabs {
 
@@ -13,9 +13,8 @@
       margin: 0 auto 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       border: 1px solid #FF2372;
-      border-radius: 1rem;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -25,20 +24,17 @@
 
     ul.nav li {
       font-size: 20px;
-      width: 50%;
+      width: 33.2%;
       padding: 1rem;
       list-style: none;
       text-align: center;
       cursor: pointer;
       transition: all 0.7s;
-      border-bottom-left-radius: 1rem;
-      border-top-left-radius: 1rem;
+      border-left: 1px solid #FF2372;
     }
 
     ul.nav li:nth-child(2) {
       border-radius: 0;
-      border-bottom-right-radius: 1rem;
-      border-top-right-radius: 1rem;
     }
 
     ul.nav li:hover {

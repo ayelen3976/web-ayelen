@@ -39,6 +39,19 @@ function Navbar(props) {
               </Link>
           </li>
           <li className="option" onClick={closeMobileMenu}>
+              <Link
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+              >
+                   { props.checkBox ? <a>PROYECTOS</a> : <a>WORK</a> }
+          
+              </Link>
+            </li>
+
+          <li className="option" onClick={closeMobileMenu}>
           <Link
                 to="resume"
                 spy={true}
@@ -62,18 +75,7 @@ function Navbar(props) {
                
               </Link>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
-              <Link
-                to="work"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000}
-              >
-                   { props.checkBox ? <a>PROYECTOS</a> : <a>WORK</a> }
-          
-              </Link>
-            </li>
+     
           <li className="option" onClick={closeMobileMenu}>
           <Link
                 to="contact"

@@ -1,194 +1,55 @@
 .contact {
   padding: 6%;
-  font-family: Miracle Mercury Bold Semi-Italic;
-  src: url("//db.onlinewebfonts.com/t/347dba378455251e46ae096580267bfd.eot");
-
-  .social-links {
-    .icon-style {
-      display: flex;
-      div {
-        text-align: center;
-        border-radius: 6px;
-        margin: 2%;
-        width: 11%;
-        height: 6vh;
-       
-        background-color: #ff2372;
-      }
-
-      a {
-        .icon {
-          color: #ffffff;
-          margin-top: 9%;
-          width: 30px;
-          height: 30px;
-        }
-
-        .icon:hover {
-          color: white;
-        }
-      }
-    }
-
+  .line {
+    border: 1px solid white;
   }
-
-  .rowe-contact {
-
-    // INFO CONTACTO
-    .col-detail {
-
-
-      
-
-
-      .contact-title {
-
-        font-weight: 200;
-
-        margin: 3% 0% 6% 0%;
-
-        font-size: 30px;
-        text-align: start;
-
+  .inputs {
+    .input-box {
+      display: flex;
+      text-align: center;
+      p {
+        font-size: 18px;
+        margin: 5% 0% 4% 7%;
+        text-align: left;
       }
-    }
-
-
-    // ENVIAR EMAIL COLUMNA
-    .email-title {
-      margin-bottom: 6%;
-      font-weight: 200;
-      margin-top: 2%;
-      text-align: start;
-      margin-left: 8%;
-      font-size: 30px;
-
-    }
-
-    .col-email {
-      border-radius: 10px;
-      border: 1px solid #FF2372;
-
-    }
-
-    .inputs {
-      text-align: -webkit-center;
-      display: grid;
-
       input {
-        border-radius: 10px;
-        background: white;
-        border: 1px solid #ffffff;
-        margin-bottom: 8px;
-        width: 83%;
-        height: 50px;
+        border-radius: 1px;
+        background: transparent;
+        border: 1px solid #ff2372;
+        width: 85%;
+        height: 45px;
       }
+    }
+    .textarea-box {
+      text-align: center;
 
+      p {
+        margin: 2% 0% 2% 5%;
+        text-align: left;
+      }
       textarea {
-        border-radius: 10px;
-        border: 1px solid #ffffff;
-        background: white;
-        width: 83%;
-        height: 90px;
-        margin-bottom: 2px;
+        border-radius: 1px;
+        background: transparent;
+        border: 1px solid #ff2372;
+        width: 90%;
+        height: 20vh;
       }
+    }
 
-      .btn-submit {
-        color: white;
-        margin-top: 1%;
+    .div-btn {
+      margin: 2% 0% 0% 5%;
+
+      text-align: left;
+      button {
         width: 20%;
-        height: 40px;
+        color: white;
+        height: 42px;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
-        background: #FF2372;
-        border-radius: 5px;
-        border: 1px solid #FF2372;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 3%;
-        float: left;
-        margin-left: 9%;
+        background: #ff2372;
+        border-radius: 1px;
+        border: 1px solid #ff2372;
       }
-
-      .btn-submit:hover {
-  background-color: #ff237493;
-        box-shadow: 1px 1px 25px 10px #ff23749d;
-      }
-
-    }
-
-    .details {
-
-      line-height: 2.8;
-
-
-      font-size: 20px;
-    }
-
-
-
-}}
-
-.swal-modal {
-  background-color: rgb(32, 31, 31);
-
-}
-.swal-icon--success__hide-corners {
-  background: none !important;
-  }
-  .swal-icon--success:before,
-  .swal-icon--success:after {
-  background: none !important;
-  }
-
-.swal-text {
-
-
-
-  color: #ffffff;
-}
-
-.swal-overlay {
-  background-color: #4382a96a;
-}
-@media (max-width: 768px) {
-
-  .contact{
-    .rowe-contact{
-      flex-direction: column-reverse;
-      .col-email{
-        width: 100% !important;
-        .btn-submit {
-          color: white;
-          margin-top: 1%;
-          width: 40%;
-          height: 40px;
-          font-size: 20px;
-   
-        }
-      }
-
-      .col-detail {
-
-
-      width: 100% !important;
-
-
-        .contact-title {
-  
-      
-  
-          margin: 0% 0% 6% 0%;
-  
-         
-          text-align: start;
-  
-        }
-      }
-  
     }
   }
-
-
- 
 }

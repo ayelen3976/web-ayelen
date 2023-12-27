@@ -1,108 +1,71 @@
-// CARDS PROJECTS TABLE PROGRAMMING
+// CARDS PROJECTS TABLE PROGRAMMING AND REALPROJECTS
 
 .programming {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 6%;
-
-    .card-work {
-        color: white;
-        text-align: -webkit-center;
-
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 350px;
-            transition: transform 2s;
-            box-shadow: 7px 1px 12px 6px black;
-            -webkit-box-shadow: 7px 1px 12px 6px black;
-            -moz-box-shadow: 7px 1px 12px 6px black;
-
-            &:hover {
-                transform: rotateY(-20deg);
-            }
-        }
-
-        .col-1-tech {
-            width: 85%;
-            margin-bottom: 10%;
-
-            .col-1-body {
-                .btn-work {
-                    border: 1px solid #FF2372;
-                    margin-top: 9%;
-                    background-color: #FF2372;
-                    width: 200px;
-                    border-radius: 4px;
-
-                    .title {
-                        letter-spacing: 2px;
-                        margin-top: 10px;
-                        color: white;
-                        font-size: 15px;
-                    }
-                }
-
-                .description {
-                    margin-top: 6%;
-                    font-size: 20px;
-                    color: white;
-                }
-            }
-        }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 6%;
+  .card-work {
+    margin-bottom: 15%;
+    color: white;
+    text-align: -webkit-center;
+    .image-container {
+      position: relative;
+      width: 300px; /* Ajusta el tamaño según tus necesidades */
     }
+    img {
+      width: 100%;
+      height: 300px;
+      display: block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.742
+      ); /* Fondo semitransparente para el texto */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* Inicialmente, el overlay es invisible */
+      transition: opacity 0.3s ease; /* Agrega una transición suave para el efecto de hover */
+    }
+
+    .overlay p {
+      font-size: 20px;
+      margin: 2%;
+      font-weight: 500;
+      color: #fff; /* Color del texto en el overlay */
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1; /* Al hacer hover, el overlay se vuelve visible */
+    }
+  }
 }
-
-
 
 // MOBILE VIEW
 
 @media (max-width: 648px) {
+  .programming {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
-      .programming {
-        margin-top: 3%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-  
-        .card-work {
-          place-self: center;
-  
-          width: 90%;
-  
-          img {
-            width: 100%;
-            height: 360px;
-          }
-        }
-  
-        .col-1-tech {
-          width: 100%;
-          margin-top: 15%;
-  
-          .col-1-body {
-            .btn-work {
-              margin-top: 9%;
-              background-color: black;
-              width: 150px;
-  
-              .title {
-                letter-spacing: 2px;
-                margin-top: 10px;
-                color: white;
-                font-size: 15px;
-              }
-            }
-  
-            .description {
-              text-align: -webkit-center;
-            }
-  
-            .title {
-              font-size: 32px;
-            }
-          }
-        }
+    .card-work {
+      place-self: center;
+
+      width: 90%;
+
+      img {
+        width: 100%;
+        height: 360px;
       }
     }
-  
+  }
+}

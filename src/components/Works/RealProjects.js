@@ -1,24 +1,22 @@
 import React from "react";
-import "./Designs.scss";
-
+import "./Programming.scss";
 import { Row, Col } from "react-bootstrap";
-
 import { NavLink } from "react-router-dom";
-import { main } from "./../datadesign.json";
-
-function DesignProjects(props) {
+import { main } from "./../datarealprojects.json";
+function RealProjects(props) {
   return (
-    <Row className="design">
-      {main.ProjectsDesign.map((p, i) => (
+    <Row className="programming">
+      {main.projects.map((p) => (
         <>
-          <Col className="card-work-design">
+          <Col className="card-work">
             <NavLink
-              to={`/projectdesign/${p.id}`}
-              key={i}
+              to={`/project/${p.id}`}
+              key={p.id}
               style={{ textDecoration: "none" }}
             >
+              <div className="col-1-tech">
                 <div className="image-container" data-aos="zoom-in-up">
-                  <img src={`ProjectsDesign/${p?.img}`} alt="imgwork" />{" "}
+                  <img src={`projects/${p?.img}`} alt="imgwork" />
                   <div className="overlay">
                     {props.checkBox ? (
                       <p>{p.descriptionES}</p>
@@ -27,6 +25,7 @@ function DesignProjects(props) {
                     )}
                   </div>
                 </div>
+              </div>
             </NavLink>
           </Col>
         </>
@@ -34,4 +33,4 @@ function DesignProjects(props) {
     </Row>
   );
 }
-export default DesignProjects;
+export default RealProjects;

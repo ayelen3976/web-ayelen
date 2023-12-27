@@ -21,24 +21,16 @@ function ProgrammingProjects(props){
           style={{ textDecoration: "none" }}
         >
           <div className="col-1-tech">
-            <div>
-              <img
-                src={`projects/${p?.img}`}
-                alt="imgwork"
-                data-aos="fade-up"
-              />
-            </div>
-            <div className="col-1-body">
-              <button className="btn-work">
-                {" "}
-                <p className="title">{p.name}</p>
-              </button>
-              {props.checkBox ? (
-                <p className="description">{p.descriptionES}</p>
-              ) : (
-                <p className="description">{p.description}</p>
-              )}
-            </div>
+          <div className="image-container" data-aos="zoom-in-up">
+                  <img src={`projects/${p?.img}`} alt="imgwork" />
+                  <div className="overlay">
+                    {props.checkBox ? (
+                      <p>{p.descriptionES}</p>
+                    ) : (
+                      <p>{p.description}</p>
+                    )}
+                  </div>
+                </div>
           </div>
         </NavLink>
       </Col>

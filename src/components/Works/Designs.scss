@@ -1,110 +1,71 @@
 // CARDS PROJECTS TABLE DESIGN
 
 .design {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 6%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6%;
 
-    // CARD IMAGE 
-    .card-work-design {
-        margin: 5%;
-
-
-
-
-        img {
-            border-radius: 5px;
-            width: 100%;
-            height: 350px;
-            transition: transform 2s;
-
-            &:hover {
-                transform: rotateY(-20deg);
-            }
-        }
-
-        .col-1-tech {
-            height: 90vh;
-            width: 95%;
-            border-radius: 5px;
-            border: 1px solid #FF2372;
-            text-align: center;
-
-            .col-1-body {
-                .btn-work {
-                    border: 1px solid #FF2372;
-                    margin-top: 9%;
-                    background-color: #FF2372;
-                    width: 200px;
-                    border-radius: 4px;
-
-                    .title {
-                        letter-spacing: 2px;
-                        margin-top: 10px;
-                        color: white;
-                        font-size: 15px;
-                    }
-                }
-
-                .description {
-                    padding: 8% 2% 3% 2%;
-                    font-size: 20px;
-                    color: white;
-                }
-            }
-        }
+  // CARD IMAGE
+  .card-work-design {
+    margin-bottom: 8%;
+    .image-container {
+      position: relative;
+      width: 98%; /* Ajusta el tamaño según tus necesidades */
     }
+    img {
+      width: 100%;
+      height: 350px;
+      display: block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.742
+      ); /* Fondo semitransparente para el texto */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* Inicialmente, el overlay es invisible */
+      transition: opacity 0.3s ease; /* Agrega una transición suave para el efecto de hover */
+    }
+
+    .overlay p {
+      font-size: 20px;
+      margin: 2%;
+      font-weight: 500;
+      color: #fff; /* Color del texto en el overlay */
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1; /* Al hacer hover, el overlay se vuelve visible */
+    }
+  }
 }
-
-
 
 // MOBILE VIEW
 
 @media (max-width: 648px) {
+  .design {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
+    .card-work {
+      place-self: center;
 
-      .design{
-        margin-top: 3%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-  
-        .card-work {
-          place-self: center;
-  
-          width: 90%;
-  
-          img {
-            width: 100%;
-            height: 360px;
-          }
-        }
-  
-        .col-1-tech {
-          width: 100%;
-          margin-top: 15%;
-  
-          .col-1-body {
-            .btn-work {
-              margin-top: 9%;
-              background-color: black;
-              width: 150px;
-  
-              .title {
-                letter-spacing: 2px;
-                margin-top: 10px;
-                color: white;
-                font-size: 15px;
-              }
-            }
-  
-            .description {
-              text-align: -webkit-center;
-            }
-  
-            .title {
-              font-size: 32px;
-            }
-          }
-        }
+      width: 90%;
+
+      img {
+        width: 100%;
+        height: 360px;
       }
     }
+  }
+}

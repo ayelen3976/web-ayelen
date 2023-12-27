@@ -1,0 +1,192 @@
+{
+    "main": {
+      "projects": [
+        {
+          "id": 1,
+          "img": "./../projects/controlstock/logostock.png",
+          "name": "Control de Stock",
+          "description": "Inventory management and control system with barcode reader for clothing store",
+          "descriptionES": "Sistema de gestion y control de inventario con lector de código de barras para tienda de ropa",
+          "marginTop": "2px",
+          "data": {
+            "desc": "In this project, an inventory control system with a barcode was developed, in this system you can add, edit, delete and send products to other branches of the same brand, it also has its own panel used so that sellers can only access to the info. they need to make a sale. among those things it has other great features that help stores to better manage their store",
+            "descES": "En este proyecto se desarrollo un sistema de control de inventario con código de barra, en este sistema se puede agregar, editar, eliminar y enviar productos a otras sucursales de la misma marca , tambien tiene su propio panel empleado para que los vendedores solo puedan acceder a la info. que necesitan para hacer una venta. entre esas cosas tiene otras funcionalidadea geniales que ayudan a las tiendas a llevar un mejor manejo de su tienda",
+            "images": [
+              {
+                "id": 1,
+                "img":"./../projects/controlstock/controlstock1.png"
+              },
+              {
+                "id": 2,
+                "img":"./../projects/controlstock/controlstock2.png"
+              },
+              {
+                "id": 3,
+                "img":"./../projects/controlstock/controlstock3.png"
+              },
+              {
+                "id": 4,
+                "img":"./../projects/controlstock/controlstock4.png"
+              },
+              {
+                "id": 5,
+                "img":  "./../projects/controlstock/controlstock5.png"
+              }
+          
+            ]   
+     
+          }
+        },
+        {
+          "id": 2,
+          "img": "./../projects/webarchitect/logoarq.png",
+          "name": "Felix T. Clavijo",
+          "description": "Website for the Felix Clavijo architecture studio team",
+          "descriptionES": "Página web para el equipo del estudio de arquitectura Felix Clavijo",
+          "marginTop": "90px",
+          "data": {
+            "repo": "",
+            "deploy": "https://arquitectofelixclavijo.com",
+            "desc": "A personalized web page was built to represent the study of the architect Felix Clavijo, where it contains the necessary information, Works, Designs, projects, etc. It was built in a responsive way for cell phones and computers as well, before programming it, a design approved by the client was created.",
+            "descES": "Se construyo una Página web personalizada para representar el estudio del Arquitecto Felix Clavijo, donde contiene la información necesaria, Trabajos,  Diseños, proyectos, etc. Fue construida de manera responsive para celulares y computadoras tambien antes de programarla se le creo un diseño aprobado por el cliente.",
+            "images": [
+              {
+                "id": 1,
+                "img": "./../projects/webarchitect/webarq1.png"
+              },
+              {
+                "id": 2,
+                "img": "./../projects/webarchitect/webarq2.png"
+              },
+              {
+                "id": 3,
+                "img": "./../projects/webarchitect/webarq3.png"
+              },
+              {
+                "id": 4,
+                "img": "./../projects/webarchitect/webarq4.png"
+              },
+              {
+                "id": 5,
+                "img": "./../projects/webarchitect/webarq5.png"
+              },
+              {
+                "id": 6,
+                "img": "./../projects/webarchitect/webarq6.png"
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "img": "./../projects/dtodo/dtodohome.jpg",
+          "name": "DTodoInd",
+          "description": "E-commerce full stack for a real clothing store in Argentina in process ",
+          "descriptionES": "Tienda online para una tienda real de Argentina, que vende indumentaria",
+          "data": {
+            "repo": "https://github.com/Bhavesh588/manjares",
+            "deploy": "https://www.dtodoind.com/",
+            "images": [
+              {
+                "id": 1,
+                "img":  "./../projects/dtodo/dtodo1.png"
+              },
+              {
+                "id": 2,
+                "img": "./../projects/dtodo/dtodo2.png"
+              },
+              {
+                "id": 3,
+                "img": "./../projects/dtodo/dtodo3.png"
+              },
+              {
+                "id": 4,
+                "img": "./../projects/dtodo/dtodo4.png"
+              },
+              {
+                "id": 5,
+                "img": "./../projects/dtodo/dtodo5.png"
+              },
+              {
+                "id": 6,
+                "img": "./../projects/dtodo/dtodo6.png"
+              },
+              {
+                "id": 7,
+                "img": "./../projects/dtodo/dtodo7.png"
+              },
+              {
+                "id": 8,
+                "img": "./../projects/dtodo/dtodo8.png"
+              },
+              {
+                "id": 9,
+                "img": "./../projects/dtodo/dtodo9.png"
+              },
+              {
+                "id": 10,
+                "img": "./../projects/dtodo/dtodo10.png"
+              },
+              {
+                "id": 11,
+                "img": "./../projects/dtodo/dtodo11.png"
+              },  {
+                "id": 12,
+                "img": "./../projects/dtodo/dtodo12.png"
+              },      {
+                "id": 13,
+                "img": "./../projects/dtodo/dtodo13.png"
+              },
+              {
+                "id": 14,
+                "img": "./../projects/dtodo/dtodo14.png"
+              },
+              {
+                "id": 15,
+                "img": "./../projects/dtodo/dtodo15.png"
+              },
+              {
+                "id": 16,
+                "img": "./../projects/dtodo/dtodo16.png"
+              },
+              {
+                "id": 17,
+                "img": "./../projects/dtodo/dtodo17.png"
+              },
+              {
+                "id": 18,
+                "img": "./../projects/dtodo/dtodo18.jpg"
+              }
+          
+          
+            ]
+       
+          }
+        },
+        {
+          "id": 4,
+          "img": "./../projects/mine/mine.png",
+          "name": "Personal Portfolio",
+          "description": "This website, check the repository! :)",
+          "descriptionES": "Esta es mi pagina, puede chequear el repositorio ! :)",
+          "data": {
+            "repo": "https://github.com/ayelen3976/web-ayelen.git",
+            "deploy": "https://portfolio-c470d.web.app/",
+            "images": [
+              {
+                "id": 1,
+                "img":"./../projects/mine/mine1.png"
+              },
+              {
+                "id": 2,
+                "img":"./../projects/mine/mine2.png"
+              }
+          
+            ]
+  
+          }
+        }
+          
+      ]
+    }
+  }

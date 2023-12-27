@@ -52,10 +52,12 @@ const PrincipalScreen = (props) => (
   <Home checkBox={props.checkBox} />
   <About checkBox={props.checkBox}/>
 
+  <Works checkBox={props.checkBox} />
+
+
   <Resume checkBox={props.checkBox} />
 
   <Technologies checkBox={props.checkBox} />
-  <Works checkBox={props.checkBox} />
 
   <Contact checkBox={props.checkBox} />
   <Footer />
