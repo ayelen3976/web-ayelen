@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
@@ -13,58 +13,58 @@ import ScrollTop from "./components/Variants/ScrollTop";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
 import WorkDesigns from "./components/WorkDesigns/WorkDesigns";
 function AppRouter() {
-  const [checkBox, setCheckBox] = useState(true)
+  const [checkBox, setCheckBox] = useState(true);
   // localStorage.setItem("translateTxt", JSON.stringify(checkBox))
-  
 
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={()=><PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox}/>} />
+        <Route
+          exact
+          path="/"
+          component={() => (
+            <PrincipalScreen checkBox={checkBox} setCheckBox={setCheckBox} />
+          )}
+        />
         {/* Los checkbox pasando como el estado a los components detail desde app.js no funca, funciona el pasaje desde el componente padre a hijo */}
         <ScrollTop>
-
-          <Route path="/project/:id" component={()=><WorkDetail />} />
+          <Route path="/project/:id" component={() => <WorkDetail />} />
           <ScrollTop>
-
-          <Route path="/projectdesign/:id" component={()=><WorkDesigns />} />
-        </ScrollTop>
+            <Route
+              path="/projectdesign/:id"
+              component={() => <WorkDesigns />}
+            />
+          </ScrollTop>
         </ScrollTop>
       </Switch>
     </Router>
   );
 }
 const PrincipalScreen = (props) => (
- 
-        <div>
+  <div>
+    <Navbar checkBox={props.checkBox} setCheckBox={props.setCheckBox} />
 
- <Navbar checkBox={props.checkBox} setCheckBox={props.setCheckBox}/> 
+    <div
+      style={{
+        position: "absolute",
+        left: "0",
+        // top: "0",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <Home checkBox={props.checkBox} />
+      <About checkBox={props.checkBox} />
 
-<div
-  style={{
-    position: "absolute",
-    left: "0",
-    // top: "0",
-    width: "100%",
-    height: "100%",
-  }}
->
-<Home checkBox={props.checkBox} />
-  <About checkBox={props.checkBox}/>
+      <Works checkBox={props.checkBox} />
 
-  <Works checkBox={props.checkBox} />
+      <Resume checkBox={props.checkBox} />
 
-  
-   <Resume checkBox={props.checkBox} />
- 
-  <Technologies checkBox={props.checkBox} />
+      <Technologies checkBox={props.checkBox} />
 
-  <Contact checkBox={props.checkBox} /> 
-  <Footer />
-</div>
-
-</div>
-
-
+      <Contact checkBox={props.checkBox} />
+      <Footer />
+    </div>
+  </div>
 );
 export default AppRouter;
