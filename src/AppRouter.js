@@ -49,17 +49,17 @@ const PrincipalScreen = (props) => (
     height: "100%",
   }}
 >
-  <Home checkBox={props.checkBox} />
+<Home checkBox={props.checkBox} />
   <About checkBox={props.checkBox}/>
 
   <Works checkBox={props.checkBox} />
 
-
-  <Resume checkBox={props.checkBox} />
-
+  
+   <Resume checkBox={props.checkBox} />
+ 
   <Technologies checkBox={props.checkBox} />
 
-  <Contact checkBox={props.checkBox} />
+  <Contact checkBox={props.checkBox} /> 
   <Footer />
 </div>
 

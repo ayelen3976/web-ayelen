@@ -1,11 +1,7 @@
 .about {
-
   padding: 4%;
 
   .elipse-div {
-
-
-
     img {
       animation-name: stretch;
 
@@ -14,20 +10,15 @@
       animation-direction: alternate;
       animation-iteration-count: infinite;
     }
-
   }
 
   @keyframes stretch {
-
-
     50% {
-      transform: scale(1.0);
-
+      transform: scale(1);
     }
 
     100% {
       transform: scale(1.09);
-
     }
   }
 
@@ -41,41 +32,35 @@
     // animation:
     //   pulse 8s ease infinite alternate,
     //   nudge 10s linear infinite alternate;
-
   }
 
-
   .about-col {
-
+    h1{
+      padding: 0% 0% 0% 10%;
+    }
     .about-text {
       margin-left: 10%;
       padding: 10px;
       width: 100%;
       margin-top: 6%;
-      font-size:25px;
+      font-size: 25px;
       line-height: 1.8;
       text-align: left;
     }
   }
-
 }
 
 @media (max-width: 668px) {
-
-
   .about {
+    padding: 0%;
     .elipse-div {
-      text-align: end !important;
-
+display: none;
       img {
-
         width: 40%;
       }
-
     }
 
     .elipse-img {
-
       width: 60%;
     }
   }
@@ -84,20 +69,17 @@
     display: contents;
 
     .about-col {
-
+      h1{
+        padding: 0% 0% 0% 0%;
+      }
       .about-text {
-        text-align: center;
+        text-align: left;
         margin-left: 0%;
 
-
         margin-top: 6%;
-        font-size: 18px;
+        font-size: 20px;
         line-height: 2;
-
       }
     }
-
   }
-
-
 }

@@ -1,0 +1,56 @@
+{
+  "resume": {
+    "experience": [
+      {
+        "id": 1,
+        "title": "AGEA - clarin",
+        "job" : "Fullstack developer - UX/UI",
+        "yearEN": "June 2023 - Present",
+        "yearES": "Junio 2023 - Presente",
+        "descripcionES": "Actualmente, formo parte del equipo de Lilax, donde desempeño un papel fundamental en el desarrollo y actualización del backoffice destinado a la carga de notas en las páginas. Mi función incluye la coordinación efectiva de equipos y una comunicación fluida para garantizar la ejecución exitosa de proyectos. Además, me encargo del control de versiones y la gestión del código, aplicando enfoques eficaces para optimizar el rendimiento del sistema. Mi habilidad para abordar y resolver problemas de manera proactiva complementa mi contribución al equipo, asegurando un entorno de trabajo productivo y eficiente.",
+        "descriptionEN": "Currently, I am part of the Lilax team, playing a pivotal role in the development and updating of the back office designed for uploading notes to pages. My responsibilities include effective team coordination and seamless communication to ensure the successful execution of projects. Additionally, I handle version control and code management, applying effective approaches to optimize system performance. My proactive approach to addressing and resolving issues complements my contribution to the team, ensuring a productive and efficient work environment."
+      },
+      {
+        "id": 2,
+        "title": "Estudio de Arquitectura Felix Clavijo",
+        "job" : "FullStack developer - UX/UI",
+        "yearEN": "September 2022 - January 2023",
+        "yearES": "Septiembre - Enero 2023",
+        "descripcionES": "Como Diseñadora UX/UI y Desarrolladora Fullstack en el Estudio de Arquitectura Felix Clavijo, contribuí a la planificación, ejecución y exitoso cierre de proyectos, garantizando entregas puntuales y clientes satisfechos. En mi rol, mantuve una comunicación abierta y transparente con los clientes, proporcionando actualizaciones regulares y abordando proactivamente cualquier inquietud. Me especialicé en el diseño y desarrollo de soluciones personalizadas alineadas con las necesidades específicas de cada cliente. Mis responsabilidades incluyeron el diseño UX/UI y el proceso general de desarrollo.",
+        "descriptionEN": "As a UX/UI Designer and Fullstack Developer at the Felix Clavijo Architecture Studio, I contributed to the planning, execution, and successful closure of projects, ensuring timely deliveries and satisfied clients. In my role, I maintained open and transparent communication with clients, providing regular updates and proactively addressing any concerns. I specialized in designing and developing customized solutions aligned with the specific needs of each client. My responsibilities included UX/UI design and the overall development process."
+      },
+      {
+        "id": 3,
+        "title": "Anteia",
+        "job" : "Frontend developer",
+        "yearEN": "May 2021 - December 2022",
+        "yearES": "Mayo 2021 - Diciembre 2022",
+        "descripcionES": "Como FrontEnd Developer en Anteia Empresa, contribuí al desarrollo de aplicaciones y servicios, especializándome en el diseño de interfaces y la creación de prototipos utilizando Figma. Además, participé activamente en proyectos que involucraban inteligencia artificial. Mi rol también incluyó el versionamiento y diseño de prototipos. Cabe destacar que trabajé en el desarrollo del Frontend de una aplicación que capturaba datos biométricos, aportando así a la implementación de soluciones innovadoras.",
+        "descriptionEN": "As a FrontEnd Developer at Anteia Company, I contributed to the development of applications and services, specializing in interface design and prototype creation using Figma. Additionally, I actively participated in projects involving artificial intelligence. My role also encompassed versioning and prototype design. It's worth noting that I worked on developing the Frontend of an application capturing biometric data, contributing to the implementation of innovative solutions."
+      }
+    ],
+    "education" : [
+        {
+            "id": 1,
+            "title": "Ingenieria informatica",
+            "university" : "Universidad de Buenos Aires (UBA)",
+            "yearEN": "May 2022 - Present",
+            "yearES": "Mayo 2022 - Presente"
+          },
+          {
+            "id": 2,
+            "title": "Fullstack developer",
+            "university" : "Henry bootcamp",
+            "yearEN": "May 2020 - December 2020",
+            "yearES": "Mayo 2020 - Diciembre 2020"
+               },
+          {
+            "id": 3,
+            "title": "Bachiller en comunicación",
+            "university" : "Colegio Juan Bautista Alberdi",
+            "yearEN": "Finish December 2019",
+            "yearES": "Termino Dicimebre 2019"
+               }
+    ]
+  }
+}

@@ -22,12 +22,20 @@ function Home(props) {
 
   return (
     <div className="home" id="home">
-      <div style={{ display: "flex" }}>
+      <div className="row-home">
         <div className="div-left">
-          <p style={{ fontSize: "42px", fontWeight: "bold" }}>
-            AYELEN FERNANDEZ<br></br>Líder Creativa en Desarrollo, Programación,
-            Diseño e Innovación
-          </p>
+          {props.checkBox ? (
+            <p>
+              AYELEN FERNANDEZ<br></br>Líder Creativa en Desarrollo,
+              Programación, Diseño e Innovación
+            </p>
+          ) : (
+            <p>
+              AYELEN FERNANDEZ<br></br>Creative Leader in Development,
+              Programming, Design, and Innovation
+            </p>
+          )}
+
           <div className="social-links" style={{ width: "100%" }}>
             <div className="icon-style">
               <div>

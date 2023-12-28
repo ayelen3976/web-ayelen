@@ -25,7 +25,7 @@ function ProjectDetail(props) {
           <Row className="cont-project">
             <div className="text-project" data-aos="fade-left">
               <p>
-              {props.checkBox ? (props.project?.data?.descES) : (props.project?.data?.desc)}
+              {props.checkBox ? (props.project?.data?.desc) : (props.project?.data?.descES)}
               </p>
 
             </div>

@@ -35,19 +35,19 @@ function Work(props) {
             className={activeTab === "tab1" ? "active" : ""}
             onClick={handleTab1}
           >
-            {props.checkBox ? "Proyectos" : "UX/UI designer"}
+            {props.checkBox ? "Proyectos" : "Projects"}
           </li>
           <li
             className={activeTab === "tab2" ? "active" : ""}
             onClick={handleTab2}
           >
-            {props.checkBox ? "Programacíon" : "Programming"}
+            {props.checkBox ? "Programación" : "Programming"}
           </li>
           <li
             className={activeTab === "tab3" ? "active" : ""}
             onClick={handleTab3}
           >
-            {props.checkBox ? "Diseño UX/UI" : "UX/UI designer"}
+            {props.checkBox ? "UX/UI" : "UX/UI designer"}
           </li>
         </ul>
         <div className="outlet">

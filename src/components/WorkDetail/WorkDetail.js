@@ -3,6 +3,7 @@ import "./WorkDetail.scss";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { main } from "../data.json";
+import {mainreal} from "../datarealprojects.json"
 import { AiFillGithub } from "react-icons/ai";
 import ProjectDetail from './ProjectDetail/ProjectDetail'
 import Footer from "./../Footer/Footer";
@@ -11,11 +12,14 @@ function WorkDetail(props) {
 
   const [project, setProject] = useState();
   useEffect(() => {
- 
-    let filteredData = main?.projects?.find((p) => p.id === parseInt(id));
+    // Combina ambos conjuntos de datos (main.projects y mainreal.projects)
+    const allProjects = [...main.projects, ...mainreal.projects];
+    
+    // Encuentra el proyecto por ID en el conjunto combinado
+    let filteredData = allProjects.find((p) => p.id === parseInt(id));
 
     setProject(filteredData);
-  }, []);
+  }, [id]);
 
   function Buttons() {
     if (!project?.data.deploy && !project?.data.repo) {
@@ -65,10 +69,10 @@ function WorkDetail(props) {
     <div>
       <div className="workdetail">
         <NavLink to="/">
-          <p className="back"> {props.checkBox ? "VOLVER " : "BACK TO HOME"}</p>
+          <p className="back"> {props.checkBox ? "BACK TO HOME" : "VOLVER" }</p>
         </NavLink>
         {/* <DarkMode /> */}
-        <p className="work"> {props.checkBox ? "proyecto" : "work"}</p>
+        <p className="work"> {props.checkBox ? "work" : "proyecto" }</p>
         <p className="work-title">{project?.name}</p>
 
         <Buttons />

@@ -1,65 +1,76 @@
 .home {
-.div-left{
-place-self: center;
-padding: 15% 0% 25% 10%; //fix it
+  .row-home {
+    display: flex;
+    .div-left {
+      place-self: center;
+      padding: 15% 0% 25% 10%; //fix it
 
-
-.social-links {
-    .icon-style {
-      display: flex;
-      div {
-        text-align: center;
-        border-radius: 6px;
-        margin: 1%;
-        width: 10%;
-        height: 6vh;
-       
-        background-color: #ff2372;
+      p {
+        font-size: 42px;
+        font-weight: bold;
       }
 
-      a {
-        .icon {
-          color: #ffffff;
-          margin-top: 11%;
-          width: 30px;
-          height: 30px;
-        }
+      .social-links {
+        .icon-style {
+          display: flex;
+          div {
+            text-align: center;
+            border-radius: 6px;
+            margin: 1%;
+            width: 10%;
+            height: 6vh;
 
-        .icon:hover {
-          color: white;
+            background-color: #ff2372;
+            @media (max-width: 648px) {
+              margin: 3%;
+
+              width: 50%;
+              height: 6vh;
+            }
+          }
+
+          a {
+            .icon {
+              color: #ffffff;
+              margin-top: 11%;
+              width: 30px;
+              height: 30px;
+              @media (max-width: 648px) {
+                margin-top: 18%;
+              }
+            }
+
+            .icon:hover {
+              color: white;
+            }
+          }
         }
       }
     }
-
+    .img {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
   }
-}
-.img {
-
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-
-    }
-
 }
 
 @media (max-width: 648px) {
-    .home {
-        margin-top: 40%;
-        .typewritter-txt{
-            margin-top: 10%;
-            font-size:20px;
-         
-        }
-        div{
-            display: block !important;
-            img{
-                display: none;
-            }
-            
-        }
+  .home {
+    margin-top: 20%;
+    .row-home {
+      display: block;
+      .div-left {
+        padding: 4%; //fix it
 
-
+        p {
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+      img {
+        display: none;
+      }
     }
-
+  }
 }

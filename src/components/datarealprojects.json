@@ -1,5 +1,5 @@
 {
-    "main": {
+    "mainreal": {
       "projects": [
         {
           "id": 1,
@@ -11,6 +11,7 @@
           "data": {
             "desc": "In this project, an inventory control system with a barcode was developed, in this system you can add, edit, delete and send products to other branches of the same brand, it also has its own panel used so that sellers can only access to the info. they need to make a sale. among those things it has other great features that help stores to better manage their store",
             "descES": "En este proyecto se desarrollo un sistema de control de inventario con código de barra, en este sistema se puede agregar, editar, eliminar y enviar productos a otras sucursales de la misma marca , tambien tiene su propio panel empleado para que los vendedores solo puedan acceder a la info. que necesitan para hacer una venta. entre esas cosas tiene otras funcionalidadea geniales que ayudan a las tiendas a llevar un mejor manejo de su tienda",
+            "deploy": "https://stockincontrol.com.ar/",
             "images": [
               {
                 "id": 1,

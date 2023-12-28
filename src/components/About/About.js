@@ -27,32 +27,50 @@ function About(props) {
 
       <Row className="row-about">
         <Col>
-          <div className="about-col" data-aos="fade-right">
-            <h1 style={{ padding: "0% 0% 0% 10%" }}>Sobre mi</h1>
+          <div
+            className="about-col"
+            data-aos={responsive.matches ? "" : "fade-right"}
+          >
             {props.checkBox ? (
               <>
+                <h1>Sobre mi</h1>
+
                 <p className="about-text">
                   Hola!, Mi Nombre es Ayelen Fernandez, Soy de Argentina, tengo
-                  21 años, Estudio la carrera de Ingeniería informática en la
-                  Universidad de Buenos Aires. Me gusta programar y aprender
-                  cosas nuevas todos los días, también me gusta hacer deporte
-                  por las mañanas. mi sueño es viajar por el mundo y crear
-                  nuevos horizontes en mi vida. Hoy en día creo proyectos en mi
-                  tiempo libre propios y de forma freelance para abrirme camino
-                  en el mundo del trabajo y experiencia
+                  22 años, Estudio la carrera de Ingeniería informática en la
+                  Universidad de Buenos Aires. Soy una profesional apasionada y
+                  dedicada en Desarrollo, Programación y Diseño. Mi visión es
+                  liderar empresas hacia la excelencia, trabajando arduamente
+                  para potenciar sus productos o servicios. Con una mente
+                  creativa y siempre ávida de aprender, me sumerjo en cada
+                  proyecto con el objetivo de encontrar soluciones innovadoras.
+                  Mi compromiso es no solo cumplir, sino superar las
+                  expectativas, contribuyendo al éxito y crecimiento de cada
+                  empresa que lidero. Mi trayectoria está marcada por la
+                  adaptabilidad y el deseo constante de enfrentar nuevos
+                  desafíos. Creo que la juventud es una ventaja que impulsa la
+                  creatividad, la adaptabilidad y el aprendizaje continuo.
                 </p>
               </>
             ) : (
               <>
+                <h1>About me</h1>
+
                 <p className="about-text">
-                  Hi, My name is Ayelen Fernandez, I am from Argentina, I am 21
-                  years old, I am studying Computer Engineering at the
-                  University of Buenos Aires. I like programming and learning
-                  new things every day, I also like to play sports for the
-                  mornings. My dream is to travel the world and create new
-                  horizons in my life Today I create projects in my time free
-                  own and freelance to make my way in the world of work and
-                  experience
+                  Hello! My name is Ayelen Fernandez. I am from Argentina and I
+                  am 22 years old. I am currently pursuing a degree in Computer
+                  Engineering at the University of Buenos Aires. I am a
+                  passionate and dedicated professional in Development,
+                  Programming, and Design. My vision is to lead companies to
+                  excellence by working diligently to enhance their products or
+                  services. With a creative mind and a constant thirst for
+                  learning, I immerse myself in each project with the goal of
+                  finding innovative solutions. My commitment is not just to
+                  meet expectations but to exceed them, contributing to the
+                  success and growth of every company I lead. My journey is
+                  characterized by adaptability and a constant desire to face
+                  new challenges. I believe that youth is an advantage that
+                  drives creativity, adaptability, and continuous learning.
                 </p>
               </>
             )}

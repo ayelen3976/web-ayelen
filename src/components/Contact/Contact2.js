@@ -46,28 +46,28 @@ function Contact(props) {
         "template_bvet4rp",
         e.target,
         "user_rEMZ0lhwsBHsrG0n6572C"
-      )
-      .then(
-        (result) => {
-          swal({
-            icon: "success",
-            text: props.checkBox ? "GRACIAS POR ENVIAR TU MENSAJE!" : "THANKS FOR CONTACT ME!",
-          });
-          setInput({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  }
-
-  const handleInputChange = (e) => {
-    setInput({ ...input, [e.target.name]: e.target.value });
+        )
+        .then(
+          (result) => {
+            swal({
+              icon: "success",
+              text: props.checkBox ? "GRACIAS POR ENVIAR TU MENSAJE!" : "THANKS FOR CONTACT ME!",
+            });
+            setInput({
+              name: "",
+              email: "",
+              subject: "",
+              message: "",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+  
+    const handleInputChange = (e) => {
+      setInput({ ...input, [e.target.name]: e.target.value });
   };
   /*   function sendEmail(e) {
     e.preventDefault();

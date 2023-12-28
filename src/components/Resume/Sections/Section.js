@@ -1,16 +1,27 @@
-import React from 'react'
-function Section(){
-    return(
+import React from "react";
+function Section(props) {
+  return (
+    <div >
+      {props.checkBox ? (
         <div>
-        <div>
-            <h4>AGEA - clarin</h4>
-            <p>Junio 2023- presente</p>
-        </div>
-        <p>
-            Harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum.
-        </p>
+          <h4>{props.data.title}</h4>
+          <h6 style={{fontWeight:'600'}}>{props.data.job}</h6>
 
-    </div>
-    )
+          <p>{props.data.yearES}</p>
+        </div>
+      ) : (
+        <div>
+         <h4>{props.data.title}</h4>
+          <p>{props.data.yearEN}</p>
+        </div>
+      )}
+      {props.checkBox ? (   <p>
+    {props.data.descripcionES}
+      </p>
+    ) : ( <p>
+        {props.data.descriptionEN}
+          </p>)}
+   </div>
+  );
 }
 export default Section;

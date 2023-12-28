@@ -1,5 +1,13 @@
 .contact {
   padding: 6%;
+  @media (max-width: 768px) {
+  .row{
+    display: block;
+    h1{
+        font-size: 20px;
+    }
+  }
+}
   .line {
     border: 1px solid white;
   }
@@ -11,13 +19,23 @@
         font-size: 18px;
         margin: 5% 0% 4% 7%;
         text-align: left;
+        @media (max-width: 768px) {
+            margin: 4% 0% 2% 0%;
+        }
       }
       input {
+        color: white;
         border-radius: 1px;
         background: transparent;
         border: 1px solid #ff2372;
         width: 85%;
         height: 45px;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+      }
+      @media (max-width: 768px) {
+    display: block;
       }
     }
     .textarea-box {
@@ -26,8 +44,12 @@
       p {
         margin: 2% 0% 2% 5%;
         text-align: left;
+        @media (max-width: 768px) {
+            margin: 5% 0% 4% 5%;
+        }
       }
       textarea {
+        color: white;
         border-radius: 1px;
         background: transparent;
         border: 1px solid #ff2372;
@@ -49,6 +71,13 @@
         background: #ff2372;
         border-radius: 1px;
         border: 1px solid #ff2372;
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+      }
+      button:hover {
+        background: #810c37;
+
       }
     }
   }

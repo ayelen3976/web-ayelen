@@ -1,11 +1,17 @@
-.Resume-style{
-    margin: 7%;
-    .col-img{
-        text-align-last: center;
-        align-self: center;
+.Resume-style {
+  margin: 7%;
+  .col-img {
+    text-align-last: center;
+    align-self: center;
+    @media (max-width: 668px) {
+      display: none;
     }
-    .line{
-        margin: 5% 0% 5% 0%;
-        border: solid 1px white;
-    }
+  }
+  .section {
+    margin-top: 10%;
+  }
+  .line {
+    margin: 5% 0% 5% 0%;
+    border: solid 1px white;
+  }
 }
