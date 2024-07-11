@@ -53,12 +53,12 @@ function Home(props) {
                   <AiFillGithub className="icon" />
                 </a>
               </div>
-              <div>
+              {/* <div>
                 <a href="https://wa.me/1125152015?text=¡Hola!" target="_blank">
                   {" "}
                   <AiOutlineWhatsApp className="icon" />
                 </a>
-              </div>
+              </div> */}
               <div>
                 <a
                   href="https://www.linkedin.com/in/ayelen-fernandez-783286187/"
@@ -69,7 +69,7 @@ function Home(props) {
                 </a>
               </div>
 
-              <div>
+              {/* <div>
                 <a
                   href="https://drive.google.com/file/d/1_E-YaKnWVuwkXZ1lewJR_YRWrdcLJvK4/view?usp=sharing"
                   target="_blank"
@@ -77,7 +77,7 @@ function Home(props) {
                   {" "}
                   <IoMdDownload className="icon" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

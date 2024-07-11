@@ -36,8 +36,7 @@ function About(props) {
                 <h1>Sobre mi</h1>
 
                 <p className="about-text">
-                  Hola!, Mi Nombre es Ayelen Fernandez, Soy de Argentina, tengo
-                  22 años, Estudio la carrera de Ingeniería informática en la
+                  Hola!, Mi Nombre es Ayelen Fernandez, Soy de Argentina, Estudio la carrera de Ingeniería informática en la
                   Universidad de Buenos Aires. Soy una profesional apasionada y
                   dedicada en Desarrollo, Programación y Diseño. Mi visión es
                   liderar empresas hacia la excelencia, trabajando arduamente
@@ -57,8 +56,7 @@ function About(props) {
                 <h1>About me</h1>
 
                 <p className="about-text">
-                  Hello! My name is Ayelen Fernandez. I am from Argentina and I
-                  am 22 years old. I am currently pursuing a degree in Computer
+                  Hello! My name is Ayelen Fernandez. I am from Argentina. I am currently pursuing a degree in Computer
                   Engineering at the University of Buenos Aires. I am a
                   passionate and dedicated professional in Development,
                   Programming, and Design. My vision is to lead companies to
